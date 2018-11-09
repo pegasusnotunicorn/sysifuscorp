@@ -1,0 +1,52 @@
+---
+---
+
+@import "hydeout";
+
+body {
+  min-width: 0 !important;
+}
+
+.is-hidden-mobile {
+  @media only screen and (max-width: 800px) {
+    display:none !important;
+  }
+}
+
+.caption {
+  font-style: italic;
+  display: block;
+  margin-top: -25px;
+  font-size: .75em;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+//<editor-fold>------------------------------------------MAIN PAGE (Buttons + Images)---------------------------------------
+
+.main-image {
+  width: calc(32% - 15px);
+  margin-right: 10px;
+  display: inline-block;
+}
+
+input, button {
+  border-radius: 5px !important;
+  outline: 0 !important;
+}
+
+input[type="text"], input[type="email"] {
+  width:50% !important;
+}
+
+.button {
+  color: #222 !important;
+}
+
+.button:hover {
+  background: #222 !important;
+  border-color: #222 !important;
+  color: #FFF !important;
+}
+
+//</editor-fold>
