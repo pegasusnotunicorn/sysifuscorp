@@ -19,7 +19,7 @@ Here are some of the many ways you can get in touch with us:
 [twitter]: https://twitter.com/pintent
 
 ---
-### Shy? Or would rather just lurk and read our updates?
-Sign up below! We aim to post once a week, sometimes more, sometimes way less.
+### Shy? Sign up below to lurk and read our updates!
+We aim to post once a week, sometimes more, sometimes way less.
 
 {% include mailchimp-form.html %}
