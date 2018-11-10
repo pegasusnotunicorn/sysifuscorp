@@ -7,6 +7,14 @@ body {
   min-width: 0 !important;
 }
 
+.site-title{
+  margin-bottom:0px !important;
+}
+
+.index #sidebar {
+  padding-bottom:2rem;
+}
+
 .is-hidden-mobile {
   @media only screen and (max-width: 800px) {
     display:none !important;
@@ -22,11 +30,35 @@ body {
   text-align: center;
 }
 
+//<editor-fold>------------------------------------------SIDE BAR---------------------------------------
+
+#sidebar-nav-links > a {
+  @media only screen and (max-width: 800px) {
+    display:inline-block;
+    margin:0 5px 0 5px;
+  }
+}
+
+#sidebar-icon-links {
+  margin-bottom:10px;
+}
+
+//</editor-fold>
+
 //<editor-fold>------------------------------------------MAIN PAGE (Buttons + Images)---------------------------------------
 
+#main-image-wrapper {
+  @media only screen and (max-width: 800px) {
+    text-align: center;
+  }
+}
+
 .main-image {
+  @media only screen and (max-width: 800px) {
+    margin: 5px;
+  }
+  margin-right:10px;
   width: calc(32% - 15px);
-  margin-right: 10px;
   display: inline-block;
 }
 
@@ -36,7 +68,7 @@ input, button {
 }
 
 input[type="text"], input[type="email"] {
-  width:50% !important;
+  width:calc(100% - 150px);
 }
 
 .button {

@@ -12,3 +12,10 @@ This blog serves to document the process of creating a board game from scratch. 
 We'd like to thank you for visiting and welcome you along on our journey. We're not 100% sure how it'll turn out, but it's bound to be a fun adventure and hopefully we can create something amazing together.
 
 -- _Wonmin & Grace_
+
+---
+
+### Stay up to date!
+We aim to post once a week, sometimes more, sometimes way less.
+
+{% include mailchimp-form.html %}
