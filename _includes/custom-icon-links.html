@@ -1,0 +1,25 @@
+<!-- Optional additional links to insert for icons links -->
+
+{% if site.social.facebook %}
+  <a id="facebook-link"
+    class="icon" title="Facebook" aria-label="Facebook"
+    href="{{ site.social.facebook }}">
+    {% include svg/facebook.svg %}
+  </a>
+{% endif %}
+
+{% if site.social.twitter%}
+  <a id="twitter-link"
+    class="icon" title="Twitter" aria-label="Twitter"
+    href="{{ site.social.twitter }}">
+    {% include svg/twitter.svg %}
+  </a>
+{% endif %}
+
+{% if site.social.instagram %}
+  <a id="instagram-link"
+    class="icon" title="Instagram" aria-label="Instagram"
+    href="{{ site.social.instagram }}">
+    {% include svg/instagram.svg %}
+  </a>
+{% endif %}

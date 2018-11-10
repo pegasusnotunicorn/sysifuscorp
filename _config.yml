@@ -17,7 +17,7 @@ title: Path of Good Intent
 author: Made by Wonmin & Grace
 email: info@pathofgoodintent.com
 description: A board game for want-to-be adults made by wannabe adults.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://pathofgoodintent.com" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-128972245-1
 paginate: 5
