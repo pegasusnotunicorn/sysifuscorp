@@ -17,8 +17,9 @@ body {
 }
 
 .is-hidden-mobile {
-  @media only screen and (max-width: 780px) {
-    display:none !important;
+  display:none !important;
+  @media (min-width: $large-breakpoint) {
+    display:initial;
   }
 }
 
@@ -33,10 +34,15 @@ body {
 
 //<editor-fold>------------------------------------------SIDE BAR---------------------------------------
 
+//mobile
 #sidebar-nav-links > a {
-  @media only screen and (max-width: 780px) {
-    display:inline-block;
-    margin:0 5px 0 5px;
+  display:inline-block !important;
+  margin:0 5px 0 5px !important;
+
+  //desktop
+  @media (min-width: $large-breakpoint) {
+    display:block !important;
+    margin:0 !important;
   }
 }
 
@@ -48,17 +54,24 @@ body {
 
 //<editor-fold>------------------------------------------MAIN PAGE (Buttons + Images)---------------------------------------
 
+//mobile
 #main-image-wrapper {
-  @media only screen and (max-width: 780px) {
-    text-align: center;
+  text-align:center;
+
+  //desktop
+  @media (min-width: $large-breakpoint) {
+    text-align:left;
   }
 }
 
 .main-image {
-  @media only screen and (max-width: 780px) {
-    margin: 5px;
+  //mobile
+  margin: 5px;
+
+  //desktop
+  @media (min-width: $large-breakpoint) {
+    margin:0 10px 10px 0;
   }
-  margin-right:10px;
   width: calc(32% - 15px);
   display: inline-block;
 }

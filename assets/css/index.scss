@@ -1,8 +1,16 @@
 ---
 ---
 
+@import "hydeout/variables";
+
+// mobile
 #sidebar-nav-links {
-  @media only screen and (max-width: 780px) {
-    display:block !important;
+  display:block !important;
+}
+
+// desktop
+@media (min-width: $large-breakpoint) {
+  #sidebar-nav-links {
+    display:flex !important;
   }
 }
