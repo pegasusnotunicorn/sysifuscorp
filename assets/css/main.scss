@@ -5,7 +5,6 @@
 
 body {
   min-width: 0 !important;
-  overflow:hidden;
 }
 
 .site-title{
@@ -48,6 +47,22 @@ body {
 
 #sidebar-icon-links {
   margin-bottom:10px;
+}
+
+//desktop (remove sidebar bottom anchor)
+@media (min-width: $large-breakpoint) {
+  #sidebar {
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container {
+    padding-top:$section-spacing;
+    padding-left:$section-spacing * 2;
+    padding-right:$section-spacing * 2;
+    padding-bottom:$section-spacing * 2;
+  }
 }
 
 //</editor-fold>
