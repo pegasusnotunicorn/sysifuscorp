@@ -17,7 +17,7 @@ body {
 }
 
 .is-hidden-mobile {
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 780px) {
     display:none !important;
   }
 }
@@ -34,7 +34,7 @@ body {
 //<editor-fold>------------------------------------------SIDE BAR---------------------------------------
 
 #sidebar-nav-links > a {
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 780px) {
     display:inline-block;
     margin:0 5px 0 5px;
   }
@@ -49,13 +49,13 @@ body {
 //<editor-fold>------------------------------------------MAIN PAGE (Buttons + Images)---------------------------------------
 
 #main-image-wrapper {
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 780px) {
     text-align: center;
   }
 }
 
 .main-image {
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 780px) {
     margin: 5px;
   }
   margin-right:10px;
