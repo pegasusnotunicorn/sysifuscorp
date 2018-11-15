@@ -1,2 +1,20 @@
-<img src="{{ include.file }}" alt="{{ include.description }}">
-<span class="caption">{{ include.description }}</span>
+
+<p style="text-align:center;">
+  {% for image in include.images %}
+  {% if include.links %}
+    <a target="_blank" href="{{ image.file }}"><img src="{{ image.file }}" class="{{ image.class }}" alt="{{ image.description | include.caption }}" /></a>
+  {% else %}
+    <img src="{{ image.file }}" class="{{ image.class }}" alt="{{ image.description | include.caption }}" />
+  {% endif %}
+  {% endfor %}
+</p>
+
+<span class="caption">{{ include.caption }}</span>
+
+{% if include.photocredtext && include.photocredlink %}
+
+  <a href="{{ include.photocredlink }}">
+    <span class="caption credit">{{ include.photocredtext }}</span>
+  </a>
+
+{% endif %}

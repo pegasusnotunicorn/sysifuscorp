@@ -22,13 +22,29 @@ body {
   }
 }
 
+img {
+  margin:3px;
+}
+
+img.is-inline {
+  display:inline-block;
+  vertical-align:middle;
+}
+img.is-half {width:45%;}
+img.is-third {width:30%;}
+img.is-fourth {width:23%;}
+
 .caption {
   font-style: italic;
   display: block;
-  margin-top: -25px;
+  margin-top: -15px;
   font-size: .75em;
   margin-bottom: 25px;
   text-align: center;
+}
+
+.caption.credit {
+  margin-top: -25px;
 }
 
 //<editor-fold>------------------------------------------SIDE BAR---------------------------------------

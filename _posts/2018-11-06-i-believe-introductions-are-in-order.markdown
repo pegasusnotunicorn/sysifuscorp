@@ -4,13 +4,17 @@ title: "I believe introductions are in order."
 date: 2018-11-06 22:46:49 -0500
 tags: personal
 author: Wonmin
+
+images:
+  - file: "/assets/images/wonmin_and_grace.jpg"
+    description: "Hello! We are Wonmin and Grace."
 ---
 
 Welcome to our first ever blog post for our new board game-- _Path of Good Intent_. What better way to kick things off than to introduce the team and explain our goals for this blog.
 
 ---
 
-{% include image.html file="/assets/images/wonmin_and_grace.jpg" description="Hello! We are Wonmin and Grace." %}
+{% include image.html images=page.images caption="Hello! We are Wonmin and Grace." %}
 Hello! My name is [Wonmin][wonmin-website] (pronounced like 1 minute). I am based in NYC and am currently 27 years old. My duties include:
 
 * designing the game mechanics
