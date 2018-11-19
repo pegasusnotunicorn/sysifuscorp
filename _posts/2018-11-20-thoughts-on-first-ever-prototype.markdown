@@ -4,8 +4,11 @@ title: "Thoughts on my first ever prototype."
 date: 2018-11-20 12:00:00 -0500
 tags: gamedesign
 author: Wonmin
+description: "test"
+
 published: false
 ---
+
 Thoughts as I designed my first ever prototype
 Some questions I get asked frequently when I tell people that I made a board game:
 

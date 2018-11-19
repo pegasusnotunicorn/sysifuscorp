@@ -4,10 +4,11 @@ title: "Why am I making a board game?"
 date: 2018-11-12 10:46:49 -0500
 tags: personal
 author: Wonmin
+description: "My name is Wonmin (pronounced like one minute) and I wanted to explain how/why I decided to make a board game."
 
 images:
   - file: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&h=300&q=1"
-    description: "Hello! We are Wonmin and Grace."
+
 ---
 
 Hi there. My name is [Wonmin][wonmin-website] (pronounced like one minute) and I wanted to explain how/why I decided to make a board game (for the literally dozens of people out there who are curious).

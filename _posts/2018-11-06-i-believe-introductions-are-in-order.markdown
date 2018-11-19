@@ -4,10 +4,13 @@ title: "I believe introductions are in order."
 date: 2018-11-06 22:46:49 -0500
 tags: personal
 author: Wonmin
+description: "Welcome to our first ever blog post for our new board game--Path of Good Intent. What better way to kick things off than to introduce the team and explain our goals for this blog."
+image: "/assets/images/wonmin_and_grace.jpg"
 
 images:
   - file: "/assets/images/wonmin_and_grace.jpg"
     description: "Hello! We are Wonmin and Grace."
+
 ---
 
 Welcome to our first ever blog post for our new board game-- _Path of Good Intent_. What better way to kick things off than to introduce the team and explain our goals for this blog.

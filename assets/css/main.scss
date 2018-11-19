@@ -116,11 +116,12 @@ input[type="text"], input[type="email"] {
   width:calc(100% - 150px);
 }
 
-button {
+input[type="submit"], button {
   color: #222 !important;
+  transition: clear;
 }
 
-button:hover {
+input[type="submit"]:hover, button:hover {
   background: #222 !important;
   border-color: #222 !important;
   color: #FFF !important;

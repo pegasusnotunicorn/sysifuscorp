@@ -1,8 +1,22 @@
-<meta name="title" content="Path of Good Intent - What goes around may not come around." />
-<meta name="description" content="A board game for want-to-be adults made by wannabe adults. Coming sometime in 2019, we think." />
 <meta name="theme-color" content="#222222"/>
-<meta property="og:title" content="Path of Good Intent - What goes around may not come around." />
-<meta property="og:description" content="A board game for want-to-be adults made by wannabe adults. Coming sometime in 2019, we think." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.pathofgoodintent.com" />
-<meta property="og:image" content="/assets/images/main_image_1.jpg">
+
+{% if page.layout == "post" %}
+  <meta name="title" content="Path of Good Intent - {{ page.title }}" />
+  <meta name="description" content="{{ page.description }}" />
+  <meta property="og:title" content="Path of Good Intent - {{ page.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:url" content="{{ page.url }}" />
+{% else %}
+  <meta name="title" content="Path of Good Intent - What goes around may not come around." />
+  <meta name="description" content="A board game for want-to-be adults made by wannabe adults. Coming sometime in 2019, we think." />
+  <meta property="og:title" content="Path of Good Intent - What goes around may not come around." />
+  <meta property="og:description" content="A board game for want-to-be adults made by wannabe adults. Coming sometime in 2019, we think." />
+  <meta property="og:url" content="https://www.pathofgoodintent.com" />
+{% endif %}
+
+{% if page.image %}
+  <meta property="og:image" content="{{ page.image }}">
+{% else %}
+  <meta property="og:image" content="/assets/images/main_image_1.jpg">
+{% endif %}
