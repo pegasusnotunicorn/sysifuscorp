@@ -22,17 +22,23 @@ body {
   }
 }
 
-img {
-  margin:3px;
+.image-wrapper{
+  text-align:center;
+  display:flex;
+  justify-content:space-between;
 }
 
-img.is-inline {
+.image-link{
   display:inline-block;
-  vertical-align:middle;
+  margin:auto;
 }
-img.is-half {width:45%;}
-img.is-third {width:30%;}
-img.is-fourth {width:23%;}
+.image-link:not(:last-child){
+  margin-right:15px;
+}
+
+img {
+  margin-bottom:0px;
+}
 
 .caption {
   font-style: italic;
@@ -113,7 +119,7 @@ input, button {
 }
 
 input[type="text"], input[type="email"] {
-  width:calc(100% - 150px);
+  width:calc(100% - 140px);
 }
 
 input[type="submit"], button {

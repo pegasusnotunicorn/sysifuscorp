@@ -7,9 +7,10 @@ author: Wonmin
 description: "Welcome to our first ever blog post for our new board game--Path of Good Intent. What better way to kick things off than to introduce the team and explain our goals for this blog."
 image: "/assets/images/wonmin_and_grace.jpg"
 
-images:
-  - file: "/assets/images/wonmin_and_grace.jpg"
-    description: "Hello! We are Wonmin and Grace."
+wonmin-and-grace:
+  caption: "Hello! We are Wonmin and Grace."
+  images:
+    - path: "/assets/images/wonmin_and_grace.jpg"
 
 ---
 
@@ -17,7 +18,7 @@ Welcome to our first ever blog post for our new board game-- _Path of Good Inten
 
 ---
 
-{% include image.html images=page.images caption="Hello! We are Wonmin and Grace." %}
+{% include image.html img-details=page.wonmin-and-grace %}
 Hello! My name is [Wonmin][wonmin-website] (pronounced like 1 minute). I am based in NYC and am currently 27 years old. My duties include:
 
 * designing the game mechanics

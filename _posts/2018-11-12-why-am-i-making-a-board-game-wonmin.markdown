@@ -6,8 +6,12 @@ tags: personal
 author: Wonmin
 description: "My name is Wonmin (pronounced like one minute) and I wanted to explain how/why I decided to make a board game."
 
-images:
-  - file: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&h=300&q=1"
+party-image:
+  caption: "I get asked this question a lot at these social gatherings people call &quot;parties.&quot;"
+  photocredtext: "Photo by Priscilla Du Preez"
+  photocredlink: "https://unsplash.com/@priscilladupreez"
+  images:
+    - path: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&h=300&q=1"
 
 ---
 
@@ -26,7 +30,7 @@ While it was gratifying to be my own boss and to build a product from the ground
 
 ### "What made you decide to make a board game?"
 
-{% include image.html images=page.images caption="I get asked this question a lot at these social gatherings people call &quot;parties.&quot;" photocredtext="Photo by Priscilla Du Preez" photocredlink="https://unsplash.com/@priscilladupreez" %}
+{% include image.html img-details=page.party-image %}
 
 When people ask this question, I usually give the following spiel:
 

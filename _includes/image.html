@@ -1,20 +1,30 @@
 
-<p style="text-align:center;">
-  {% for image in include.images %}
-  {% if include.links %}
-    <a target="_blank" href="{{ image.file }}"><img src="{{ image.file }}" class="{{ image.class }}" alt="{{ image.description | include.caption }}" /></a>
-  {% else %}
-    <img src="{{ image.file }}" class="{{ image.class }}" alt="{{ image.description | include.caption }}" />
-  {% endif %}
+<p class="image-wrapper">
+  {% for image in include.img-details.images %}
+    <a class="image-link" target="_blank" href="{{ image.path }}"><img src="{{ image.path }}" class="{{ image.class }}" alt="{{ include.img-details.caption }}" /></a>
   {% endfor %}
 </p>
 
-<span class="caption">{{ include.caption }}</span>
-
-{% if include.photocredtext && include.photocredlink %}
-
-  <a href="{{ include.photocredlink }}">
-    <span class="caption credit">{{ include.photocredtext }}</span>
-  </a>
-
+{% if include.img-details.caption %}
+  <span class="caption">{{ include.img-details.caption }}</span>
 {% endif %}
+
+{% if include.img-details.photocredtext && include.img-details.photocredlink %}
+  <a href="{{ include.img-details.photocredlink }}">
+    <span class="caption credit">{{ include.img-details.photocredtext }}</span>
+  </a>
+{% endif %}
+
+<!--
+NAME-OF-VARIABLE:
+  caption: ""
+  photocredtext: ""
+  photocredlink: ""
+  images:
+    - path: ""
+      description : ""
+      class: ""
+    - path: ""
+      description : ""
+      class: ""
+ -->

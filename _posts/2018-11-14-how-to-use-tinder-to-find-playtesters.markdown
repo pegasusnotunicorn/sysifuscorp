@@ -8,62 +8,58 @@ description: "&quot;Why did I choose to use Tinder?&quot; you may ask. The corre
 image: "/assets/images/posts/11/14/convo-first-1.jpg"
 
 profile-first:
-  - file: "/assets/images/posts/11/14/profile-first-1.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-first-2.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-first-3.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-first-4.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-first-5.jpg"
-    class: "is-third is-inline"
+  caption: "My initial Tinder profile pictures and description."
+  images:
+    - path: "/assets/images/posts/11/14/profile-first-1.jpg"
+    - path: "/assets/images/posts/11/14/profile-first-2.jpg"
+    - path: "/assets/images/posts/11/14/profile-first-3.jpg"
+    - path: "/assets/images/posts/11/14/profile-first-4.jpg"
+    - path: "/assets/images/posts/11/14/profile-first-5.jpg"
 
 convo-first:
-  - file: "/assets/images/posts/11/14/convo-first-1.jpg"
-    class: "is-half is-inline"
-  - file: "/assets/images/posts/11/14/convo-first-2.jpg"
-    class: "is-half is-inline"
+  caption: "I guess people don't really read on Tinder."
+  images:
+    - path: "/assets/images/posts/11/14/convo-first-1.jpg"
+    - path: "/assets/images/posts/11/14/convo-first-2.jpg"
 
 profile-second:
-  - file: "/assets/images/posts/11/14/profile-second-1.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-second-2.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-second-3.jpg"
-    class: "is-third is-inline"
+  caption: "Second attempt photos. Now with a 100% more pizza."
+  images:
+    - path: "/assets/images/posts/11/14/profile-second-1.jpg"
+    - path: "/assets/images/posts/11/14/profile-second-2.jpg"
+    - path: "/assets/images/posts/11/14/profile-second-3.jpg"
 
 convo-second:
-  - file: "/assets/images/posts/11/14/convo-second-1.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/convo-second-2.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/convo-second-3.jpg"
-    class: "is-third is-inline"
+  caption: "The second round of conversations were a little better."
+  images:
+    - path: "/assets/images/posts/11/14/convo-second-1.jpg"
+    - path: "/assets/images/posts/11/14/convo-second-2.jpg"
+    - path: "/assets/images/posts/11/14/convo-second-3.jpg"
 
 profile-third:
-  - file: "/assets/images/posts/11/14/profile-third-1.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-third-2.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-third-3.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-third-4.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-third-5.jpg"
-    class: "is-third is-inline"
-  - file: "/assets/images/posts/11/14/profile-third-6.jpg"
-    class: "is-third is-inline"
+  caption: "My final Tinder profile pictures."
+  images:
+    - path: "/assets/images/posts/11/14/profile-third-1.jpg"
+    - path: "/assets/images/posts/11/14/profile-third-2.jpg"
+    - path: "/assets/images/posts/11/14/profile-third-3.jpg"
+    - path: "/assets/images/posts/11/14/profile-third-4.jpg"
+    - path: "/assets/images/posts/11/14/profile-third-5.jpg"
+    - path: "/assets/images/posts/11/14/profile-third-6.jpg"
 
 convo-third:
-  - file: "/assets/images/posts/11/14/convo-third.jpg"
+  caption: "Matching and setting up a meeting. Click to enlarge."
+  images:
+    - path: "/assets/images/posts/11/14/convo-third.jpg"
 
 meetup:
-  - file: "/assets/images/posts/11/14/meetup.jpg"
+  caption: "Meeting and playing my game!"
+  images:
+    - path: "/assets/images/posts/11/14/meetup.jpg"
 
 matches:
-  - file: "/assets/images/posts/11/14/tinder-matches.jpg"
-    class: "is-inline"
+  caption: "I ended my Tinder experiment with a total of 28 matches."
+  images:
+    - path: "/assets/images/posts/11/14/tinder-matches.jpg"
 
 ---
 
@@ -87,7 +83,7 @@ This blog post is just to document my experience with Tinder as a _supplementary
 
 Below are the pictures and descriptive text I used in my initial setup of a Tinder account.
 
-{% include image.html links="true" images=page.profile-first caption="My initial Tinder profile pictures and description." %}
+{% include image.html img-details=page.profile-first %}
 
 >
 I just made a new board game and need play testers.
@@ -127,7 +123,7 @@ Additionally, I added several hot emojis to really spice up my Tinder game. It w
 
 Unfortunately, despite the shorter description, it seemed people still didn’t really understand the point.
 
-{% include image.html links="true" images=page.convo-first caption="I guess people don't really read on Tinder." %}
+{% include image.html img-details=page.convo-first %}
 
 ---
 
@@ -137,11 +133,11 @@ Since Tinder is mainly just a game of photos for people with attention spans sma
 
 If my amazing handwritten board game wasn't enough to grab their attention, then I was a 100% sure that photos of pizza would do the trick.
 
-{% include image.html links="true" images=page.profile-second caption="Second attempt photos. Now with a 100% more pizza." %}
+{% include image.html img-details=page.profile-second %}
 
 Amazingly enough, the pizza pictures combined with my newly reduced description seemed to have piqued some interest. At least the matches this time around were actually reading my profile and were seemingly interested in holding a basic conversation.
 
-{% include image.html links="true" images=page.convo-second caption="The second round of conversations were a little better." %}
+{% include image.html img-details=page.convo-second %}
 
 Unfortunately, like the majority of Tinder conversations, none of this "interest" led to anything fruitful and I was ghosted within hours of matching. I needed a better game plan.
 
@@ -153,7 +149,7 @@ Having passed the one month mark in this experiment, I was ready to give up on m
 
 Here was my final Tinder profile set-up:
 
-{% include image.html links="true" images=page.profile-third caption="My final Tinder profile pictures." %}
+{% include image.html img-details=page.profile-third %}
 
 I figured that by including a picture of my friends and I playing the game, it might seem like I was popular and had people lining up to playtest my game (thus triggering their FOMO).
 
@@ -172,17 +168,17 @@ Finally, after all of my hard work, I met the one.
 
 It was the _board-game-designer-using-Tinder-in-an-unconventional-way_ jackpot!
 
-{% include image.html links="true" images=page.convo-third caption="Matching and setting up a meeting. Click to enlarge." %}
+{% include image.html img-details=page.convo-third %}
 
 The meeting was everything I'd hoped it would be and more. We played each others games and had a great time chatting about random board game stuff.
 
-{% include image.html links="true" images=page.meetup caption="Meeting and playing my game!" %}
+{% include image.html img-details=page.meetup %}
 
 They were incredibly encouraging and taught me a lot about the board game industry in general (podcasts, events, industry pros, etc.). They also told me about an annual event held in New Jersey called [Metatopia][metatopia]--a four day conference specifically for board game developers.
 
 Amazing! I had no idea that my Tindering would lead to such a discovery. If you guys are out there reading this post, thank you so much! I'll post about my experiences at Metatopia some other time.
 
-{% include image.html links="true" images=page.matches caption="I ended my Tinder experiment with a total of 28 matches." %}
+{% include image.html img-details=page.matches %}
 
 I think I'll call this Tindering experiment a huge success.
 
