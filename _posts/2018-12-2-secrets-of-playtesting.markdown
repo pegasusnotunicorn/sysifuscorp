@@ -27,8 +27,8 @@ nyc-background-alpha:
 meetup:
   caption: "My first time asking strangers to help."
   images:
-    - path: "/assets/images/posts/12/3/meetup-1.png"
-    - path: "/assets/images/posts/12/3/meetup-2.png"
+    - path: "/assets/images/posts/12/3/meetup-ss-1.png"
+    - path: "/assets/images/posts/12/3/meetup-ss-2.png"
 
 ---
 
