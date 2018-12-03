@@ -2,10 +2,10 @@
 layout: post
 title: "The secrets of playtesting that no game developer will ever tell you!"
 date: 2018-12-2 12:00:00 -0500
-tags: gamedesign
+tags: marketing
 author: Wonmin
-description: ""
-image: ""
+description: "You won't believe these five brain-dead simple life-hacks to jump-start your board game career! Board game publishers and industry specialists will _hate_ you for this. Players will line up outside your door, _begging_ for expansion sets. Read on to find out more!"
+image: "/assets/images/posts/12/3/left-on-read-1.png"
 
 alpha-playtest:
   caption: "An earlier Alpha playtest session. It doesn't fit the flow of the text, but at least it looks nice."
