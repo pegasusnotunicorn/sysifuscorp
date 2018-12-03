@@ -48,6 +48,8 @@ profile-third:
 
 convo-third:
   caption: "Matching and setting up a meeting. Click to enlarge."
+  photocredtext: "Check out Laura's website here!"
+  photocredlink: "https://www.ledesignandgames.com/"
   images:
     - path: "/assets/images/posts/11/14/convo-third.jpg"
 
