@@ -105,7 +105,7 @@ The very first time I posted on Facebook about my game, I was met with a lot of 
 
 Thanks to this one post, I was able to schedule over ten different playtest sessions in the next coming few weeks. Amazing!
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1minlee%2Fposts%2F10156330368856698&width=500" width="500" height="445" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1minlee%2Fposts%2F10156330368856698" width="100%" height="525" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
 #### Put yourself out there, strangers don't bite
 
