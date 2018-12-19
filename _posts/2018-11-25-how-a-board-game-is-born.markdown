@@ -124,7 +124,7 @@ But of course, a theme is not what all that goes into making a fun game. The mec
 
 ---
 
-### Complex abilities = fun, right?
+### Complex abilities = fun, right? ###
 
 There were several game mechanics that I had always wanted to incorporate into my game. I knew I wanted abilities in my game, so I chose three principles as the foundation for my game.
 

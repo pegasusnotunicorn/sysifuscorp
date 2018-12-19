@@ -16,8 +16,11 @@ left-on-read:
   caption: "Some examples of being left on read. Any personal details have been censored."
   images:
     - path: "/assets/images/posts/12/3/left-on-read-1.png"
+      class: "has-shadow"
     - path: "/assets/images/posts/12/3/left-on-read-2.png"
+      class: "has-shadow"
     - path: "/assets/images/posts/12/3/left-on-read-3.png"
+      class: "has-shadow"
 
 nyc-background-alpha:
   caption: "A nice picture of my Alpha version."
@@ -28,7 +31,9 @@ meetup:
   caption: "My first time asking strangers to help."
   images:
     - path: "/assets/images/posts/12/3/meetup-ss-1.png"
+      class: "has-shadow"
     - path: "/assets/images/posts/12/3/meetup-ss-2.png"
+      class: "has-shadow"
 
 ---
 
