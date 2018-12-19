@@ -159,7 +159,7 @@ Currently, there is no real theme for the game. Just various vague feelings or d
 
 We recently stumbled upon a video that captures the spirit that I had originally envisioned for the game.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_o7qjN3KF8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/_o7qjN3KF8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Something about the absurdity and seriousness of his actions that really resonates with me.
 
