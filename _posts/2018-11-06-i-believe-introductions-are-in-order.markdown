@@ -31,6 +31,8 @@ I am joined by my amazing designer friend, [Grace][grace-website]! She is based 
 * drawing graphics / pictures
 * and another billion other odd tasks
 
+**UPDATE** (2019/01/11) - [Grace has officially left](/2019/01/11/thank-you-and-good-bye-grace.html)! Thank you for all of your help!
+
 ---
 
 This blog serves to document the process of creating a board game from scratch. A place to record all of the ups & downs, our innermost secrets or fears, and the blood / sweat / tears that go into creating a tangible product.

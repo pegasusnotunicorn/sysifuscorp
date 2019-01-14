@@ -37,8 +37,13 @@ body {
 }
 
 img {
+  margin:auto;
   margin-bottom:0px;
 }
+
+img.is-half{width:50%;}
+img.is-third{width:32%;}
+img.is-fourth{width:25%;}
 
 .caption {
   font-style: italic;

@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Path of Good Intent
-author: Made by Wonmin & Grace
+author: Made by Wonmin Lee
 email: info@pathofgoodintent.com
 description: A board game for want-to-be adults made by wannabe adults.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -30,7 +30,6 @@ social:
   instagram: "https://www.instagram.com/pathofgoodintent/"
 
 wonminurl: "https://1minlee.com"
-graceurl: "https://midorikoa.com"
 sidebar_home_link: "/"
 sidebar_blog_link: "/blog"
 disqus:
