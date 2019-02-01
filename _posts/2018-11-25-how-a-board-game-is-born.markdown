@@ -5,24 +5,24 @@ date: 2018-11-25 12:00:00 -0500
 tags: gamedesign
 author: Wonmin
 description: "How a board game comes to life: start with a few core mechanics and play it over and over again until something not-completely-garbage emerges. Then feed it love until you're ready to show it to the world. Then kill it and start all over again using the feedback you receive."
-image: "/assets/images/posts/11/25/attention-image.jpg"
+image: "/assets/images/posts/2018/11/25/attention-image.jpg"
 
 attention-image:
   caption: "Here's a picture for your short attention span."
   images:
-    - path: "/assets/images/posts/11/25/attention-image.jpg"
+    - path: "/assets/images/posts/2018/11/25/attention-image.jpg"
 
 brainstorm-first:
   caption: "The very first thing I wrote in my notebook."
   images:
-    - path: "/assets/images/posts/11/25/brainstorm-first.jpg"
+    - path: "/assets/images/posts/2018/11/25/brainstorm-first.jpg"
 
 brainstorm-second:
   caption: "Some various high-level thoughts I had about game design."
   images:
-    - path: "/assets/images/posts/11/25/brainstorm-second-1.jpg"
-    - path: "/assets/images/posts/11/25/brainstorm-second-2.jpg"
-    - path: "/assets/images/posts/11/25/brainstorm-second-3.jpg"
+    - path: "/assets/images/posts/2018/11/25/brainstorm-second-1.jpg"
+    - path: "/assets/images/posts/2018/11/25/brainstorm-second-2.jpg"
+    - path: "/assets/images/posts/2018/11/25/brainstorm-second-3.jpg"
 
 tone-image:
   caption: "An example of the type of tone I wanted."
@@ -34,42 +34,42 @@ tone-image:
 abilities-mockup:
   caption: "A list of random abilities that sounded awesome on paper."
   images:
-    - path: "/assets/images/posts/11/25/abilities-mockup-1.jpg"
-    - path: "/assets/images/posts/11/25/abilities-mockup-2.jpg"
+    - path: "/assets/images/posts/2018/11/25/abilities-mockup-1.jpg"
+    - path: "/assets/images/posts/2018/11/25/abilities-mockup-2.jpg"
 
 first-prototype-mockup:
   caption: "The mock-up game board for the first prototype."
   images:
-    - path: "/assets/images/posts/11/25/first-prototype-mockup.jpg"
+    - path: "/assets/images/posts/2018/11/25/first-prototype-mockup.jpg"
 
 first-prototype:
   caption: "The first ever prototype using index cards, poker chips, and my little cousin's Lego pieces."
   images:
-    - path: "/assets/images/posts/11/25/first-prototype-1.jpg"
-    - path: "/assets/images/posts/11/25/first-prototype-2.jpg"
+    - path: "/assets/images/posts/2018/11/25/first-prototype-1.jpg"
+    - path: "/assets/images/posts/2018/11/25/first-prototype-2.jpg"
 
 first-karma-cards:
   caption: "One of the first iterations of &quot;karma&quot; cards."
   images:
-    - path: "/assets/images/posts/11/25/first-karma-cards.jpg"
+    - path: "/assets/images/posts/2018/11/25/first-karma-cards.jpg"
 
 playtest-session-1:
   images:
-    - path: "/assets/images/posts/11/25/playtest-session-1.jpg"
+    - path: "/assets/images/posts/2018/11/25/playtest-session-1.jpg"
 
 playtest-session-2:
   images:
-    - path: "/assets/images/posts/11/25/playtest-session-2.jpg"
+    - path: "/assets/images/posts/2018/11/25/playtest-session-2.jpg"
 
 playtest-session-3:
   images:
-    - path: "/assets/images/posts/11/25/playtest-session-3.jpg"
+    - path: "/assets/images/posts/2018/11/25/playtest-session-3.jpg"
 
 playtest-session-4:
   caption: "Some pictures from early playtest sessions."
   images:
-    - path: "/assets/images/posts/11/25/playtest-session-1.jpg"
-    - path: "/assets/images/posts/11/25/playtest-session-2.jpg"
+    - path: "/assets/images/posts/2018/11/25/playtest-session-1.jpg"
+    - path: "/assets/images/posts/2018/11/25/playtest-session-2.jpg"
 
 ---
 

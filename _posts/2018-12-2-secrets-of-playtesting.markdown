@@ -5,34 +5,34 @@ date: 2018-12-2 12:00:00 -0500
 tags: marketing
 author: Wonmin
 description: "You won't believe these five brain-dead simple life-hacks to jump-start your board game career! Board game publishers and industry specialists will _hate_ you for this. Players will line up outside your door, _begging_ for expansion sets. Read on to find out more!"
-image: "/assets/images/posts/12/3/left-on-read-1.png"
+image: "/assets/images/posts/2018/12/3/left-on-read-1.png"
 
 alpha-playtest:
   caption: "An earlier Alpha playtest session. It doesn't fit the flow of the text, but at least it looks nice."
   images:
-    - path: "/assets/images/posts/12/3/alpha-playtest.jpg"
+    - path: "/assets/images/posts/2018/12/3/alpha-playtest.jpg"
 
 left-on-read:
   caption: "Some examples of being left on read. Any personal details have been censored."
   images:
-    - path: "/assets/images/posts/12/3/left-on-read-1.png"
+    - path: "/assets/images/posts/2018/12/3/left-on-read-1.png"
       class: "has-shadow"
-    - path: "/assets/images/posts/12/3/left-on-read-2.png"
+    - path: "/assets/images/posts/2018/12/3/left-on-read-2.png"
       class: "has-shadow"
-    - path: "/assets/images/posts/12/3/left-on-read-3.png"
+    - path: "/assets/images/posts/2018/12/3/left-on-read-3.png"
       class: "has-shadow"
 
 nyc-background-alpha:
   caption: "A nice picture of my Alpha version."
   images:
-    - path: "/assets/images/posts/12/3/nyc-background-alpha.jpg"
+    - path: "/assets/images/posts/2018/12/3/nyc-background-alpha.jpg"
 
 meetup:
   caption: "My first time asking strangers to help."
   images:
-    - path: "/assets/images/posts/12/3/meetup-ss-1.png"
+    - path: "/assets/images/posts/2018/12/3/meetup-ss-1.png"
       class: "has-shadow"
-    - path: "/assets/images/posts/12/3/meetup-ss-2.png"
+    - path: "/assets/images/posts/2018/12/3/meetup-ss-2.png"
       class: "has-shadow"
 
 ---

@@ -5,66 +5,66 @@ date: 2018-12-15 12:00:00 -0500
 tags: update
 author: Wonmin
 description: "The December 2018 update for the Path of Good Intent. Updating mechanics and reducing complexity! Read more about it here."
-image: "/assets/images/posts/12/15/december-analytics.png"
+image: "/assets/images/posts/2018/12/15/december-analytics.png"
 <!-- published: false -->
 
 version-notes:
-  caption: "Notes from the latest playtest sessions."
+  caption: "Click to see notes from this month's playtest sessions."
   images:
-    - path: "/assets/images/posts/12/15/version-notes.png"
-      class: "has-shadow"
+    - path: "/assets/images/posts/2018/12/15/version-notes.png"
+      class: "has-shadow is-half"
 
 old-board-layout:
   caption: "How the board used to be laid out."
   images:
-    - path: "/assets/images/posts/12/15/old-board-layout.jpg"
+    - path: "/assets/images/posts/2018/12/15/old-board-layout.jpg"
 
 old-hand:
   caption: "An example hand in the older version."
   images:
-    - path: "/assets/images/posts/12/15/old-hand.jpg"
+    - path: "/assets/images/posts/2018/12/15/old-hand.jpg"
 
 old-character-sheets:
   caption: "Old character sheets used to keep track of actions and karma."
   images:
-    - path: "/assets/images/posts/12/15/old-character-sheets.jpg"
+    - path: "/assets/images/posts/2018/12/15/old-character-sheets.jpg"
 
 old-abilities:
   caption: "Despite improvements in legibility, the sheer volume of unique cards made the game unnecessarily convoluted."
   images:
-    - path: "/assets/images/posts/12/15/old-old-abilities-rotate-1.png"
+    - path: "/assets/images/posts/2018/12/15/old-old-abilities-rotate-1.png"
       class: "has-shadow"
-    - path: "/assets/images/posts/12/15/old-abilities-rotate-1.png"
+    - path: "/assets/images/posts/2018/12/15/old-abilities-rotate-1.png"
       class: "has-shadow"
 
 old-abilities-rotate:
   caption: "Old ability cards that rotated cards on the board."
   class: "has-shadow"
   images:
-    - path: "/assets/images/posts/12/15/old-abilities-rotate-1.png"
+    - path: "/assets/images/posts/2018/12/15/old-abilities-rotate-1.png"
       class: "has-shadow"
-    - path: "/assets/images/posts/12/15/old-abilities-rotate-2.png"
+    - path: "/assets/images/posts/2018/12/15/old-abilities-rotate-2.png"
       class: "has-shadow"
-    - path: "/assets/images/posts/12/15/old-abilities-rotate-3.png"
+    - path: "/assets/images/posts/2018/12/15/old-abilities-rotate-3.png"
       class: "has-shadow"
-    - path: "/assets/images/posts/12/15/old-abilities-rotate-4.png"
+    - path: "/assets/images/posts/2018/12/15/old-abilities-rotate-4.png"
       class: "has-shadow"
 
 new-abilities-rotate:
   caption: "The new version of a rotate ability card."
   images:
-    - path: "/assets/images/posts/12/15/new-abilities-rotate-1.jpg"
+    - path: "/assets/images/posts/2018/12/15/new-abilities-rotate-1.jpg"
 
 december-analytics:
   caption: "Thanks to the Reddit post, we saw a huge spike in traffic."
   images:
-    - path: "/assets/images/posts/12/15/december-analytics.png"
+    - path: "/assets/images/posts/2018/12/15/december-analytics.png"
       class: "has-shadow"
 
 email-analytics:
   caption: "A big thank you to everyone who subscribed!"
   images:
-    - path: "/assets/images/posts/12/15/email-analytics.png"
+    - path: "/assets/images/posts/2018/12/15/email-analytics.png"
       class: "has-shadow"
 
 ---

@@ -5,63 +5,63 @@ date: 2018-11-14 12:00:00 -0500
 tags: marketing
 author: Wonmin
 description: "&quot;Why did I choose to use Tinder?&quot; you may ask. The correct answer to that lies somewhere in between, &quot;I am so desperately lonely&quot; and &quot;I wanted to make a cool viral blog post.&quot;"
-image: "/assets/images/posts/11/14/convo-first-1.jpg"
+image: "/assets/images/posts/2018/11/14/convo-first-1.jpg"
 
 profile-first:
   caption: "My initial Tinder profile pictures and description."
   images:
-    - path: "/assets/images/posts/11/14/profile-first-1.jpg"
-    - path: "/assets/images/posts/11/14/profile-first-2.jpg"
-    - path: "/assets/images/posts/11/14/profile-first-3.jpg"
-    - path: "/assets/images/posts/11/14/profile-first-4.jpg"
-    - path: "/assets/images/posts/11/14/profile-first-5.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-first-1.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-first-2.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-first-3.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-first-4.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-first-5.jpg"
 
 convo-first:
   caption: "I guess people don't really read on Tinder."
   images:
-    - path: "/assets/images/posts/11/14/convo-first-1.jpg"
-    - path: "/assets/images/posts/11/14/convo-first-2.jpg"
+    - path: "/assets/images/posts/2018/11/14/convo-first-1.jpg"
+    - path: "/assets/images/posts/2018/11/14/convo-first-2.jpg"
 
 profile-second:
   caption: "Second attempt photos. Now with a 100% more pizza."
   images:
-    - path: "/assets/images/posts/11/14/profile-second-1.jpg"
-    - path: "/assets/images/posts/11/14/profile-second-2.jpg"
-    - path: "/assets/images/posts/11/14/profile-second-3.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-second-1.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-second-2.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-second-3.jpg"
 
 convo-second:
   caption: "The second round of conversations were a little better."
   images:
-    - path: "/assets/images/posts/11/14/convo-second-1.jpg"
-    - path: "/assets/images/posts/11/14/convo-second-2.jpg"
-    - path: "/assets/images/posts/11/14/convo-second-3.jpg"
+    - path: "/assets/images/posts/2018/11/14/convo-second-1.jpg"
+    - path: "/assets/images/posts/2018/11/14/convo-second-2.jpg"
+    - path: "/assets/images/posts/2018/11/14/convo-second-3.jpg"
 
 profile-third:
   caption: "My final Tinder profile pictures."
   images:
-    - path: "/assets/images/posts/11/14/profile-third-1.jpg"
-    - path: "/assets/images/posts/11/14/profile-third-2.jpg"
-    - path: "/assets/images/posts/11/14/profile-third-3.jpg"
-    - path: "/assets/images/posts/11/14/profile-third-4.jpg"
-    - path: "/assets/images/posts/11/14/profile-third-5.jpg"
-    - path: "/assets/images/posts/11/14/profile-third-6.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-third-1.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-third-2.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-third-3.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-third-4.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-third-5.jpg"
+    - path: "/assets/images/posts/2018/11/14/profile-third-6.jpg"
 
 convo-third:
   caption: "Matching and setting up a meeting. Click to enlarge."
   photocredtext: "Check out Laura's website here!"
   photocredlink: "https://www.ledesignandgames.com/"
   images:
-    - path: "/assets/images/posts/11/14/convo-third.jpg"
+    - path: "/assets/images/posts/2018/11/14/convo-third.jpg"
 
 meetup:
   caption: "Meeting and playing my game!"
   images:
-    - path: "/assets/images/posts/11/14/meetup.jpg"
+    - path: "/assets/images/posts/2018/11/14/meetup.jpg"
 
 matches:
   caption: "I ended my Tinder experiment with a total of 28 matches."
   images:
-    - path: "/assets/images/posts/11/14/tinder-matches.jpg"
+    - path: "/assets/images/posts/2018/11/14/tinder-matches.jpg"
 
 ---
 
