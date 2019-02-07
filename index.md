@@ -18,13 +18,13 @@ main-images-second:
 {% include image.html img-details=page.main-images-first %}
 {% include image.html img-details=page.main-images-second %}
 
-_Path of Good Intent_ is a board game that mirrors the modern rat-race that we call life (AKA _#adulting_).
+_Path of Good Intent_ is a board game about clawing your way up the corporate ladder to be the first to receive a promotion.
 
-* Choose your own path in life by laying down cards.
-* Earn money by moving (living) around on the board (life).
-* Activate special cards to advance yourself or screw over others.
+* Choose your next Project by laying down cards.
+* Earn Company Influence by billing various Projects around the board.
+* Activate Office Politics cards to advance yourself or screw over others.
 
-Can you be the first to make it in life?
+Can you be the first to receive the coveted promotion?
 
 ---
 

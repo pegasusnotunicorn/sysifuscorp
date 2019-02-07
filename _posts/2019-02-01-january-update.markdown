@@ -5,8 +5,7 @@ date: 2019-01-31 12:00:00 -0500
 tags: update
 author: Wonmin
 description: "The January 2019 update for the Path of Good Intent. Introducing the new theme! Read more about it here."
-image: "/assets/images/posts/2019/01/15/january-analytics.png"
-<!-- published: false -->
+image: "/assets/images/posts/2019/01/31/project-card-1-new.png"
 
 version-notes:
   caption: "Click to see notes from this month's playtest sessions."
