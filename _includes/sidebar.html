@@ -1,5 +1,6 @@
 <div id="sidebar">
   <header>
+    <p class="lead lead-top">Welcome to</p>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
         {% unless page.url == "/" %}
@@ -7,8 +8,9 @@
         {% endunless %}
         {{ site.title }}
       </a>
+      <img id="logo-transparent" src="/assets/images/logo_transparent.png" />
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
-    <p class="lead">{{ site.description }}</p>
+    <p class="lead lead-bot">{{ site.description }}</p>
   </header>
   <div>
     {% include sidebar-nav-links.html %}
