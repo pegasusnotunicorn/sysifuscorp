@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Say Hello!
+header-title: Contact
 permalink: /contact
 sidebar_link: true
 ---
@@ -13,10 +14,10 @@ Here are some of the many ways you can get in touch with us:
 
 **NOTE**: Anything that isn't an email has about a 25% chance of being read and replied to in a timely fashion.
 
-[email-us]: mailto:info@pathofgoodintent.com
-[instagram]: https://www.instagram.com/pathofgoodintent
-[facebook]: https://www.facebook.com/pathofgoodintent
-[twitter]: https://twitter.com/pintent
+[email-us]: mailto:hello@sysifuscorp.com
+[instagram]: https://www.instagram.com/sysifuscorp
+[facebook]: https://www.facebook.com/sysifuscorp
+[twitter]: https://twitter.com/sysifuscorp
 
 ---
 ### Shy? Sign up below to lurk and read our updates!

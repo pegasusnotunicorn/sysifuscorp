@@ -1,6 +1,7 @@
 ---
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
+header-title: A cut-throat corporate board game.
 
 main-images-first:
   images:
@@ -13,18 +14,17 @@ main-images-second:
     - path: "/assets/images/main_image_4.jpg"
     - path: "/assets/images/main_image_5.jpg"
 ---
-<link rel="stylesheet" href="/assets/css/index.css">
 
 {% include image.html img-details=page.main-images-first %}
 {% include image.html img-details=page.main-images-second %}
 
-_Path of Good Intent_ is a board game about clawing your way up the corporate ladder to be the first to receive a promotion.
+_Welcome To Sysifus Corp_ is a board game about being the first to be promoted at a cut-throat corporation.
 
-* Choose your next Project by laying down cards.
-* Earn Company Influence by billing various Projects around the board.
-* Activate Office Politics cards to advance yourself or screw over others.
+* Choose your own career path by laying down Project Cards.
+* Earn Company Influence by working on Projects.
+* Use Office Politics Cards to screw over your fellow employees.
 
-Can you be the first to receive the coveted promotion?
+Will you be the one to receive coveted promotion?
 
 ---
 

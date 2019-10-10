@@ -13,21 +13,22 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Path of Good Intent
+title: Welcome to Sysifus Corp
+tagline: TEST
 author: Made by Wonmin Lee
 email: info@pathofgoodintent.com
-description: A board game for want-to-be adults made by wannabe adults.
+description: A game about being the first to be promoted at a cut-throat corporation.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://pathofgoodintent.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sysifuscorp.com" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-128972245-1
 paginate: 5
 paginate_path: "/blog/:num/"
 date_format: "%Y %B %-d"
 
 social:
-  facebook: "https://facebook.com/pathofgoodintent/"
-  twitter: "https://twitter.com/PIntent"
-  instagram: "https://www.instagram.com/pathofgoodintent/"
+  facebook: "https://facebook.com/sysifuscorp/"
+  twitter: "https://twitter.com/sysifuscorp"
+  instagram: "https://www.instagram.com/sysifuscorp/"
 
 wonminurl: "https://1minlee.com"
 sidebar_home_link: "/"

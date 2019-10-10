@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+header-title: About
 permalink: /about
 sidebar_link: true
 
@@ -10,7 +11,7 @@ wonmin-lee:
     - path: "/assets/images/wonmin_lee.jpg"
 ---
 
-Welcome to the development blog for _Path of Good Intent_!
+Welcome to the development blog for _Sysifus Corp_!
 
 This blog serves to document the process of creating a board game from scratch. A place to record all of the ups & downs, innermost secrets or fears, and the blood / sweat / tears that go into creating a tangible product.
 {% include image.html img-details=page.wonmin-lee %}
