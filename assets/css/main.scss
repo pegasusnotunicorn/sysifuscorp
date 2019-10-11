@@ -5,16 +5,18 @@ $sidebar-width: 23rem !default;
 
 //<editor-fold>------------------------------------------MAIN PAGE---------------------------------------
 
+img {
+  border-radius: 10px;
+}
+
 body {
   min-width: 0 !important;
+  background-color: #000;
+  background-image: linear-gradient(to bottom, #000, #000);
 }
 
 .site-title{
   margin-bottom:0px !important;
-}
-
-.index #sidebar {
-  padding-bottom:2rem;
 }
 
 .is-hidden-mobile {
@@ -94,7 +96,12 @@ img.is-fourth{width:25%;}
   }
 
   #logo-transparent {
-    width: 30px;
+    width: 15px;
+
+    //desktop
+    @media (min-width: $large-breakpoint) {
+      width: 30px;
+    }
   }
 }
 

@@ -4,7 +4,7 @@ title: "December 2018 Update"
 date: 2018-12-15 12:00:00 -0500
 tags: update
 author: Wonmin
-description: "The December 2018 update for the Sysifus Corp. Updating mechanics and reducing complexity! Read more about it here."
+description: "The December 2018 update for Welcome to Sysifus Corp. Updating mechanics and reducing complexity! Read more about it here."
 image: "/assets/images/posts/2018/12/15/december-analytics.png"
 <!-- published: false -->
 
@@ -69,7 +69,7 @@ email-analytics:
 
 ---
 
-Welcome to a monthly series of blog posts that aims to capture the current state of development for the Sysifus Corp!
+Welcome to a monthly series of blog posts that aims to capture the current state of development for _Welcome to Sysifus Corp_!
 
 These updates serve to keep track of how the game changes throughout its development and will be split into the following categories:
 
@@ -187,4 +187,4 @@ A few things to keep in mind for the future and for anyone in a similar situatio
 1. Don't take criticism personally. It's not you, it's your game.
 2. What feels like setbacks are actually "setforwards" that put you one step closer to completion.
 
-Thank you for reading the December update for the Sysifus Corp. Tune in next month for more updates!
+Thank you for reading the December update for _Welcome to Sysifus Corp_. Tune in next month for more updates!

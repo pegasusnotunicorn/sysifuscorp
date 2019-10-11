@@ -4,7 +4,7 @@ title: "January 2019 Update"
 date: 2019-01-31 12:00:00 -0500
 tags: update
 author: Wonmin
-description: "The January 2019 update for the Sysifus Corp. Introducing the new theme! Read more about it here."
+description: "The January 2019 update for Welcome to Sysifus Corp. Introducing the new theme! Read more about it here."
 image: "/assets/images/posts/2019/01/31/project-card-1-new.png"
 
 version-notes:
@@ -71,7 +71,7 @@ boss-cards:
 
 ---
 
-Welcome to a monthly series of blog posts that aims to capture the current state of development for the Sysifus Corp!
+Welcome to a monthly series of blog posts that aims to capture the current state of development for _Welcome to Sysifus Corp_!
 
 These updates serve to keep track of how the game changes throughout its development and will be split into the following categories:
 
@@ -139,4 +139,4 @@ I was able to get into a good groove this month and balance both development and
 
 With that said, if you are interested in playtesting the latest version, please do not hesitate to reach out! I'd love some feedback on any aspect of the game.
 
-Thank you for reading the January update for the Sysifus Corp. Tune in next month for more updates!
+Thank you for reading the January update for _Welcome to Sysifus Corp_. Tune in next month for more updates!
