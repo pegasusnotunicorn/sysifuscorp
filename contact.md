@@ -4,6 +4,8 @@ title: Say Hello!
 header-title: Contact
 permalink: /contact
 sidebar_link: true
+description: "Click here to send a message to Sysifus Corp."
+
 ---
 
 Here are some of the many ways you can get in touch with us:

@@ -3,7 +3,7 @@
 
   <!-- Adobe Font -->
   <link rel="stylesheet" href="https://use.typekit.net/qeb6hfu.css">
-  
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
@@ -30,16 +30,26 @@
   {% if page.layout == "post" %}
     <title>{{ page.title }}</title>
     <meta name="title" content="Sysifus Corp - {{ page.title }}" />
-    <meta name="description" content="{{ page.description }}" />
     <meta property="og:title" content="Sysifus Corp - {{ page.title }}" />
+
+    <meta name="description" content="{{ page.description }}" />
     <meta property="og:description" content="{{ page.description }}" />
+
     <meta property="og:url" content="https://sysifuscorp.com{{ page.url }}" />
   {% else %}
     <title>Sysifus Corp - {{ page.header-title }}</title>
     <meta name="title" content="Sysifus Corp - A cut-throat corporate board game." />
-    <meta name="description" content="A board game about being the first to be promoted at a cut-throat corporation." />
     <meta property="og:title" content="Sysifus Corp - A cut-throat corporate board game." />
-    <meta property="og:description" content="A board game about being the first to be promoted at a cut-throat corporation." />
+
+    <!-- DESCRIPTION IF IT HAS IT-->
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}" />
+      <meta property="og:description" content="{{ page.description }}" />
+    {% else %}
+      <meta name="description" content="A game about being the first to be promoted at a cut-throat corporation." />
+      <meta property="og:description" content="A game about being the first to be promoted at a cut-throat corporation." />
+    {% endif %}
+
     <meta property="og:url" content="https://www.sysifuscorp.com" />
   {% endif %}
 

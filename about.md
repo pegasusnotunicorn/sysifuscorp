@@ -4,6 +4,7 @@ title: About
 header-title: About
 permalink: /about
 sidebar_link: true
+description: "Click here to learn more about Sysifus Corp."
 
 wonmin-lee:
   caption: "Hello! My name is Wonmin. I'm the game designer."
