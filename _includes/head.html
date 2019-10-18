@@ -27,15 +27,15 @@
 
   <!-- OG SNS STUFF  -->
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sysifuscorp.com{{ page.url }}" />
+
+  <!-- CHANGE TITLE / DESCRIPTION BASED ON PAGE -->
   {% if page.layout == "post" %}
     <title>{{ page.title }}</title>
     <meta name="title" content="Sysifus Corp - {{ page.title }}" />
     <meta property="og:title" content="Sysifus Corp - {{ page.title }}" />
-
     <meta name="description" content="{{ page.description }}" />
     <meta property="og:description" content="{{ page.description }}" />
-
-    <meta property="og:url" content="https://sysifuscorp.com{{ page.url }}" />
   {% else %}
     <title>Sysifus Corp - {{ page.header-title }}</title>
     <meta name="title" content="Sysifus Corp - A cut-throat corporate board game." />
@@ -49,8 +49,6 @@
       <meta name="description" content="A game about being the first to be promoted at a cut-throat corporation." />
       <meta property="og:description" content="A game about being the first to be promoted at a cut-throat corporation." />
     {% endif %}
-
-    <meta property="og:url" content="https://www.sysifuscorp.com" />
   {% endif %}
 
   <!-- OG SNS IMAGE PREVIEW  -->
