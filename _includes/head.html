@@ -26,35 +26,42 @@
   <meta name="theme-color" content="#222222"/>
 
   <!-- OG SNS STUFF  -->
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@sysifuscorp">
+  <meta name="twitter:creator" content="@Xcellion">
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sysifuscorp.com{{ page.url }}" />
 
-  <!-- CHANGE TITLE / DESCRIPTION BASED ON PAGE -->
+  <!-- CHANGE TITLE  BASED ON PAGE -->
   {% if page.layout == "post" %}
     <title>{{ page.title }}</title>
     <meta name="title" content="Sysifus Corp - {{ page.title }}" />
     <meta property="og:title" content="Sysifus Corp - {{ page.title }}" />
-    <meta name="description" content="{{ page.description }}" />
-    <meta property="og:description" content="{{ page.description }}" />
+    <meta name="twitter:title" content="Sysifus Corp - {{ page.title }}">
   {% else %}
     <title>Sysifus Corp - {{ page.header-title }}</title>
     <meta name="title" content="Sysifus Corp - A cut-throat corporate board game." />
     <meta property="og:title" content="Sysifus Corp - A cut-throat corporate board game." />
-
-    <!-- DESCRIPTION IF IT HAS IT-->
-    {% if page.description %}
-      <meta name="description" content="{{ page.description }}" />
-      <meta property="og:description" content="{{ page.description }}" />
-    {% else %}
-      <meta name="description" content="A game about being the first to be promoted at a cut-throat corporation." />
-      <meta property="og:description" content="A game about being the first to be promoted at a cut-throat corporation." />
-    {% endif %}
   {% endif %}
 
-  <!-- OG SNS IMAGE PREVIEW  -->
+  <!-- DESCRIPTION IF IT HAS IT-->
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
+    <meta name="description" content="A game about being the first to be promoted at a cut-throat corporation." />
+    <meta property="og:description" content="A game about being the first to be promoted at a cut-throat corporation." />
+    <meta name="twitter:description" content="A game about being the first to be promoted at a cut-throat corporation.">
+  {% endif %}
+
+  <!-- SNS IMAGE PREVIEW  -->
   {% if page.image %}
     <meta property="og:image" content="https://sysifuscorp.com{{ page.image }}">
+    <meta name="twitter:image" content="https://sysifuscorp.com{{ page.image }}">
   {% else %}
     <meta property="og:image" content="https://sysifuscorp.com/assets/images/main_image_1.jpg">
+    <meta name="twitter:image" content="https://sysifuscorp.com/assets/images/main_image_1.jpg">
   {% endif %}
 </head>
