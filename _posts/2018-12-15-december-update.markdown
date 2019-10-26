@@ -18,16 +18,19 @@ old-board-layout:
   caption: "How the board used to be laid out."
   images:
     - path: "/assets/images/posts/2018/12/15/old-board-layout.jpg"
+      class: "has-shadow"
 
 old-hand:
   caption: "An example hand in the older version."
   images:
     - path: "/assets/images/posts/2018/12/15/old-hand.jpg"
+      class: "has-shadow"
 
 old-character-sheets:
   caption: "Old character sheets used to keep track of actions and karma."
   images:
     - path: "/assets/images/posts/2018/12/15/old-character-sheets.jpg"
+      class: "has-shadow"
 
 old-abilities:
   caption: "Despite improvements in legibility, the sheer volume of unique cards made the game unnecessarily convoluted."
@@ -54,6 +57,7 @@ new-abilities-rotate:
   caption: "The new version of a rotate ability card."
   images:
     - path: "/assets/images/posts/2018/12/15/new-abilities-rotate-1.jpg"
+      class: "has-shadow"
 
 december-analytics:
   caption: "Thanks to the Reddit post, we saw a huge spike in traffic."

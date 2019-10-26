@@ -3,29 +3,46 @@
 layout: page
 header-title: A cut-throat corporate board game
 
-main-images-first:
+career-path:
   images:
-    - path: "/assets/images/main_image_0.jpg"
-    - path: "/assets/images/main_image_1.jpg"
-    - path: "/assets/images/main_image_2.jpg"
-main-images-second:
+    - path: "/assets/images/main_career_path.png"
+
+earn-influence:
   images:
-    - path: "/assets/images/main_image_3.jpg"
-    - path: "/assets/images/main_image_4.jpg"
-    - path: "/assets/images/main_image_5.jpg"
+    - path: "/assets/images/main_earn_influence.png"
+
+office-politics:
+  images:
+    - path: "/assets/images/main_office_politics.png"
+
 ---
 
-Welcome to _Sysifus Corp_ is a board game about being the first to be promoted at a cut-throat corporation.
+Welcome to Sysifus Corp is a board game about being the first to be promoted at a cut-throat corporation.
 
-* Choose your own career path by laying down Project Cards.
-* Earn Company Influence by working on Projects.
-* Use Office Politics Cards to screw over your fellow employees.
+#### Will you be the one to receive the coveted Promotion?
 
-Will you be the one to receive the coveted promotion?
+---
+
+<div id="main-steps-container">
+  <div class="main-steps-block">
+    {% include image.html img-details=page.career-path %}
+    <p class="main-steps-text">Race to build your career path to the <strong>Promotion</strong></p>
+  </div>
+
+  <div class="main-steps-block">
+    {% include image.html img-details=page.earn-influence %}
+    <p class="main-steps-text">Earn <strong>Influence</strong> at the company by working on Projects</p>
+  </div>
+
+  <div class="main-steps-block">
+    {% include image.html img-details=page.office-politics %}
+    <p class="main-steps-text">Use <strong>Office Politics</strong> to screw over your fellow employees</p>
+  </div>
+</div>
 
 ---
 
 ### Stay up to date!
-We aim to post once a week, sometimes more, sometimes way less.
+We aim to post once a week, sometimes more, sometimes way less. Depends on our mood.
 
 {% include mailchimp-form.html %}

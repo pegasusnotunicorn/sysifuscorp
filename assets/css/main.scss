@@ -3,71 +3,6 @@
 $sidebar-width: 23rem !default;
 @import "hydeout";
 
-//<editor-fold>------------------------------------------MAIN PAGE---------------------------------------
-
-img {
-  border-radius: 10px;
-}
-
-body {
-  min-width: 0 !important;
-  background-color: #000;
-  background-image: linear-gradient(to bottom, #000, #000);
-}
-
-.site-title{
-  margin-bottom:0px !important;
-}
-
-.is-hidden-mobile {
-  display:none !important;
-  @media (min-width: $large-breakpoint) {
-    display:initial;
-  }
-}
-
-.image-wrapper{
-  text-align:center;
-  display:flex;
-  justify-content:space-between;
-}
-
-.image-link{
-  display:inline-block;
-  margin:auto;
-}
-.image-link:not(:last-child){
-  margin-right:15px;
-}
-
-img {
-  margin:auto;
-  margin-bottom:0px;
-}
-
-img.is-half{width:50%;}
-img.is-third{width:32%;}
-img.is-fourth{width:25%;}
-
-.caption {
-  font-style: italic;
-  display: block;
-  margin-top: -10px;
-  font-size: .75em;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-.caption.credit {
-  margin-top: -25px;
-}
-
-.has-shadow{
-  box-shadow:1px 1px 5px grey;
-}
-
-//</editor-fold>
-
 //<editor-fold>------------------------------------------SIDE BAR---------------------------------------
 
 #sidebar {
@@ -75,7 +10,7 @@ img.is-fourth{width:25%;}
   background-image: linear-gradient(to bottom, rgb(75,75,75), #000);
 
   .lead-top {
-    margin-bottom:0;
+    margin-bottom:-10px;
   }
 
   .lead-bot {
@@ -88,20 +23,18 @@ img.is-fourth{width:25%;}
     font-style: normal;
     margin: auto;
 
+    a, {
+      font-size:2.8rem;
+    }
+
     a, img {
       border-radius: 0;
       display: inline-block;
-      vertical-align: middle;
     }
   }
 
   #logo-transparent {
-    width: 15px;
-
-    //desktop
-    @media (min-width: $large-breakpoint) {
-      width: 30px;
-    }
+    width: 2.5rem;
   }
 }
 
@@ -135,6 +68,118 @@ img.is-fourth{width:25%;}
     padding-right:$section-spacing * 2;
     padding-bottom:$section-spacing * 2;
   }
+}
+
+//</editor-fold>
+
+//<editor-fold>------------------------------------------MAIN PAGE---------------------------------------
+
+.content {
+  max-width:none;
+}
+
+img {
+  border-radius: 10px;
+}
+
+body {
+  min-width: 0 !important;
+  background-color: #000;
+  background-image: linear-gradient(to bottom, #000, #000);
+}
+
+//graphics and steps
+.main-steps-block {
+  text-align:center;
+  margin:auto;
+
+  @media (min-width: $large-breakpoint) {
+    border-bottom:0;
+    display:inline-block;
+    width:32%;
+    padding:10px;
+    text-align:left;
+  }
+}
+#main-steps-container .main-steps-block:not(:last-child){
+  border-bottom:1px solid #eee;
+  margin-bottom:25px;
+  padding-bottom:10px;
+
+  @media (min-width: $large-breakpoint) {
+    border-right:1px solid #eee;
+    border-bottom:0;
+    padding-bottom:0;
+    margin-bottom:0;
+  }
+}
+
+.main-steps-text {
+  font-weight:lighter;
+}
+
+.site-title{
+  margin-bottom:0px !important;
+}
+
+.is-hidden-mobile {
+  display:none !important;
+  @media (min-width: $large-breakpoint) {
+    display:initial;
+  }
+}
+
+.image-wrapper{
+  text-align:center;
+  display:flex;
+  justify-content:space-between;
+}
+
+.image-link{
+  display:inline-block;
+  margin:auto;
+}
+.image-link:not(:last-child){
+  margin-right:15px;
+}
+
+img {
+  margin:auto;
+  margin-bottom:0px;
+}
+
+img.is-threequarter{width:75%;}
+img.is-half{width:50%;}
+img.is-third{width:32%;}
+img.is-fourth{width:25%;}
+
+.caption {
+  font-style: italic;
+  display: block;
+  margin-top: -10px;
+  font-size: .75em;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.caption.credit {
+  margin-top: -25px;
+}
+
+.has-shadow{
+  box-shadow:1px 1px 5px grey;
+}
+
+.has-padding{
+  padding:15px;
+}
+
+.left-aligned{
+  margin:0;
+}
+
+.font-bodoni{
+  font-family: "bodoni-fb-compressed",serif;
 }
 
 //</editor-fold>

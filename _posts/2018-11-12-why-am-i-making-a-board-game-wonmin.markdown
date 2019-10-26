@@ -12,6 +12,7 @@ party-image:
   photocredlink: "https://unsplash.com/@priscilladupreez"
   images:
     - path: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&h=300&q=1"
+      class: "has-shadow"
 
 ---
 

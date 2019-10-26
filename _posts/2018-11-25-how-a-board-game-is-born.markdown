@@ -11,18 +11,23 @@ attention-image:
   caption: "Here's a picture for your short attention span."
   images:
     - path: "/assets/images/posts/2018/11/25/attention-image.jpg"
+      class: "has-shadow"
 
 brainstorm-first:
   caption: "The very first thing I wrote in my notebook."
   images:
     - path: "/assets/images/posts/2018/11/25/brainstorm-first.jpg"
+      class: "has-shadow"
 
 brainstorm-second:
   caption: "Some various high-level thoughts I had about game design."
   images:
     - path: "/assets/images/posts/2018/11/25/brainstorm-second-1.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/25/brainstorm-second-2.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/25/brainstorm-second-3.jpg"
+      class: "has-shadow"
 
 tone-image:
   caption: "An example of the type of tone I wanted."
@@ -30,46 +35,58 @@ tone-image:
   photocredlink: "http://skeletonclaw.com/post/172523266228/brain-drain-patreon-facebook-twitter"
   images:
     - path: "https://66.media.tumblr.com/9cdb3d6cd00142e8aba715e7d79f03b4/tumblr_p6kh16IoMf1u0glb4o1_1280.jpg"
+      class: "has-shadow"
 
 abilities-mockup:
   caption: "A list of random abilities that sounded awesome on paper."
   images:
     - path: "/assets/images/posts/2018/11/25/abilities-mockup-1.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/25/abilities-mockup-2.jpg"
+      class: "has-shadow"
 
 first-prototype-mockup:
   caption: "The mock-up game board for the first prototype."
   images:
     - path: "/assets/images/posts/2018/11/25/first-prototype-mockup.jpg"
+      class: "has-shadow"
 
 first-prototype:
   caption: "The first ever prototype using index cards, poker chips, and my little cousin's Lego pieces."
   images:
     - path: "/assets/images/posts/2018/11/25/first-prototype-1.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/25/first-prototype-2.jpg"
+      class: "has-shadow"
 
 first-karma-cards:
   caption: "One of the first iterations of &quot;karma&quot; cards."
   images:
     - path: "/assets/images/posts/2018/11/25/first-karma-cards.jpg"
+      class: "has-shadow"
 
 playtest-session-1:
   images:
     - path: "/assets/images/posts/2018/11/25/playtest-session-1.jpg"
+      class: "has-shadow"
 
 playtest-session-2:
   images:
     - path: "/assets/images/posts/2018/11/25/playtest-session-2.jpg"
+      class: "has-shadow"
 
 playtest-session-3:
   images:
     - path: "/assets/images/posts/2018/11/25/playtest-session-3.jpg"
+      class: "has-shadow"
 
 playtest-session-4:
   caption: "Some pictures from early playtest sessions."
   images:
     - path: "/assets/images/posts/2018/11/25/playtest-session-1.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/25/playtest-session-2.jpg"
+      class: "has-shadow"
 
 ---
 

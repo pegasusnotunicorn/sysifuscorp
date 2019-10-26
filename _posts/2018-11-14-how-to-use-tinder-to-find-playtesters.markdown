@@ -11,40 +11,59 @@ profile-first:
   caption: "My initial Tinder profile pictures and description."
   images:
     - path: "/assets/images/posts/2018/11/14/profile-first-1.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-first-2.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-first-3.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-first-4.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-first-5.jpg"
+      class: "has-shadow"
 
 convo-first:
   caption: "I guess people don't really read on Tinder."
   images:
     - path: "/assets/images/posts/2018/11/14/convo-first-1.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/convo-first-2.jpg"
+      class: "has-shadow"
 
 profile-second:
   caption: "Second attempt photos. Now with a 100% more pizza."
   images:
     - path: "/assets/images/posts/2018/11/14/profile-second-1.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-second-2.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-second-3.jpg"
+      class: "has-shadow"
 
 convo-second:
   caption: "The second round of conversations were a little better."
   images:
     - path: "/assets/images/posts/2018/11/14/convo-second-1.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/convo-second-2.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/convo-second-3.jpg"
+      class: "has-shadow"
 
 profile-third:
   caption: "My final Tinder profile pictures."
   images:
     - path: "/assets/images/posts/2018/11/14/profile-third-1.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-third-2.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-third-3.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-third-4.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-third-5.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2018/11/14/profile-third-6.jpg"
+      class: "has-shadow"
 
 convo-third:
   caption: "Matching and setting up a meeting. Click to enlarge."
@@ -52,16 +71,19 @@ convo-third:
   photocredlink: "https://www.ledesignandgames.com/"
   images:
     - path: "/assets/images/posts/2018/11/14/convo-third.jpg"
+      class: "has-shadow"
 
 meetup:
   caption: "Meeting and playing my game!"
   images:
     - path: "/assets/images/posts/2018/11/14/meetup.jpg"
+      class: "has-shadow"
 
 matches:
   caption: "I ended my Tinder experiment with a total of 28 matches."
   images:
     - path: "/assets/images/posts/2018/11/14/tinder-matches.jpg"
+      class: "has-shadow"
 
 ---
 

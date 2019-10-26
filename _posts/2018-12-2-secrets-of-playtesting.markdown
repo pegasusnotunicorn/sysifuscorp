@@ -11,6 +11,7 @@ alpha-playtest:
   caption: "An earlier Alpha playtest session. It doesn't fit the flow of the text, but at least it looks nice."
   images:
     - path: "/assets/images/posts/2018/12/3/alpha-playtest.jpg"
+      class: "has-shadow"
 
 left-on-read:
   caption: "Some examples of being left on read. Any personal details have been censored."
@@ -21,11 +22,6 @@ left-on-read:
       class: "has-shadow"
     - path: "/assets/images/posts/2018/12/3/left-on-read-3.png"
       class: "has-shadow"
-
-nyc-background-alpha:
-  caption: "A nice picture of my Alpha version."
-  images:
-    - path: "/assets/images/posts/2018/12/3/nyc-background-alpha.jpg"
 
 meetup:
   caption: "My first time asking strangers to help."
