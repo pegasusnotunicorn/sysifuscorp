@@ -98,7 +98,7 @@ If you are trying to design your own game, I highly suggest you learn to use Ill
 
 #### Rulebook and the Game Board
 
-The rulebook is finally in a state where I am confident in sharing it with the public. Please [check it out](/rulebook-r4.pdf)! Any and all feedback is appreciated!
+The rulebook is finally in a state where I am confident in sharing it with the public. Please [check it out](/rulebook)! Any and all feedback is appreciated!
 
 Additionally, here's what the game board looks like currently! Like the Office Politics Cards, I hired a freelance illustrator from fiverr and then tweaked the final image myself to create this.
 
@@ -120,6 +120,6 @@ In terms of the game mechanics, I am pretty content with the current build. Just
 
 Fingers crossed for a commercially viable product within the next coming weeks!
 
-The only things left to design are the game sleeve for the box and various illustrations for use on the website / marketing. 
+The only things left to design are the game sleeve for the box and various illustrations for use on the website / marketing.
 
 Thank you for reading the Autumn update for _Welcome to Sysifus Corp_. Tune in next month for more updates!
