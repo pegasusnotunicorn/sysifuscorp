@@ -19,14 +19,14 @@ office-politics:
 
 Welcome to Sysifus Corp is a board game about being the first to be promoted at a cut-throat corporation.
 
-#### Will you be the one to receive the coveted Promotion?
+_Will you be the one to receive the coveted Promotion?_
 
 ---
 
 <div id="main-steps-container">
   <div class="main-steps-block">
     {% include image.html img-details=page.career-path %}
-    <p class="main-steps-text">Race to build your career path to the <strong>Promotion</strong></p>
+    <p class="main-steps-text">Build your career path to the <strong>Bosses</strong> and the <strong>Promotion</strong></p>
   </div>
 
   <div class="main-steps-block">
