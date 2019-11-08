@@ -5,14 +5,8 @@ date: 2019-10-05 12:00:00 -0500
 tags: update
 author: Wonmin
 description: "The Autumn 2019 update for Welcome to Sysifus Corp. A new name and beginnings of mass-production!"
-image: "/assets/images/posts/2019/10/15/current-build-pic.png"
+image: "/assets/images/posts/2019/10/15/sysifus-name.png"
 <!-- published: false -->
-
-current-build-pic:
-  caption: "What the game looks like currently."
-  images:
-    - path: "/assets/images/posts/2019/10/15/current-build-pic.jpg"
-      class: "has-shadow is-half"
 
 sysifus-name-logo:
   caption: "Welcome to Sysifus Corp--where we are always pushing our way to the top."

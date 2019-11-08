@@ -5,7 +5,7 @@ date: 2019-10-25 12:00:00 -0500
 tags: update
 author: Wonmin
 description: "Here are some pictures of some slight design changes I've been considering."
-image: "/assets/images/posts/2019/10/15/current-build-pic.png"
+image: "/assets/images/main_career_path.png"
 <!-- published: false -->
 
 sysifus-logo-flat:

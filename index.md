@@ -19,7 +19,7 @@ office-politics:
 
 Welcome to Sysifus Corp is a board game about being the first to be promoted at a cut-throat corporation.
 
-_Will you be the one to receive the coveted Promotion?_
+_Will you be the first to be promoted?_
 
 ---
 
