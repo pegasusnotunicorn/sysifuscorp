@@ -24,4 +24,4 @@ I am going for a neutral / bleak color scheme for the employees and the game in 
 
 Meanwhile, the fictional company (Sysifus Corp) uses bright primary colors in all of their messaging. As if they are trying to instill positive energy from their ~~slaves~~ employees.
 
-Please let me know what you think in the comments below!
+Please let me know what you think in the comments below! I also posted it on [/r/tabletopgamedesign](https://www.reddit.com/r/tabletopgamedesign/comments/dtnoh1/working_on_the_game_cover_not_really_sure_what/) so feel free to comment there as well!
