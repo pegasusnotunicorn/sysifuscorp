@@ -4,6 +4,7 @@ title: "How a board game is born."
 date: 2018-11-25 12:00:00 -0500
 tags: gamedesign
 author: Wonmin
+author-url: wonmin
 description: "How a board game comes to life: start with a few core mechanics and play it over and over again until something not-completely-garbage emerges. Then feed it love until you're ready to show it to the world. Then kill it and start all over again using the feedback you receive."
 image: "/assets/images/posts/2018/11/25/attention-image.jpg"
 

@@ -4,6 +4,7 @@ title: "December 2018 Update"
 date: 2018-12-15 12:00:00 -0500
 tags: update
 author: Wonmin
+author-url: wonmin
 description: "The December 2018 update for Welcome to Sysifus Corp. Updating mechanics and reducing complexity! Read more about it here."
 image: "/assets/images/posts/2018/12/15/december-analytics.png"
 <!-- published: false -->

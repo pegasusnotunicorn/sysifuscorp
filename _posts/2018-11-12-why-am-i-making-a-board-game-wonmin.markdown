@@ -4,6 +4,7 @@ title: "Why am I making a board game?"
 date: 2018-11-12 10:46:49 -0500
 tags: personal
 author: Wonmin
+author-url: wonmin
 description: "My name is Wonmin (pronounced like one minute) and I wanted to explain how/why I decided to make a board game."
 
 party-image:

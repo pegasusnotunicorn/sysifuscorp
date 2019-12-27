@@ -4,6 +4,7 @@ title: "How to use Tinder to find playtesters for your new board game."
 date: 2018-11-14 12:00:00 -0500
 tags: marketing
 author: Wonmin
+author-url: wonmin
 description: "&quot;Why did I choose to use Tinder?&quot; you may ask. The correct answer to that lies somewhere in between, &quot;I am so desperately lonely&quot; and &quot;I wanted to make a cool viral blog post.&quot;"
 image: "/assets/images/posts/2018/11/14/convo-first-1.jpg"
 

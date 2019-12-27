@@ -4,6 +4,7 @@ title: "Thank you and good bye, Grace!"
 date: 2019-01-11 12:00:00 -0500
 tags: personal
 author: Wonmin
+author-url: wonmin
 description: "We say good bye to our dear friend and designer, Grace! Thank you for all of your help and hard work."
 image: "/assets/images/wonmin_and_grace.jpg"
 

@@ -4,6 +4,7 @@ title: "Welcome to Sysifus Corp AKA The Autumn 2019 Update"
 date: 2019-10-05 12:00:00 -0500
 tags: update
 author: Wonmin
+author-url: wonmin
 description: "The Autumn 2019 update for Welcome to Sysifus Corp. A new name and beginnings of mass-production!"
 image: "/assets/images/posts/2019/10/15/sysifus-name.png"
 <!-- published: false -->

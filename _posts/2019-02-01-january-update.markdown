@@ -4,6 +4,7 @@ title: "January 2019 Update"
 date: 2019-01-31 12:00:00 -0500
 tags: update
 author: Wonmin
+author-url: wonmin
 description: "The January 2019 update for Welcome to Sysifus Corp. Introducing the new theme! Read more about it here."
 image: "/assets/images/posts/2019/01/31/project-card-1-new.png"
 

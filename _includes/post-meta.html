@@ -1,6 +1,6 @@
 <div class="post-meta">
   <span class="post-date">{{ include.post.date | date: "%B %-d %Y" }}</span> ・
-  <span class="post-author">Written by: <a href="/authors/{{ include.post.author }}">{{ include.post.author }}</a></span>
+  <span class="post-author">Written by: <a href="/authors/{{ include.post.author-url }}">{{ include.post.author }}</a></span>
   <span class="post-categories">
     {% for category in include.post.categories %}
       &bull;

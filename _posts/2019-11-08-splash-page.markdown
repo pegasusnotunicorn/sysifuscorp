@@ -4,6 +4,7 @@ title: "Working on the game box / sleeve"
 date: 2019-11-08 12:00:00 -0500
 tags: update
 author: Wonmin
+author-url: wonmin
 description: "Working on some graphics for the game box / sleeve!"
 image: "/assets/images/posts/2019/11/08/splash.png"
 <!-- published: false -->

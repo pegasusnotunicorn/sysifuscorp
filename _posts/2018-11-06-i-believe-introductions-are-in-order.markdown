@@ -4,6 +4,7 @@ title: "I believe introductions are in order."
 date: 2018-11-06 22:46:49 -0500
 tags: personal
 author: Wonmin
+author-url: wonmin
 description: "Welcome to our first ever blog post for our new board game--Welcome to Sysifus Corp. What better way to kick things off than to introduce the team and explain our goals for this blog."
 image: "/assets/images/wonmin_and_grace.jpg"
 
