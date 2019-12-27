@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: SYSIFUS CORP
-tagline: TEST
+tagline: Sysifus Corp
 author: Made by Wonmin Lee
 email: hello@sysifuscorp.com
 description: A cut-throat corporate board game.
@@ -31,6 +31,7 @@ social:
   instagram: "https://www.instagram.com/sysifuscorp/"
 
 wonminurl: "https://1minlee.com"
+pegasusurl: "https://unicornwithwings.com"
 sidebar_home_link: "/"
 sidebar_blog_link: "/blog"
 disqus:
@@ -42,6 +43,27 @@ markdown: kramdown
 remote_theme: fongandrew/hydeout
 plugins:
   - jekyll-feed
+
+# Authors
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

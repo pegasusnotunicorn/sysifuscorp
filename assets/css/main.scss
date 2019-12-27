@@ -5,6 +5,10 @@ $sidebar-width: 23rem !default;
 
 //<editor-fold>------------------------------------------SIDE BAR---------------------------------------
 
+.margin-bottom-zero {
+  margin-bottom:0 !important;
+}
+
 #sidebar {
   background-color: rgb(75,75,75);
   background-image: linear-gradient(to bottom, rgb(75,75,75), #000);

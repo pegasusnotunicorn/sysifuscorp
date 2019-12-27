@@ -5,7 +5,7 @@ date: 2019-12-18 12:00:00 -0500
 tags: update
 author: Wonmin
 description: "The game box sample is done!"
-image: "/assets/images/posts/2019/11/08/splash.png"
+image: "/assets/images/posts/2019/12/18/box (1).jpg"
 <!-- published: false -->
 
 game-sample:
