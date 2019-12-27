@@ -8,6 +8,6 @@ description: "The authors of this blog for Welcome to Sysifus Corp"
 ---
 
 {% for author in site.authors %}
-  <h3><a href="{{ author.url }}">{{ author.name }}</a></h3>
+  <h3><a href="{{ author.lower-case-url }}">{{ author.name }}</a></h3>
   <p>{{ author.content | markdownify }}</p>
 {% endfor %}
