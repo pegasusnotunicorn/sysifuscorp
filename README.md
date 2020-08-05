@@ -15,6 +15,10 @@ Will you be the one to receive coveted promotion?
 Technical Notes:
 
 1. Start cmd prompt
-2. Type `jek` to compile website
+2. Type `jek` to compile website (if necessary, install Jekyll https://jekyllrb.com/docs/installation)
+
+* Might need to `bundle update`
+* Or use `bundle exec jekyll serve`
+
 
 ---
