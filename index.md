@@ -3,6 +3,10 @@
 layout: page
 header-title: A cut-throat corporate board game
 
+main-image:
+  images:
+    - path: "/assets/images/main_image.jpg"
+
 career-path:
   images:
     - path: "/assets/images/main_career_path.png"
@@ -16,6 +20,8 @@ office-politics:
     - path: "/assets/images/main_office_politics.png"
 
 ---
+
+{% include image.html img-details=page.main-image %}
 
 Welcome to Sysifus Corp is a board game about being the first to be promoted at a cut-throat corporation.
 
