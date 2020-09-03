@@ -6,7 +6,7 @@ tags: marketing update
 author: Wonmin
 author-url: wonmin
 description: "Weekly update for the game, Welcome to Sysifus Corp. (August 19-26)"
-image: "/assets/images/posts/2020/08/19/cat-sniff.jpg"
+image: "/assets/images/posts/2020/08/26/game-crafter-shop.png"
 <!-- published: false -->
 
 game-crafter:
