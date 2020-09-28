@@ -139,12 +139,20 @@ body {
   justify-content:space-between;
 }
 
+.image-wrapper.left-align{
+  text-align:left !important;
+}
+
 .image-link{
   display:inline-block;
   margin:auto;
 }
 .image-link:not(:last-child){
   margin-right:15px;
+}
+
+.image-link.left-align{
+  margin:0;
 }
 
 img {
@@ -156,6 +164,7 @@ img.is-threequarter{width:75%;}
 img.is-half{width:50%;}
 img.is-third{width:32%;}
 img.is-fourth{width:25%;}
+img.is-sharp{border-radius:0 !important}
 
 .caption {
   font-style: italic;

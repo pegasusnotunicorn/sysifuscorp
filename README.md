@@ -20,5 +20,7 @@ Technical Notes:
 * Might need to `bundle update`
 * Or use `bundle exec jekyll serve`
 
+Markdown guide:
+https://www.markdownguide.org/basic-syntax
 
 ---

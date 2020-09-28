@@ -19,32 +19,52 @@ office-politics:
   images:
     - path: "/assets/images/main_office_politics.png"
 
+game-images:
+  images:
+    - path: "/assets/images/gallery/1-min.jpg"
+    - path: "/assets/images/gallery/2-min.jpg"
+    - path: "/assets/images/gallery/3-min.jpg"
+    - path: "/assets/images/gallery/5-min.jpg"
+
+game-images-2:
+  images:
+    - path: "/assets/images/gallery/6-min.jpg"
+    - path: "/assets/images/gallery/7-min.jpg"
+    - path: "/assets/images/gallery/8-min.jpg"
+    - path: "/assets/images/gallery/9-min.jpg"
+    - path: "/assets/images/gallery/10-min.jpg"
+
+bosses:
+  caption: "We are the Bosses of Sysifus Corp, welcome!"
+  images:
+    - path: "/assets/images/gallery/4-min.jpg"
+      class: "is-half"
+
 ---
 
 {% include image.html img-details=page.main-image %}
 
-Welcome to Sysifus Corp is a board game about being the first to be promoted at a cut-throat corporation.
+### Race around the office, suck up to the Bosses, and _be the first_ to be promoted.
 
-_Will you be the first to be promoted?_
+It's quite literally _"rat-race, the board game."_
 
 ---
 
-<div id="main-steps-container">
-  <div class="main-steps-block">
-    {% include image.html img-details=page.career-path %}
-    <p class="main-steps-text">Build your career path to the <strong>Bosses</strong> and the <strong>Promotion</strong></p>
-  </div>
+{% include image.html img-details=page.game-images %}
+{% include image.html img-details=page.game-images-2 %}
 
-  <div class="main-steps-block">
-    {% include image.html img-details=page.earn-influence %}
-    <p class="main-steps-text">Earn <strong>Influence</strong> at the company by working on Projects</p>
-  </div>
+---
 
-  <div class="main-steps-block">
-    {% include image.html img-details=page.office-politics %}
-    <p class="main-steps-text">Use <strong>Office Politics</strong> to screw over your fellow employees</p>
-  </div>
-</div>
+#### Hello EMPLOYEE #51351!
+
+We are so glad you are here. Let us fill you in a little on what we do and, more importantly, how you can start benefiting us immediately as a corporate gear-cog.  
+
+{% include image.html img-details=page.bosses %}
+
+When we started this company (Sysifus Corp) 50 years ago, we never dreamed it would become the multinational, award-winning, and industry-leading powerhouse it is today. You are now an integral cog of our great big company. Congratulations! We chose you for your achievements, your background, and, most importantly, your unyielding desire to push to the top--no matter the cost.
+
+Welcome to Sysifus Corp--where we are always pushing our way to the top!
+
 
 ---
 
