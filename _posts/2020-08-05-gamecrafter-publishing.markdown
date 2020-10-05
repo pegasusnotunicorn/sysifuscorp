@@ -13,7 +13,7 @@ game-crafter:
   caption: "The Game Crafter is a great place to get anything you need to prototype your game!"
   images:
     - path: "/assets/images/posts/2020/08/04/game-crafter.png"
-      class: "is-half"
+      class: "is-half has-shadow"
 
 ---
 

@@ -13,17 +13,21 @@ game-sample:
   caption: "The game box sample is done!!!"
   images:
     - path: "/assets/images/posts/2019/12/18/box (1).jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2019/12/18/box (2).jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2019/12/18/box (3).jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2019/12/18/box (4).jpg"
+      class: "has-shadow"
 
 game-sample-china:
   caption: "The amazing plastic holders on the inside!!!"
   images:
     - path: "/assets/images/posts/2019/12/18/chinese (1).jpg"
-      class: "is-threequarter"
+      class: "is-threequarter has-shadow"
     - path: "/assets/images/posts/2019/12/18/chinese (2).jpg"
-      class: "is-threequarter"
+      class: "is-threequarter has-shadow"
 
 ---
 

@@ -5,7 +5,11 @@
   {% endfor %}
 </p>
 
-{% if include.img-details.caption %}
+{% if include.img-details.captionlink %}
+  <a href="{{ include.img-details.captionlink }}">
+    <span class="caption">{{ include.img-details.caption }}</span>
+  </a>
+{% else if include.img-details.caption %}
   <span class="caption">{{ include.img-details.caption }}</span>
 {% endif %}
 

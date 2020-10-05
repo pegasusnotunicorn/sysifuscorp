@@ -13,7 +13,7 @@ cat-sniff:
   caption: "Here's a pic of my cat sniffing the hell out of my game."
   images:
     - path: "/assets/images/posts/2020/08/19/cat-sniff.jpg"
-      class: "is-half"
+      class: "is-half has-shadow"
 
 ---
 

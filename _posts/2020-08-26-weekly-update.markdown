@@ -13,7 +13,7 @@ game-crafter:
   caption: "[Here's my game on The Game Crafter!](https://www.thegamecrafter.com/games/welcome-to-sysifus-corp)"
   images:
     - path: "/assets/images/posts/2020/08/26/game-crafter-shop.png"
-      class: "is-half"
+      class: "is-half has-shadow"
 
 ---
 

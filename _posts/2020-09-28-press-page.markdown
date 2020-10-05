@@ -10,7 +10,7 @@ description: "I made a Press page and the Kickstarter page."
 
 ---
 
-Made a [press page](/contact) to help people looking to promote my game. I also finished the first draft of the Kickstarter page and it's looking great. The pictures my dad helped me take last time really help in making the game stand out.
+Made a [press page](/press) to help people looking to promote my game. I also finished the first draft of the Kickstarter page and it's looking great. The pictures my dad helped me take last time really help in making the game stand out.
 
 If you are a game reviewer and looking for any new games to review, please drop me a line!
 

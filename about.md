@@ -10,7 +10,9 @@ wonmin-lee:
   caption: "Hello! My name is Wonmin. I'm the game designer."
   images:
     - path: "/assets/images/wonmin_lee.jpg"
-      class: "is-half"
+      class: "has-shadow"
+    - path: "/assets/images/wonmin_lee2.jpg"
+      class: "has-shadow"
 ---
 
 Welcome to the development blog and website for _Sysifus Corp_!

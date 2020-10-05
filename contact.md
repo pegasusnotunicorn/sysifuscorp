@@ -64,6 +64,8 @@ Here are some of the many ways you can get in touch with us:
 [reddit]: https://www.reddit.com/user/sysifuscorp
 [bgg]: https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp
 
+---
+
 # Press details
 
 ### Media Links

@@ -13,7 +13,7 @@ office-politics:
   caption: "A series on introducing the Office Politics cards!"
   images:
     - path: "/assets/images/posts/2020/08/11/office-politics.jpg"
-      class: "is-half"
+      class: "is-half has-shadow"
 
 ---
 
