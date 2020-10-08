@@ -23,4 +23,7 @@ Technical Notes:
 Markdown guide:
 https://www.markdownguide.org/basic-syntax
 
+Liquid guide:
+https://shopify.dev/docs/themes/liquid/reference/basics/operators
+
 ---
