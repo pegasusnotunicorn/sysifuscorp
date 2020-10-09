@@ -122,7 +122,7 @@ HOW IT WORKS:
 4. Play my board game (50 min.)
 5. If you or any of your friends win, I buy you a pizza pie ($20 max value)
 >
-Now really looking for dating but if you think I’m cute I can give you my digits I guess.
+Not really looking for dating but if you think I’m cute I can give you my digits I guess.
 
 I thought the plan was foolproof and that I’d be flooded with messages from hungry people who were excited at the prospect of eating a free meal.
 
@@ -189,7 +189,7 @@ Finally, after all of my hard work, I met the one.
 
 ---
 
-### Hitting a home run
+### Hitting a home run (as far as this experiment was concerned)
 
 It was the _board-game-designer-using-Tinder-in-an-unconventional-way_ jackpot!
 
