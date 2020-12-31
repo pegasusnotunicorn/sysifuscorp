@@ -43,7 +43,9 @@ logo:
     - path: "/assets/images/logo_transparent.png"
       class: "is-sharp"
     - path: "/assets/images/text_logo.png"
-      class: "is-half is-sharp"
+      class: "is-sharp"
+    - path: "/assets/images/text_logo_white.png"
+      class: "black-background is-sharp"
 
 ---
 
@@ -68,11 +70,19 @@ Here are some of the many ways you can get in touch with us:
 
 # Press details
 
-### Media Links
-We are currently looking for game reviewers who will review the game for us! Please get in touch via any of the methods listed above.
+### Cheatsheet / At a glance
+- Started development in June 2018
+- Website built November 2018
+- [Kickstarter launching on February 2021](https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game)
+- Located in New York, NY
+- Created by [Wonmin Lee](https://1minlee.com/)
+- 2 to 4 players
+- Ages 12+
+- Playtime between 1-2 hours (depending on # of players)
+{% include image.html img-details=page.game-details %}
 
 ### Game Description
->Welcome to Sysifus Corp! You are EMPLOYEE#35151 and are part of the most recent cohort of new hires here at Sysifus Corp. Your goal at this company is to suck up to all three Bosses before attending your annual Performance Review. The first employee to do so will be promoted! But be careful as your fellow coworkers will do anything to make you fail.
+>Welcome to Sysifus Corp! You are EMPLOYEE#318996 and are part of the most recent cohort of new hires here at Sysifus Corp. Your goal at this company is to suck up to all three Bosses before attending your annual Performance Review. The first employee to do so will be promoted! But be careful as your fellow coworkers will do anything to make you fail.
 >
 >Welcome to Sysifus Corp is a literal rat-race around the board as you build a path to the Bosses in their corner offices and return to the Performance Review tile.
 >
@@ -86,16 +96,21 @@ We are currently looking for game reviewers who will review the game for us! Ple
 >- chain together multiple cards to achieve crazy combos such as swapping locations, causing others to get stuck, or shifting the entire office layout
 >- manage your Company Influence wisely and use them strategically to get even further ahead
 
-### Cheatsheet
-- Started development in June 2018
-- Website built November 2018
-- Kickstarter launched December 2020
-- Located in New York, NY
-- Created by Wonmin Lee
-- 2 to 4 players
-- Ages 12+
-- Playtime between 1-2 hours (depending on # of players)
-{% include image.html img-details=page.game-details %}
+### What people are saying
+
+We are currently looking for game reviewers who will review the game for us! Please get in touch via any of the methods listed above.
+
+<div class="video-container is-half">
+<iframe class="video" src="https://www.youtube.com/embed/qqVmOL7WBqQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-half">
+<iframe class="video" src="https://www.youtube.com/embed/No0SuXFXP9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-half">
+<iframe class="video" src="https://www.youtube.com/embed/NGZcS1XwG-o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### Images
 
@@ -110,6 +125,40 @@ The logo symbolizes [Sisyphus](https://en.wikipedia.org/wiki/Sisyphus), the pers
 
 #### Artwork / Illustrations
 {% include image.html img-details=page.splash-images %}
+
+### Videos
+
+#### Sexy close up slow-mo shots
+
+<div class="video-container is-third">
+<iframe class="video" src="https://www.youtube.com/embed/3UbL82_Yyms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-third">
+<iframe class="video" src="https://www.youtube.com/embed/qGvmfjyA22g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-third">
+<iframe class="video" src="https://www.youtube.com/embed/WGzDqhNB0-k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### Funny skits about the work life at Sysifus Corp
+
+<div class="video-container is-threequarter">
+<iframe class="video" src="https://www.youtube.com/embed/GwbriboTKFY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-third">
+<iframe class="video" src="https://www.youtube.com/embed/grfjOG_Ej9E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-third">
+<iframe class="video" src="https://www.youtube.com/embed/rVhBtkbAHF8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-third">
+<iframe class="video" src="https://www.youtube.com/embed/gWbHpPWgz2s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### Colors
 
