@@ -274,7 +274,7 @@ At this point, I was pretty confident in the gameplay and was starting to play a
 
 At Metatopia I was given some harsh (but true) feedback on the game. It was way too complicated and the theme was way too loose. It was back to the drawing board.
 
-This was probably the lowest point of the development process. My designer friend decided to leave and the game was not in a good state. It's funny how just a few sentences from strangers can make you look at your game in a whole different light. Just before Metatopia, I was so confident, but just after I was devastated.But as my English teacher in high school said, it's easier to edit and remove than it is to create something good from the start. So just keep writing and worry about removing the bad later.
+This was probably the lowest point of the development process. My designer friend decided to leave and the game was not in a good state. It's funny how just a few sentences from strangers can make you look at your game in a whole different light. Just before Metatopia, I was so confident, but just after I was devastated. But as my English teacher in high school said, it's easier to edit and remove than it is to create something good from the start. So just keep writing and worry about removing the bad later.
 
 It was time to remove the bad.
 
