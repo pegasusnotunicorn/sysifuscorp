@@ -9,6 +9,7 @@ description: "Click here to get in contact with the support team of Sysifus Corp
 game-details:
   images:
     - path: "/assets/images/GameDetails.png"
+      class: "is-half"
 
 game-images:
   images:
@@ -77,8 +78,9 @@ Here are some of the many ways you can get in touch with us:
 - Located in New York, NY
 - Created by [Wonmin Lee](https://1minlee.com/)
 - 2 to 4 players
-- Ages 12+
+- Ages 14+
 - Playtime between 1-2 hours (depending on # of players)
+- [Pronounced like the greek myth Sisyphus](https://www.youtube.com/watch?v=PHP8YtUzRDw)
 {% include image.html img-details=page.game-details %}
 
 ### Game Description
@@ -96,6 +98,10 @@ Here are some of the many ways you can get in touch with us:
 >- chain together multiple cards to achieve crazy combos such as swapping locations, causing others to get stuck, or shifting the entire office layout
 >- manage your Company Influence wisely and use them strategically to get even further ahead
 
+### How do you pronounce Sysifus?
+
+[Like the greek myth Sisyphus](https://www.youtube.com/watch?v=PHP8YtUzRDw)
+
 ### What people are saying
 
 We are currently looking for game reviewers who will review the game for us! Please get in touch via any of the methods listed above.
@@ -110,6 +116,10 @@ We are currently looking for game reviewers who will review the game for us! Ple
 
 <div class="video-container is-half">
 <iframe class="video" src="https://www.youtube.com/embed/NGZcS1XwG-o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-half">
+<iframe class="video" src="https://www.youtube.com/embed/P4lNz1KMHbQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### Images
