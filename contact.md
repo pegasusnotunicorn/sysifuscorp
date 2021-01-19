@@ -74,7 +74,7 @@ Here are some of the many ways you can get in touch with us:
 ### Cheatsheet / At a glance
 - Started development in June 2018
 - Website built November 2018
-- [Kickstarter launching on February 2021](https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game)
+- [Kickstarter launching on February 2021](https://bit.ly/sysifuscorp)
 - Located in New York, NY
 - Created by [Wonmin Lee](https://1minlee.com/)
 - 2 to 4 players

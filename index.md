@@ -48,7 +48,7 @@ bosses:
 
 It's quite literally _"rat-race, the board game."_
 
-{% include button.html buttonlink="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game" buttontext="Click here to see our Kickstarter!"%}
+{% include button.html buttonlink="https://bit.ly/sysifuscorp" buttontext="Click here to see our Kickstarter!"%}
 
 ---
 
