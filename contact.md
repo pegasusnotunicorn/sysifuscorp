@@ -122,6 +122,10 @@ We are currently looking for game reviewers who will review the game for us! Ple
 <iframe class="video" src="https://www.youtube.com/embed/P4lNz1KMHbQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+<div class="video-container is-half">
+<iframe src="https://player.twitch.tv/?video=875158044&parent=www.sysifuscorp.com,localhost" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+</div>
+
 ### Images
 
 #### The game
