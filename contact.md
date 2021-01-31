@@ -50,6 +50,9 @@ logo:
 
 ---
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="0XX40C9g"></script>
+
 Here are some of the many ways you can get in touch with us:
 * [ **Email** - "Hopefully this won't get spam filtered."][email-us]
 * [ **Instagram** - "Hold on, this is _totally_ going on my 'gram."][instagram]
@@ -123,7 +126,20 @@ We are currently looking for game reviewers who will review the game for us! Ple
 </div>
 
 <div class="video-container is-half">
-<iframe src="https://player.twitch.tv/?video=875158044&parent=sysifuscorp.com" autoplay="false" time="3m22s" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+<div class="fb-video" data-href="https://www.facebook.com/facebook/videos/430897138245666/" data-show-text="false"><blockquote cite="https://developers.facebook.com/Diaryofalincolngeek/videos/430897138245666/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/Diaryofalincolngeek/videos/430897138245666/">Lets Talk Boardgames Ep 7</a><p>Welcome to latest edition of lets board games, tonight&#039;s guest star is Wonmin Lee from Pegasus Games.
+#DOALG #DiaryofaLincolnGeek #Boardgames #Webshow #Kickstarter #Exclusive #SpecialGuest</p>Posted by <a href="https://www.facebook.com/Diaryofalincolngeek/">Diary of a Lincoln Geek</a> on Friday, January 8, 2021</blockquote></div>
+</div>
+
+<div class="video-container is-half">
+<iframe class="video" src="https://www.youtube.com/embed/Ck1RL-m3Bo0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-half">
+<iframe class="video" src="https://www.youtube.com/embed/s10q7He6tTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-half">
+<iframe class="video" src="https://www.youtube.com/embed/8iuNrIvNJ-w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### Images
