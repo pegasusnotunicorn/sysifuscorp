@@ -48,7 +48,9 @@ bosses:
 
 It's quite literally _"rat-race, the board game."_
 
-{% include button.html buttonlink="https://bit.ly/sysifuscorp" buttontext="Click here to see our Kickstarter!"%}
+Fully funded on Kickstarter and estimated to release to the general public on August of 2021.
+
+{% include button.html buttonlink="https://gamefound.com/projects/pegasus-games/sysifuscorp" buttontext="Click here to purchase a copy!"%}
 
 ---
 

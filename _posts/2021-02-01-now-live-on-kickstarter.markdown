@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Now live on Kickstarter!! 😍"
-date: 2021-01-14 12:00:00 -0500
+date: 2021-02-01 12:00:00 -0500
 tags: marketing
 author: Wonmin
 author-url: wonmin
