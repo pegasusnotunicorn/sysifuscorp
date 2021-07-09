@@ -3,27 +3,12 @@
 layout: page
 header-title: A cut-throat corporate board game
 
-main-image:
-  images:
-    - path: "/assets/images/main_image.jpg"
-
-career-path:
-  images:
-    - path: "/assets/images/main_career_path.png"
-
-earn-influence:
-  images:
-    - path: "/assets/images/main_earn_influence.png"
-
-office-politics:
-  images:
-    - path: "/assets/images/main_office_politics.png"
-
 game-images:
   images:
     - path: "/assets/images/gallery/1-min.jpg"
     - path: "/assets/images/gallery/2-min.jpg"
     - path: "/assets/images/gallery/3-min.jpg"
+    - path: "/assets/images/gallery/4-min.jpg"
     - path: "/assets/images/gallery/5-min.jpg"
 
 game-images-2:
@@ -34,45 +19,70 @@ game-images-2:
     - path: "/assets/images/gallery/9-min.jpg"
     - path: "/assets/images/gallery/10-min.jpg"
 
-bosses:
-  caption: "We are the Bosses of Sysifus Corp, welcome!"
-  images:
-    - path: "/assets/images/gallery/4-min.jpg"
-      class: "is-half"
 
 ---
 
-{% include image.html img-details=page.main-image %}
+<div class="video-container is-threequarter">
+  <iframe class="video" src="https://www.youtube.com/embed/9gfzyzldHC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-### Race around the office, suck up to the Bosses, and _be the first_ to be promoted.
+## Race around the office, suck up to the Bosses, and _be the first_ to be promoted.
 
 It's quite literally _"rat-race, the board game."_
 
-Fully funded on Kickstarter and estimated to release to the general public on August of 2021.
+Fully funded on <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter</a> and estimated to release to the general public by the end of August 2021.
 
-{% include button.html buttonlink="https://gamefound.com/projects/pegasus-games/sysifuscorp" buttontext="Click here to purchase a copy!"%}
+{% include stripe-button.html %}
 
 ---
 
+## What makes the game fun in 30 seconds
+<div class="video-container is-threequarter">
+  <iframe class="video" src="https://www.youtube.com/embed/OOGUH8D_7qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+---
+
+## What are people saying?
+
+<img src="/assets/images/game-quote.png" class="is-full" />
 {% include image.html img-details=page.game-images %}
 {% include image.html img-details=page.game-images-2 %}
 
 ---
 
-#### Hello EMPLOYEE #318996!
+## If you enjoy any of the below mechanics then this game is for you!
 
-We are so glad you are here. Let us fill you in a little on what we do and, more importantly, how you can start benefiting us immediately as a corporate gear-cog.  
-
-{% include image.html img-details=page.bosses %}
-
-When we started this company (Sysifus Corp) 50 years ago, we never dreamed it would become the multinational, award-winning, and industry-leading powerhouse it is today. You are now an integral cog of our great big company. Congratulations! We chose you for your achievements, your background, and, most importantly, your unyielding desire to push to the top--no matter the cost.
-
-Welcome to Sysifus Corp--where we are always pushing our way to the top!
-
+<div class="gameIconsWrapper">
+  <div class="gameIconWrapper">
+    <img class="gameIcon" src="/assets/images/icons/card chaining.png" />
+    <p class="gameIconText">Card Chaining</p>
+  </div>
+  <div class="gameIconWrapper">
+    <img class="gameIcon" src="/assets/images/icons/hand management.png" />
+    <p class="gameIconText">Hand Management</p>
+  </div>
+  <div class="gameIconWrapper">
+    <img class="gameIcon" src="/assets/images/icons/multi-use cards.png" />
+    <p class="gameIconText">Multi-use Cards</p>
+  </div>
+  <div class="gameIconWrapper">
+    <img class="gameIcon" src="/assets/images/icons/race.png" />
+    <p class="gameIconText">Race</p>
+  </div>
+  <div class="gameIconWrapper">
+    <img class="gameIcon" src="/assets/images/icons/tile placement.png" />
+    <p class="gameIconText">Tile Placement</p>
+  </div>
+  <div class="gameIconWrapper">
+    <img class="gameIcon" src="/assets/images/icons/take that.png" />
+    <p class="gameIconText">Take That</p>
+  </div>
+</div>
 
 ---
 
-### Stay up to date!
+## Stay up to date!
 We aim to post once a week, sometimes more, sometimes way less. Depends on our mood.
 
 {% include mailchimp-form.html %}

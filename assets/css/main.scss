@@ -78,6 +78,10 @@ $sidebar-width: 23rem !default;
 
 //<editor-fold>------------------------------------------MAIN PAGE---------------------------------------
 
+h2{
+  margin-bottom:2rem;
+}
+
 .content {
   max-width:none;
 }
@@ -126,6 +130,14 @@ body {
   margin-bottom:0px !important;
 }
 
+.is-hidden{
+  display:none !important;
+}
+
+.is-invisible{
+  opacity:0 !important;
+}
+
 .is-hidden-mobile {
   display:none !important;
   @media (min-width: $large-breakpoint) {
@@ -154,6 +166,7 @@ body {
 .image-link.left-align{
   margin:0;
 }
+.image-link.is-full{width:100%}
 
 img {
   margin:auto;
@@ -166,6 +179,7 @@ img.is-third{width:32%;}
 img.is-fourth{width:25%;}
 img.is-sharp{border-radius:0 !important;}
 img.black-background{background-color:black;}
+img.is-full{width:100%;}
 
 .caption {
   font-style: italic;
@@ -211,8 +225,45 @@ img.black-background{background-color:black;}
     height: 100%;
 }
 
+.gameIconsWrapper{
+  display:block;
+  text-align:center;
+  height: 120px;
+  vertical-align: bottom;
+  margin-bottom: 20px;
+}
+
+.gameIconWrapper{
+  text-align:center;
+  display:inline-block;
+  width:100px;
+}
+
+.gameIcon{
+  width:50px;
+  height:50px;
+}
+
+.gameIconText{
+  margin-top:20px;
+  line-height:100%;
+}
+
 //desktop
 @media (min-width: $large-breakpoint) {
+  .gameIconsWrapper{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 160px;
+  }
+  .gameIconWrapper{
+    width:200px !important;
+  }
+  .gameIcon{
+    width:100px !important;
+    height:100px !important;
+  }
   .video-container {
       position: relative;
       height: 0;
@@ -258,6 +309,10 @@ img.black-background{background-color:black;}
   display: inline-block;
 }
 
+.stripebutton{
+  text-decoration:none;
+}
+
 .buttonlink{
   background-color:#ef5559;
   color:white;
@@ -268,6 +323,8 @@ img.black-background{background-color:black;}
   display:block;
   margin-bottom:10px;
   text-align:center;
+  cursor:pointer;
+  position:relative;
 
   //desktop
   @media (min-width: $large-breakpoint) {
@@ -278,6 +335,31 @@ img.black-background{background-color:black;}
 .buttonlink:hover{
   text-decoration: none;
   opacity:.75;
+}
+
+.buttonContent{
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.buttonSpinnerWrapper{
+  justify-content:center;
+  align-items:center;
+  left:0;
+  top:0;
+  display:flex;
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+}
+
+.buttonContent.ld{
+  display:none;
+}
+
+.buttonContent.ld.is-active{
+  display:block !important;
 }
 
 input, button {

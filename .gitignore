@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 *.ini
 .DS_Store
+.netlify

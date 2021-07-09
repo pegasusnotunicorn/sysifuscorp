@@ -76,3 +76,11 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - functions/
+  - package.json
+  - README.md
+  - netlify.toml
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
