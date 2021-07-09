@@ -8,12 +8,15 @@ author-url: wonmin
 description: "Fully funded on Kickstarter!"
 image: "/assets/images/posts/2021/02/14/funded-kickstarter.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w1ZvVGZSPTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I just want to take this moment to thank everyone who pledged in the campaign. I cannot wait until we get this bad boy manufactured and sent out.
+
+<!--more-->
 
 Let me also update you on what I've been doing.
 

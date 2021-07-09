@@ -8,6 +8,7 @@ author-url: wonmin
 description: "Working on some graphics for the game box / sleeve!"
 image: "/assets/images/posts/2019/11/08/splash.png"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 sysifus-splash:
   caption: "What the game box / front cover might look like."

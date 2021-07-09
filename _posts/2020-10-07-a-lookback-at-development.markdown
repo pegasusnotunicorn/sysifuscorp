@@ -8,6 +8,7 @@ author-url: wonmin
 description: "A step-by-step look back at the development process for Welcome the Sysifus Corp!"
 image: "/assets/images/posts/2020/10/05/ks.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 journeyimage1:
   images:
@@ -187,6 +188,8 @@ With the Kickstarter finally created for my game, I thought it would be a good t
 The final product picture first.
 
 It was a long journey to get it to look like this and took way longer than I had originally anticipated because life got in the way. I thought it would take about a year, but it was closer to 2.5 years.
+
+<!--more-->
 
 {% include image.html img-details=page.journeyimage2 %}
 

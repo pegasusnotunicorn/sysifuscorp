@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /js
 ---
 
 <!-- page to make sure that /js doesn't show public functions -->

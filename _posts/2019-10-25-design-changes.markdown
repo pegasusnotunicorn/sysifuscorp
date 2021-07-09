@@ -8,6 +8,7 @@ author-url: wonmin
 description: "Here are some pictures of some slight design changes I've been considering."
 image: "/assets/images/main_career_path.png"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 sysifus-logo-flat:
   caption: "Some changes to the Sysifus Corp logo I've been considered the past few days."
@@ -58,6 +59,8 @@ Here are some design changes that I've been working on. Please feel free to let 
 {% include image.html img-details=page.sysifus-logo-flat %}
 
 {% include image.html img-details=page.sysifus-logo-3d %}
+
+<!--more-->
 
 You also might have noticed that the main page has been updated with some new illustrations.
 

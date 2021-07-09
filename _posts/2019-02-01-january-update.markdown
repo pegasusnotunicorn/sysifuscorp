@@ -7,6 +7,7 @@ author: Wonmin
 author-url: wonmin
 description: "The January 2019 update for Welcome to Sysifus Corp. Introducing the new theme! Read more about it here."
 image: "/assets/images/posts/2019/01/31/project-card-1-new.png"
+excerpt_separator: <!--more-->
 
 version-notes:
   caption: "Click to see notes from this month's playtest sessions."
@@ -75,6 +76,8 @@ boss-cards:
 Welcome to a monthly series of blog posts that aims to capture the current state of development for _Welcome to Sysifus Corp_!
 
 These updates serve to keep track of how the game changes throughout its development and will be split into the following categories:
+
+<!--more-->
 
 1. [Game development](#game-development-updates)
 2. [Game marketing](#game-marketing-updates)

@@ -7,6 +7,7 @@ author: Wonmin
 author-url: wonmin
 description: "You won't believe these five brain-dead simple life-hacks to jump-start your board game career! Board game publishers and industry specialists will _hate_ you for this. Players will line up outside your door, _begging_ for expansion sets. Read on to find out more!"
 image: "/assets/images/posts/2018/12/3/left-on-read-1.png"
+excerpt_separator: <!--more-->
 
 alpha-playtest:
   caption: "An earlier Alpha playtest session. It doesn't fit the flow of the text, but at least it looks nice."
@@ -41,6 +42,8 @@ Just kidding, there is no simple life-hack that'll turn your game into an amazin
 The simple truth of making a great game is to _playtest_ over and over and over and over and over and over again.
 
 But what exactly is a "playtest" and how do we go about doing it? That's what we're going to be talking about today.
+
+<!--more-->
 
 ---
 

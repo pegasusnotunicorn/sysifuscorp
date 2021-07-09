@@ -8,6 +8,7 @@ author-url: wonmin
 description: "I attended Protospiel online over the weekend and learned valuable lessons for boardgame dev!"
 image: "/assets/images/posts/2021/01/14/protospiel_sysifus.png"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 protospiel_sysifus:
   images:
@@ -26,6 +27,8 @@ Over this past weekend, I attended an online board game convention called [Proto
 Boy am I glad he did.
 
 {% include image.html img-details=page.protospiel_sysifus %}
+
+<!--more-->
 
 This was my first ever online event and it was a wild ride the entire time. The moderators and event staff did a fantastic job in making the Discord server feel like a little conference hall. There were private voice servers set up like tables, giant voice chats filled with over 20 people looking for a new cool game to play, and dozens of text channels for all sorts of discussion.
 

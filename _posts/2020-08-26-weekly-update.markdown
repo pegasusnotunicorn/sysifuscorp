@@ -8,6 +8,7 @@ author-url: wonmin
 description: "Weekly update for the game, Welcome to Sysifus Corp. (August 19-26)"
 image: "/assets/images/posts/2020/08/26/game-crafter-shop.png"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 game-crafter:
   caption: "[Here's my game on The Game Crafter!](https://www.thegamecrafter.com/games/welcome-to-sysifus-corp)"

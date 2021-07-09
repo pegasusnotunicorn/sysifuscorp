@@ -8,6 +8,7 @@ author-url: wonmin
 description: "How the Project Cards went from index cards to what they look like today."
 image: "/assets/images/posts/2020/11/10/12.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 journeyimage1:
   images:
@@ -80,6 +81,8 @@ Project cards are the basic movement tiles used in my game to build a path aroun
 But they didn't used to look like this, nope. They were very very different indeed.
 
 Here's how they came to look like what they do today.
+
+<!--more-->
 
 {% include image.html img-details=page.journeyimage2 %}
 

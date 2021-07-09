@@ -7,6 +7,7 @@ author: Wonmin
 author-url: wonmin
 description: "Last few days of the campaign, my post on /r/iama, and a game review!"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 ---
 
@@ -15,6 +16,8 @@ Hey there! It's your corporate boy Wonmin back at it with another Kickstarter up
 So a lot has been happening in the past few days.
 
 [My post on /r/iama](https://www.reddit.com/r/IAmA/comments/lt2mna/in_the_last_5_years_i_quit_my_corporate_job_sold/) blew up and currently has over 11k upvotes and 575 comments on it which just blows my mind. I am just humbled by all the questions and the positive responses that came in. Amazing. And if you are a backer that found me from Reddit, thank you for joining and thank you for supporting me on this little adventure.
+
+<!--more-->
 
 We're coming up on the last few days of the campaign and I'm hoping to end it strong with $20k total raised, but if that doesn't happen, that's okay too! Because my goal was $15k and I definitely raised way over that 😍 If you can share this campaign with a buddy of yours then hopefully we can get to that $20k goal.
 

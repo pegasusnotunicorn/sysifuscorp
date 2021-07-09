@@ -7,6 +7,7 @@ author: Wonmin
 author-url: wonmin
 description: "How a board game comes to life: start with a few core mechanics and play it over and over again until something not-completely-garbage emerges. Then feed it love until you're ready to show it to the world. Then kill it and start all over again using the feedback you receive."
 image: "/assets/images/posts/2018/11/25/attention-image.jpg"
+excerpt_separator: <!--more-->
 
 attention-image:
   caption: "Here's a picture for your short attention span."
@@ -98,6 +99,8 @@ The TL;DR of how a board game comes to life:
 4. Kill it and start all over again using the feedback you receive.
 
 Read on below if you want more details! Relatedly, if you want to read about _why_ I am making a board game, [click here](../12/why-am-i-making-a-board-game-wonmin.html).
+
+<!--more-->
 
 ---
 

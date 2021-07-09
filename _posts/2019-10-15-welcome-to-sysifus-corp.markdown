@@ -8,6 +8,7 @@ author-url: wonmin
 description: "The Autumn 2019 update for Welcome to Sysifus Corp. A new name and beginnings of mass-production!"
 image: "/assets/images/posts/2019/10/15/sysifus-name.png"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 sysifus-name-logo:
   caption: "Welcome to Sysifus Corp--where we are always pushing our way to the top."
@@ -52,6 +53,8 @@ close-up-politics:
 Hello! It's been a hot minute since I've posted anything and that's 1000% my laziness at fault. Not going to lie, I haven't been 100% focused on this game for the good part of this past half-year.
 
 But that's going to change starting now.
+
+<!--more-->
 
 ---
 

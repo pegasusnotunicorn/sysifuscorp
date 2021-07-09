@@ -8,6 +8,7 @@ author-url: wonmin
 description: "Doing some basic social media posts to dip my toes in the pool of M A R K E T I N G"
 image: "/assets/images/posts/2020/08/04/game-crafter.png"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 office-politics:
   caption: "A series on introducing the Office Politics cards!"

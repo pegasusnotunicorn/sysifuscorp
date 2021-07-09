@@ -8,12 +8,15 @@ author-url: wonmin
 description: "Finding Sysifus (or Sisyphus) in the real world outside of this board game"
 image: "/assets/images/posts/2021/02/20/sisyphus_netflix.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 ---
 
 So here on this relaxing Sunday, I just wanted to post an update on some interesting things I've been seeing on the internet.
 
 Did you know that "Sisyphus Corporation" is a real life company? Yeah! It belongs to Jared Leto, the cult leader, joke of an actor (I mean Joker actor), and lead band vocalist. It is one of the reasons why I named my fictional company "Sysifus" instead.
+
+<!--more-->
 
 The story is that the Bosses who founded "Sysifus Corp" heard about the Greek myth of Sisyphus and thought that it was a great story about a relentless and tireless workforce. Hence they named their company after him. But they were too lazy (or too stupid) to bother spelling the name correctly.
 

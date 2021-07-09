@@ -8,6 +8,7 @@ author-url: wonmin
 description: "The December 2018 update for Welcome to Sysifus Corp. Updating mechanics and reducing complexity! Read more about it here."
 image: "/assets/images/posts/2018/12/15/december-analytics.png"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 version-notes:
   caption: "Click to see notes from this month's playtest sessions."
@@ -77,6 +78,8 @@ email-analytics:
 Welcome to a monthly series of blog posts that aims to capture the current state of development for _Welcome to Sysifus Corp_!
 
 These updates serve to keep track of how the game changes throughout its development and will be split into the following categories:
+
+<!--more-->
 
 1. [Game development](#game-development-updates)
 2. [Game marketing](#game-marketing-updates)

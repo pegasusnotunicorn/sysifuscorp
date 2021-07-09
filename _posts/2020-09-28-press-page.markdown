@@ -7,6 +7,7 @@ author: Wonmin
 author-url: wonmin
 description: "I made a Press page and the Kickstarter page."
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 ---
 

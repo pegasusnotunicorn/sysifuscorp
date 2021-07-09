@@ -8,6 +8,7 @@ author-url: management
 description: "From all of us here at Sysifus Corp, we wish you a happy holiday season!"
 image: "/assets/images/posts/2019/12/26/happy-holidays.svg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 holiday-splash:
   caption: "Have a wonderful holiday season! See you back at work in a few days!"

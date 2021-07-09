@@ -8,6 +8,7 @@ author-url: wonmin
 description: "Have a funny work story you want to immortalize in your very own custom Office Politics Card?"
 image: "/assets/images/posts/2021/02/22/custom_op.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 custom-op-convo:
   caption: "Message from Eunju, taken with her permission."
@@ -32,11 +33,13 @@ Hello hello. Been a minute since I updated.
 
 I just wanted to showcase another custom Office Politics card that I did for a backer friend of mine, Eunju.
 
+{% include image.html img-details=page.custom-op %}
+
+<!--more-->
+
 {% include image.html img-details=page.custom-op-convo %}
 
 And from that I was able to create this custom card for her!
-
-{% include image.html img-details=page.custom-op %}
 
 If you are interested in getting your very own custom Office Politics Card, please consider adding the addon to your pledge on the [pledge manager](https://gamefound.com/projects/pegasus-games/sysifuscorp#/)!
 

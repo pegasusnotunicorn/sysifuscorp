@@ -6,6 +6,7 @@ tags: personal
 author: Wonmin
 author-url: wonmin
 description: "My name is Wonmin (pronounced like one minute) and I wanted to explain how/why I decided to make a board game."
+excerpt_separator: <!--more-->
 
 party-image:
   caption: "I get asked this question a lot at these social gatherings people call &quot;parties.&quot;"
@@ -27,6 +28,8 @@ A bit about my background--
 4. I started an [internet service][domahub-website] with my brother to help people sell domain names.
 
 While it was gratifying to be my own boss and to build a product from the ground up, I knew deep down that it wasn't what I _truly_ wanted to do.
+
+<!--more-->
 
 ---
 

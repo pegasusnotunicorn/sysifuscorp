@@ -8,6 +8,7 @@ author-url: wonmin
 description: "The Boss Cards got a new look!"
 image: "/assets/images/posts/2021/02/15/old_boss_card.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 old_boss_card:
   caption: "Old and bald Boss cards"
@@ -30,6 +31,8 @@ Thanks to [this Reddit comment](https://www.reddit.com/r/boardgames/comments/lgw
 {% include image.html img-details=page.old_boss_card %}
 
 {% include image.html img-details=page.new_boss_card %}
+
+<!--more-->
 
 Let me know in the comments below what you think about these new cards!
 

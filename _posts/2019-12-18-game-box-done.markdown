@@ -8,6 +8,7 @@ author-url: wonmin
 description: "The game box sample is done!"
 image: "/assets/images/posts/2019/12/18/box (1).jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 game-sample:
   caption: "The game box sample is done!!!"
@@ -36,6 +37,8 @@ Here are some pictures of the finished game sample! Yay!!!
 {% include image.html img-details=page.game-sample %}
 
 {% include image.html img-details=page.game-sample-china %}
+
+<!--more-->
 
 The first sample run was a huge success. It feels so amazing to hold the (almost) final product in my hands.
 

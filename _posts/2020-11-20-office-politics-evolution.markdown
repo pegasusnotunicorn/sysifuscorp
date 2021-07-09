@@ -8,6 +8,7 @@ author-url: wonmin
 description: "How the Office Politics Cards went from index cards to what they look like today."
 image: "/assets/images/posts/2020/11/20/17.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 journeyimage1:
   images:
@@ -104,6 +105,8 @@ Office Politics Cards are the bread and butter of the strategic gameplay for my 
 Carefully strategizing which cards to use and managing your resources carefully is the key to winning.
 
 These cards didn't used to look like this though. Here's how they came to look like what they do today.
+
+<!--more-->
 
 {% include image.html img-details=page.journeyimage2 %}
 

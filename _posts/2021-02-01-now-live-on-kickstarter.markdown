@@ -8,6 +8,7 @@ author-url: wonmin
 description: "We are finally live on Kickstarter!"
 image: "/assets/images/posts/2021/02/01/now-launched.png"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 now_launched:
   caption: "Click here to be taken to the campaign!"
@@ -23,6 +24,8 @@ We finally launched on Kickstarter! After almost three years of development, I c
 {% include image.html img-details=page.now_launched %}
 
 I started making a board game back in May 2018. When I first started in my parents basement I had no idea how long this journey would take and had no idea of all the crazy stuff I'd experience along the way.
+
+<!--more-->
 
 If you told me that it would take almost three years to make a game and get it to Kickstarter, I probably would not have done it. I've had so many ups and downs during the process and many many times where I just wanted to throw it all away.
 

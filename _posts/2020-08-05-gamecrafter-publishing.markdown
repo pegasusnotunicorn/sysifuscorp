@@ -8,6 +8,7 @@ author-url: wonmin
 description: "Trying out print-on-demand using The Game Crafter"
 image: "/assets/images/posts/2020/08/04/game-crafter.png"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 game-crafter:
   caption: "The Game Crafter is a great place to get anything you need to prototype your game!"

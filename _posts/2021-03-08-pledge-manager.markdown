@@ -7,12 +7,15 @@ author: Wonmin
 author-url: wonmin
 description: "The pledge manager to my game is now live!"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 ---
 
 Hello :)
 
 By now all backers to my Kickstarter should have received an email from Gamefound, the company I am using to manage pledges. Please open the link, create an account, and select the items you purchased. You should already have a credit on your account for the amount you pledged on the Kickstarter campaign.
+
+<!--more-->
 
 If you are not a backer and you discovered this campaign too late, don't worry! You can still do a late pledge [via Gamefound](https://gamefound.com/projects/pegasus-games/sysifuscorp#/) and still get your copy at the same time as everyone else.
 

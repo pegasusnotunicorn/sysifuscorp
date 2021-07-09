@@ -17,8 +17,10 @@ wonmin-lee:
 
 Welcome to the development blog and website for _Sysifus Corp_!
 
-This website serves to document the process of creating a board game from scratch. A place to record all of the ups & downs, innermost secrets or fears, and the blood / sweat / tears that go into creating a tangible product.
+This website serves to document the process of creating a board game from scratch. A place to record all of the ups & downs, inner-most secrets, and the blood / sweat / tears that go into creating a tangible product.
+
 {% include image.html img-details=page.wonmin-lee %}
+
 I'd like to thank you for visiting and welcome you along on our journey. While I'm not 100% sure how it'll turn out, it's bound to be a fun adventure and hopefully we can create something amazing together.
 
 -- _Wonmin Lee, Game Designer_

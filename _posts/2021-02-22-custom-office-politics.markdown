@@ -8,6 +8,7 @@ author-url: wonmin
 description: "Have a funny work story you want to immortalize in your very own custom Office Politics Card?"
 image: "/assets/images/posts/2021/02/22/custom_op.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 custom-op-convo:
   caption: "Message from Nick, taken with his permission."
@@ -35,12 +36,14 @@ custom-op-promo:
 
 Here's an example of a custom Office Politics card that a backer, Nick, helped me create. When I asked him to give me a little blurb about himself, this is what he told me:
 
+{% include image.html img-details=page.custom-op %}
+
+<!--more-->
+
 {% include image.html img-details=page.custom-op-convo %}
 {% include image.html img-details=page.custom-op-convo2 %}
 
 And from that I was able to create this custom card for him!
-
-{% include image.html img-details=page.custom-op %}
 
 If you are interested in getting your very own custom Office Politics Card, please consider adding the addon to your pledge!
 

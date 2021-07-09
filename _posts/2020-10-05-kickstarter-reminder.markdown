@@ -8,6 +8,7 @@ author-url: wonmin
 description: "Click here to sign up and be reminded when the Kickstarter launches for Welcome to Sysifus Corp!"
 image: "/assets/images/posts/2020/10/05/ks.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 main-image:
   caption: "Click here to be reminded when we launch!"

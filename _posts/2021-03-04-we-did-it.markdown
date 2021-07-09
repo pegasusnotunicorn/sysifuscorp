@@ -7,6 +7,7 @@ author: Wonmin
 author-url: wonmin
 description: "My game is fully funded on Kickstarter!"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 ---
 
@@ -17,6 +18,8 @@ EIGHTEEN THOUSAND SEVEN HUNDRED FORTY FOUR.
 WOW.
 
 Thank you x 18744.
+
+<!--more-->
 
 Please keep an eye out in your inboxes for the link to the [pledge manager at Gamefound](https://gamefound.com/projects/pegasus-games/sysifuscorp#/). There you can sign up for an account and fill out your address details.
 

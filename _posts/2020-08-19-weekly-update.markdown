@@ -8,6 +8,7 @@ author-url: wonmin
 description: "Weekly update for the game, Welcome to Sysifus Corp. (August 12-19)"
 image: "/assets/images/posts/2020/08/19/cat-sniff.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 cat-sniff:
   caption: "Here's a pic of my cat sniffing the hell out of my game."

@@ -8,6 +8,7 @@ author-url: wonmin
 description: "Did a photoshoot for my game!"
 image: "/assets/images/posts/2020/09/02/overall_image.jpg"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 main-image:
   images:

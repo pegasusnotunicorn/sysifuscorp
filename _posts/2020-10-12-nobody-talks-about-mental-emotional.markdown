@@ -7,6 +7,7 @@ author: Wonmin
 author-url: wonmin
 description: "A look into some of the mental/emotional hurdles I faced when designing my board game."
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 ---
 
@@ -15,6 +16,8 @@ Is it just me or is there a butt-load of advice/guides on how to **make** a boar
 ----------
 
 Let me explain what I mean--
+
+<!--more-->
 
 * **The ever-present imposter syndrome.** *Who the hell am I and why would anyone buy my game? Nobody's gonna want to buy this. They'll know I'm a first time creator. I'm nobody.*
 * **Jealousy the ugly green monster.** *Holy shit that game looks AMAZING. Why does my game look like crap while theirs looks like a modern work of art?*

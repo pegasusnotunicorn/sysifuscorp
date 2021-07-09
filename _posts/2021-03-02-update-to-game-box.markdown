@@ -8,6 +8,7 @@ author-url: wonmin
 description: "The Game Box got a new look!"
 image: "/assets/images/posts/2021/03/02/game_box.gif"
 <!-- published: false -->
+excerpt_separator: <!--more-->
 
 game_box:
   caption: "Here's a GIF of the box in a 3D viewer! Click to play around with it yourself!"
@@ -23,6 +24,8 @@ So with just a little under 48 hours left in the campaign, I'd like to show you 
 [Click here to preview what the box looks like.](https://s3.amazonaws.com/www.thegamecrafter.com/box-viewer/index.html?v=1&box=largestoutbox&top=https://s3.amazonaws.com/files.thegamecrafter.com/df18b390dffca3855886e18a31c75e1d51b34ce1&bottom=https://s3.amazonaws.com/files.thegamecrafter.com/e364f84c6e37060790f9637e1598c523c1cc8ccb)
 
 {% include image.html img-details=page.game_box %}
+
+<!--more-->
 
 It's finally finished and everything should be good for final proofing with the manufacturer. Hopefully within the next week everything can begin. Really depends on how fast Kickstarter can get the funds to my bank account and how fast I can get the deposit to my manufacturer.
 
