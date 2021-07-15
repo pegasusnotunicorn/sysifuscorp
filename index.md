@@ -26,11 +26,12 @@ game-images-2:
   <iframe class="video" src="https://www.youtube.com/embed/9gfzyzldHC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Race around the office, backstab coworkers, suck up to the Bosses, and _be the first_ to be promoted.
+## Backstab coworkers while sucking up to the Bosses in a cut-throat race to the promotion!
 
-It's quite literally _"rat-race, the board game."_ Perfect for relieving all your work-related stresses out on your fellow coworkers.
+It's quite literally _"rat-race, the board game."_
+Perfect for relieving all your work-related stresses out on your fellow unsuspecting coworkers.
 
-Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter</a> on March 2021 and estimated to release to the general public by the end of August 2021.
+Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter on March 2021</a> and estimated to release to the general public by the end of August 2021.
 
 {% include stripe-button.html %}
 

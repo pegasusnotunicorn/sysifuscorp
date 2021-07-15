@@ -61,7 +61,7 @@ Here are some of the many ways you can get in touch with us:
 * [ **Reddit** - "If I don't get distracted by cat memes on the way."][reddit]
 * [ **BoardGameGeek** - "A board game doesn't actual exist unless it's on BGG."][bgg]
 
-**NOTE**: Anything that isn't an email has about a 25% chance of being read and replied to in a timely fashion.
+**NOTE**: Anything that isn't an email only has about a 25% chance of being replied to in a timely fashion.
 
 [email-us]: mailto:hello@sysifuscorp.com
 [instagram]: https://www.instagram.com/sysifuscorp
@@ -74,12 +74,6 @@ Here are some of the many ways you can get in touch with us:
 
 ### Want to write about Sysifus Corp?
 
-[Click here for press details](/press). Please get in contact with us if you are a reviewer / content creator and want a copy of the game to review.
+[Click here for press details](/press). Please get in contact with us if you are a reviewer / content creator and want a copy of the game to review. We can work out the details on shipping and logistics of the review via email.
 
----
-### Shy? Sign up below to lurk and read our updates!
-We aim to post once a week, sometimes more, sometimes way less.
-
-{% include mailchimp-form.html %}
-
----
+Thank you very much for helping spread the word!

@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@easypost/api": "^3.11.2",
+    "@sendgrid/mail": "^7.4.5",
     "stripe": "^8.160.0"
   }
 }

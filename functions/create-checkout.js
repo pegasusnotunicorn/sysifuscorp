@@ -8,7 +8,7 @@ exports.handler = async (event) => {
       allowed_countries: ['US', 'CA', "MX"],
     },
     mode: "payment",
-    success_url: `${process.env.URL}/success.html`,
+    success_url: `${process.env.URL}/.netlify/functions/create-label?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: process.env.URL,
     line_items: [
       {

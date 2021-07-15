@@ -3,7 +3,7 @@ layout: page
 title: Press
 header-title: Press Details
 permalink: /press
-sidebar_link: true
+sidebar_link: false
 description: "Click here for press information on Welcome to Sysifus Corp."
 
 game-details:
