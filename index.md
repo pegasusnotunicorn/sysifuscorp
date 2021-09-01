@@ -31,7 +31,7 @@ game-images-2:
 It's quite literally _"rat-race, the board game."_
 Perfect for relieving all your work-related stresses out on your fellow unsuspecting coworkers.
 
-Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter on March 2021</a> and estimated to release to the general public by the end of August 2021.
+Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter on March 2021</a> and now available for purchase!
 
 {% include stripe-button.html %}
 

@@ -16,6 +16,7 @@ Technical Notes:
 
 1. Start cmd prompt
 2. Type `jek` to compile website (if necessary, install Jekyll https://jekyllrb.com/docs/installation)
+3. Use `ntl dev` to start Netlify dev environment
 
 * Might need to `bundle update`
 * Or use `bundle exec jekyll serve`

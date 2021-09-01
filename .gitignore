@@ -4,3 +4,8 @@ _site
 *.ini
 .DS_Store
 .netlify
+dev.env
+/dev
+/functions/create-coupons.js
+/functions/get-promocodes.js
+/js/create-coupons.js
