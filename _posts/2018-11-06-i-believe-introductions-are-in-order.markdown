@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I believe introductions are in order."
-date: 2018-11-06 22:46:49 -0500
+date: 2018-11-06 12:00:00 -0500
 tags: personal
 author: Wonmin
 author-url: wonmin
