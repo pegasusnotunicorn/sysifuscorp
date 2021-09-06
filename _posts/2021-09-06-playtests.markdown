@@ -6,7 +6,7 @@ tags: update
 author: Wonmin
 author-url: wonmin
 description: "When making a board game, how do you know if you've playtested it enough?"
-image: "/assets/images/posts/2021/09/01/shippingsetup1.png"
+image: "/assets/images/posts/2021/09/06/survey.jpg"
 <!-- published: false -->
 excerpt_separator: <!--more-->
 
@@ -47,4 +47,4 @@ If you are a game developer and have a game you are looking to playtest your new
 
 - [The secrets of playtesting that no game developer will ever tell you!](/2018/12/02/secrets-of-playtesting.html)
 - [How to use Tinder to find playtesters for your new board game.](/2018/11/14/how-to-use-tinder-to-find-playtesters.html)
-- [Attending Protospiel Online](2021/01/14/protospiel-online)
+- [Attending Protospiel Online](/2021/01/14/protospiel-online)
