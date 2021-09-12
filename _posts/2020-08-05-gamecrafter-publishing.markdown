@@ -14,7 +14,7 @@ game-crafter:
   caption: "The Game Crafter is a great place to get anything you need to prototype your game!"
   images:
     - path: "/assets/images/posts/2020/08/04/game-crafter.png"
-      class: "is-half has-shadow"
+      class: "is-half"
 
 ---
 
@@ -26,6 +26,6 @@ With that said, I am currently exploring other options at just getting this game
 
 Here's a cool 3D box preview. Unfortunately, using a print-on-demand service means that I have to cut some of the cool custom designs I made. (Such as the suitcase handle on the top of the box). But hopefully there won't be much else I need to sacrifice to get this game out the door.
 
-<iframe src='https://gfycat.com/ifr/equatorialincompatiblehorsemouse' frameborder='0' scrolling='no' allowfullscreen width='640' height='453'></iframe>
+{% include iframe-embed.html iframe-link="https://gfycat.com/ifr/equatorialincompatiblehorsemouse" %}
 
 Stay safe out there! Wear a mask! Socially distance yourselves!

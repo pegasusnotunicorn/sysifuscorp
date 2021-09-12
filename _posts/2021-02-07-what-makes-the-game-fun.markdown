@@ -11,4 +11,4 @@ image: "/assets/images/posts/2021/02/07/what-make-fun.jpg"
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OOGUH8D_7qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include iframe-embed.html iframe-link="https://www.youtube.com/embed/OOGUH8D_7qI" %}

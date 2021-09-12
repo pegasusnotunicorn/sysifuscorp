@@ -29,9 +29,9 @@ meetup:
   caption: "My first time asking strangers to help."
   images:
     - path: "/assets/images/posts/2018/12/3/meetup-ss-1.png"
-      class: "has-shadow"
+      class: "has-shadow has-padding"
     - path: "/assets/images/posts/2018/12/3/meetup-ss-2.png"
-      class: "has-shadow"
+      class: "has-shadow has-padding"
 
 ---
 
@@ -110,7 +110,7 @@ The very first time I posted on Facebook about my game, I was met with a lot of 
 
 Thanks to this one post, I was able to schedule over ten different playtest sessions in the next coming few weeks. Amazing!
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1minlee%2Fposts%2F10156330368856698" width="100%" height="525" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+{% include iframe-embed.html iframe-link="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F1minlee%2Fposts%2F10156330368856698" %}
 
 #### Put yourself out there, strangers don't bite
 

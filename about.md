@@ -1,23 +1,22 @@
 ---
-layout: page
+layout: main
 title: About Us
 header-title: About
 permalink: /about
 sidebar_link: true
+showheader_mobile: true
 description: "Click here to learn more about the game Welcome to Sysifus Corp."
 
 wonmin-lee:
   caption: "Hello! My name is Wonmin. I'm the game designer."
   images:
     - path: "/assets/images/wonmin_lee.jpg"
-      class: "has-shadow"
     - path: "/assets/images/wonmin_lee2.jpg"
-      class: "has-shadow"
 ---
 
-Welcome to the development blog and website for _Sysifus Corp_!
+Welcome to the website and development blog for _Sysifus Corp_!
 
-This website serves to document the process of creating a board game from scratch. A place to record all of the ups & downs, inner-most secrets, and the blood / sweat / tears that go into creating a tangible product.
+The blog serves to document the process of creating and selling a board game from scratch. A place to record all of the ups & downs, inner-most secrets, and the blood / sweat / tears that go into creating a tangible product. I will share with you all of the lessons I learned and hopefully help you achieve your own goals.
 
 {% include image.html img-details=page.wonmin-lee %}
 
@@ -27,7 +26,4 @@ I'd like to thank you for visiting and welcome you along on our journey. While I
 
 ---
 
-### Stay up to date!
-We aim to post once a week, sometimes more, sometimes way less.
-
-{% include mailchimp-form.html %}
+{% include signup.html %}

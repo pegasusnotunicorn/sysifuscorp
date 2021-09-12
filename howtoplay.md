@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: main
 title: How To Play
 header-title: How To Play
 permalink: /howtoplay
 sidebar_link: true
+showheader_mobile: true
 description: "Click here to learn how to play the game Welcome to Sysifus Corp."
 
 bosses:
@@ -31,7 +32,7 @@ office-politics:
     - path: "/assets/images/main_office_politics.png"
 ---
 
-The objective is to race around the office, backstab coworkers, suck up to the Bosses, and **be the first** to make it back to the Performance Review tile.
+The objective of the game is to race around the office, backstab coworkers, suck up to the Bosses, and **be the first** to make it back to the Performance Review tile.
 
 It's quite literally _"rat-race, the board game."_
 
@@ -39,7 +40,7 @@ It's quite literally _"rat-race, the board game."_
 
 ---
 
-### Gameplay at a glance
+## Gameplay at a glance
 
 <div id="main-steps-container">
   <div class="main-steps-block">
@@ -60,7 +61,16 @@ It's quite literally _"rat-race, the board game."_
 
 ---
 
-### More details
+## Playthrough and how-to-play videos
+
+* [Just let Terence explain it - How to play](https://youtu.be/odPoq8RUq98)
+* [Board Game Empire - How to play](https://youtu.be/-tRSgOXT6ZM)
+* [Cardboard Stacker - Preview and playthough](https://youtu.be/NGZcS1XwG-o)
+* [Unfiltered Gamer - Review and how-to-play](https://youtu.be/qqVmOL7WBqQ)
+
+---
+
+## More details
 
 {% include image.html img-details=page.bosses %}
 
@@ -76,7 +86,4 @@ Chaining together multiple Office Politics Cards to create advantages schemes is
 
 ---
 
-### Stay up to date!
-We aim to post once a week, sometimes more, sometimes way less.
-
-{% include mailchimp-form.html %}
+{% include signup.html %}

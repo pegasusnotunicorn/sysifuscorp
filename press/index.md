@@ -1,9 +1,10 @@
 ---
-layout: page
-title: Press
+layout: main
+title: Press Details
 header-title: Press Details
 permalink: /press
 sidebar_link: false
+showheader_mobile: true
 description: "Click here for press information on Welcome to Sysifus Corp."
 
 game-details:
@@ -185,9 +186,7 @@ The logo symbolizes [Sisyphus](https://en.wikipedia.org/wiki/Sisyphus), the pers
 
 
 ---
-### Shy? Sign up below to lurk and read our updates!
-We aim to post once a week, sometimes more, sometimes way less.
 
-{% include mailchimp-form.html %}
+{% include signup.html %}
 
 ---

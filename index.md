@@ -1,7 +1,12 @@
 ---
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: page
+layout: main
 header-title: A cut-throat corporate board game
+
+quote:
+  images:
+    - path: "/assets/images/game-quote.png"
+      class: "is-full"
 
 game-images:
   images:
@@ -22,22 +27,33 @@ game-images-2:
 
 ---
 
+## Hate your job? Angry with your coworkers?
+
+<p>Need to relieve that stress in a way that won’t get you fired or sued?</p>
+
+We have the perfect game for you. _Welcome to Sysifus Corp._
+
 <div class="video-container is-threequarter">
   <iframe class="video" src="https://www.youtube.com/embed/9gfzyzldHC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Backstab coworkers while sucking up to the Bosses in a cut-throat race to the promotion!
+## Backstab your unsuspecting coworkers in a tactical race to the promotion!
 
-It's quite literally _"rat-race, the board game."_
-Perfect for relieving all your work-related stresses out on your fellow unsuspecting coworkers.
+Quite literally _"rat-race, the board game."_
+
+Perfect for relieving all your work-related stresses out on your fellow coworkers in a HR-approved and totally legal manner.
 
 Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter on March 2021</a> and now available for purchase!
 
 {% include stripe-button.html %}
 
+<br>
+<br>
+Or keep scrolling down to learn more!
+
 ---
 
-## What makes the game fun in 30 seconds
+## What makes this game fun explained in 30 seconds
 
 <div class="video-container is-threequarter">
   <iframe class="video" src="https://www.youtube.com/embed/OOGUH8D_7qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -47,13 +63,13 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
 
 ## What are people saying?
 
-<img src="/assets/images/game-quote.png" class="is-full" />
+{% include image.html img-details=page.quote %}
 {% include image.html img-details=page.game-images %}
 {% include image.html img-details=page.game-images-2 %}
 
 ---
 
-## If you enjoy any of the below mechanics then this game is for you!
+## If you like any of these mechanics then this game is for you!
 
 <div class="gameIconsWrapper">
   <div class="gameIconWrapper">
@@ -84,7 +100,4 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
 
 ---
 
-## Stay up to date!
-We aim to post once a week, sometimes more, sometimes way less. Depends on our mood.
-
-{% include mailchimp-form.html %}
+{% include signup.html %}

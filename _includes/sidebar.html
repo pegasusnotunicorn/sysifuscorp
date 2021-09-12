@@ -1,15 +1,12 @@
 <div id="sidebar">
   <header>
     <p class="lead lead-top">Welcome to</p>
-    <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
-      <a href={% if page.layout == "post" %}"/blog"{% else %}"/"{% endif %}>
-        {% unless page.url == "/" %}
-          <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
-        {% endunless %}
+    <div class="site-title">
+      <a href="/">
         {{ site.title }}
       </a>
-      <img id="logo-transparent" src="/assets/images/logo_transparent.png" />
-    </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
+      <img class="logo-transparent" src="/assets/images/logo_transparent.png" />
+    </div>
     <p class="lead lead-bot">{{ site.description }}</p>
     {% include stripe-button.html %}
   </header>
@@ -19,3 +16,19 @@
     {% include copyright.html %}
   </div>
 </div>
+
+<div id="sidebar-open">
+  <span id="sidebarlines" class="sidebaricon" onclick="toggleNav()">☰</span>
+  <span id="sidebarx" class="sidebaricon" onclick="toggleNav()">×</span>
+</div>
+
+
+<script>
+
+  function toggleNav() {
+    document.getElementById("sidebar-open").classList.toggle("is-active");
+    document.getElementById("sidebar").classList.toggle("is-active");
+    document.getElementsByClassName("container").classList.toggle("is-active");
+  }
+
+</script>

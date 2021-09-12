@@ -22,12 +22,12 @@ The story is that the Bosses who founded "Sysifus Corp" heard about the Greek my
 
 And did you know? There is now a Korean drama called "Sisyphus" on Netflix. I haven't seen the episodes yet but might check it out once all the episodes are available.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-qMlwHnQmGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include iframe-embed.html iframe-link="https://www.youtube.com/embed/-qMlwHnQmGM" %}
 
 And now back to my game 😂
 
 Thanks to the folks over at [Boardgame Empire](https://www.youtube.com/c/BoardGameEmpire/featured) for a playthrough video of my game!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1zmt6_dwHuo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include iframe-embed.html iframe-link="https://www.youtube.com/embed/1zmt6_dwHuo" %}
 
 So what do you think? Would you name your company after the Greek myth of Sisyphus? Does the Netflix show look interesting to you? I personally would NOT name my company after a dead king who was punished to forever roll a boulder up a cliff...but that's just me I guess.

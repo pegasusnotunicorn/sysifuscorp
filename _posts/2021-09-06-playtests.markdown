@@ -14,15 +14,20 @@ surveys:
   caption: "Various social media responses"
   images:
     - path: "/assets/images/posts/2021/09/06/facebooksurvey.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2021/09/06/redditsurvey.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2021/09/06/bggsurvey.jpg"
+      class: "has-shadow"
     - path: "/assets/images/posts/2021/09/06/twittersurvey.jpg"
+      class: "has-shadow"
 
 surveygraph:
   caption: "Added up into one graph."
   images:
     - path: "/assets/images/posts/2021/09/06/survey.jpg"
-
+      class: "has-shadow"
+      
 ---
 
 I did a few surveys around the internet a few weeks back, asking everyone the same question:

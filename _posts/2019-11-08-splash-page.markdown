@@ -14,7 +14,7 @@ sysifus-splash:
   caption: "What the game box / front cover might look like."
   images:
     - path: "/assets/images/posts/2019/11/08/splash.png"
-      class: "is-half has-shadow"
+      class: "is-half has-padding has-shadow"
 
 ---
 

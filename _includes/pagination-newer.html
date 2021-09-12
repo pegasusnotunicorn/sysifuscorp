@@ -1,0 +1,6 @@
+{% if paginator.previous_page %}
+<a class="pagination-item newer"
+   href="{{ paginator.previous_page_path | relative_url }}">
+  << Newer posts
+</a>
+{% endif %}

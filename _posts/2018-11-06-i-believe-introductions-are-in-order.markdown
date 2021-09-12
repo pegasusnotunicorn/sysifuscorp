@@ -19,18 +19,17 @@ wonmin-and-grace:
 
 Welcome to our first ever blog post for our new board game--_Welcome to Sysifus Corp_. What better way to kick things off than to introduce the team and explain our goals for this blog.
 
----
-
 {% include image.html img-details=page.wonmin-and-grace %}
 
 <!--more-->
+
+---
 
 Hello! My name is [Wonmin][wonmin-website] (pronounced like 1 minute). I am based in NYC and am currently 27 years old. My duties include:
 
 * designing the game mechanics
 * writing blog posts
 * and a billion other odd tasks
-
 
 I am joined by my amazing designer friend, [Grace](https://www.midorikoa.com)! She is based in Boston and is currently 25 years old. Her duties include:
 

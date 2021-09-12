@@ -14,12 +14,13 @@ custom-op-convo:
   caption: "Message from Eunju, taken with her permission."
   images:
     - path: "/assets/images/posts/2021/03/16/custom_op_convo.jpg"
+      class: "has-shadow"
 
 custom-op:
   caption: "A 100% custom Office Politics card just for Eunju!"
   images:
     - path: "/assets/images/posts/2021/03/16/custom_op.jpg"
-      class: "has-shadow is-half"
+      class: "has-shadow is-fourth"
 
 custom-op-promo:
   caption: "Get your very own custom Office Politics Card!"

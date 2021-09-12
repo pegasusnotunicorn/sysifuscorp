@@ -14,7 +14,7 @@ holiday-splash:
   caption: "Have a wonderful holiday season! See you back at work in a few days!"
   images:
     - path: "/assets/images/posts/2019/12/26/happy-holidays.svg"
-      class: "is-half has-shadow"
+      class: "is-half"
 
 ---
 

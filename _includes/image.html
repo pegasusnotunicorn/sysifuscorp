@@ -1,7 +1,7 @@
 
 <p class="image-wrapper">
   {% for image in include.img-details.images %}
-    <a class="image-link {{ include.class }}" target="_blank" href="{{ image.path }}"><img src="{{ image.path }}" class="{{ image.class }}" alt="{{ include.img-details.caption }}" /></a>
+    <a class="image-link {{ image.class }}" target="_blank" href="{{ image.path }}"><img src="{{ image.path }}" alt="{{ include.img-details.caption }}" /></a>
   {% endfor %}
 </p>
 

@@ -20,12 +20,15 @@ shippingsetup:
 
 ---
 
-It's been almost 3 whole years since [I started this website and blog](/2018/11/06/i-believe-introductions-are-in-order.html). And I cannot believe it took so long but we're finally here. You can now get your very own copy of _Welcome to Sysifus Corp_ by clicking the red BUY button on this page.
+It's been almost 3 whole years since [I started this website and blog](/2018/11/06/i-believe-introductions-are-in-order.html). And I cannot believe it took so long but we're finally here. You can now get your very own copy of _Welcome to Sysifus Corp_ by clicking the big shiny red button.
 
-<div class="video-container is-half">
-<iframe class="video" src="https://www.youtube.com/embed/pE6mT355pqI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include stripe-button.html %}
 
+<br>
+
+{% include iframe-embed.html iframe-link="https://www.youtube.com/embed/pE6mT355pqI" %}
+
+<br>
 
 <!--more-->
 
