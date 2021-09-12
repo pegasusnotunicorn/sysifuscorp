@@ -71,7 +71,7 @@ Or keep scrolling down to learn more!
 
 ## If you like any of these mechanics then this game is for you!
 
-<div class="gameIconsWrapper">
+<div class="gameIconsWrapper is-display-flex">
   <div class="gameIconWrapper">
     <img class="gameIcon" src="/assets/images/icons/card chaining.png" />
     <p class="gameIconText">Card Chaining</p>

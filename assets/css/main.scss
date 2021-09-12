@@ -37,6 +37,10 @@ article {
   opacity:0 !important;
 }
 
+is-display-flex{
+  display:flex;
+}
+
 .is-hidden-mobile {
   display:none !important;
   @media (min-width: $large-breakpoint) {
@@ -163,6 +167,7 @@ input[type="submit"]:hover, button:hover {
 
   .lead-bot {
     border-top:1px solid white;
+    text-align:left;
   }
 
   @media (min-width: $large-breakpoint) {
