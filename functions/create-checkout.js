@@ -25,6 +25,12 @@ exports.handler = async (event) => {
     consent_collection: {
       promotions: 'auto',
     },
+    after_expiration: {
+      recovery: {
+        enabled: true,
+        allow_promotion_codes: true
+      },
+    },
   });
 
   return {
