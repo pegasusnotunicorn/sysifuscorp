@@ -22,14 +22,15 @@ exports.handler = async (event) => {
     ],
     shipping_rates: [process.env.SHIPPING_RATE_AMERICA],
     allow_promotion_codes: true,
-    expires_at: Math.floor(Date.now() / 1000) + (3600 * 1),   //configured to expire after 1 hours
+    expires_at: Math.floor(Date.now() / 1000) + (3600 * 1),   //configured to expire after 1 hour
     consent_collection: {
       promotions: 'auto',
     },
     after_expiration: {
       recovery: {
         enabled: true,
-        allow_promotion_codes: true
+        allow_promotion_codes: true,
+        expires_at: Math.floor(Date.now() / 1000) + (3600 * 1) + (3600 * 24)    //configured to expire after 1 hour + 1 day
       },
     },
   });
