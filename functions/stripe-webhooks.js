@@ -16,7 +16,7 @@ const notifyMyself = async (messageDetails) => {
   };
 
   try {
-    await client.send(data);
+    await sgMail.send(data);
   } catch (err) {
     console.log(err);
   }
@@ -32,17 +32,17 @@ exports.handler = async ({ body, headers }) => {
     );
 
     // only do stuff if this is a successful Stripe Checkout purchase
-    if (stripeEvent.type === 'checkout.session.expired') {
+    if (stripeEvent.type === 'checkout.session.completed') {
       const session = stripeEvent.data.object;
       const paymentIntent = await stripe.paymentIntents.retrieve(session.payment_intent);
 
       //everything looks good, lets send the email
       if (session.customer_details
         && session.customer_details.email
-        && session.after_expiration
-        && session.after_expiration.recovery
-        && session.consent
-        && session.consent.promotions === 'opt_in'
+        // && session.after_expiration
+        // && session.after_expiration.recovery
+        // && session.consent
+        // && session.consent.promotions === 'opt_in'
       ){
         const email = session.customer_details.email;
 
