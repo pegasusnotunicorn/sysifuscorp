@@ -3,6 +3,25 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_KEY);
 
+//send an email to myself
+const notifyMyself = async (messageDetails) => {
+  const data = {
+    to: process.env.SENDGRID_FROM_EMAIL,
+    from: {
+      email: process.env.SENDGRID_FROM_EMAIL,
+      name: "Sup biatch",
+    },
+    subject: messageDetails.subject,
+    html: messageDetails.message,
+  };
+
+  try {
+    await client.send(data);
+  } catch (err) {
+    errorCatch(err);
+  }
+}
+
 exports.handler = async ({ body, headers }) => {
   try {
     // check the webhook to make sure it’s valid
@@ -21,6 +40,8 @@ exports.handler = async ({ body, headers }) => {
         && session.customer_details.email
         && session.after_expiration
         && session.after_expiration.recovery
+        && session.consent
+        && session.consent.promotions === 'opt_in'
       ){
         const email = session.customer_details.email;
         const recoveryUrl = (session.after_expiration) ? session.after_expiration.recovery.url : "https://sysifuscorp.com/buy";
@@ -43,12 +64,7 @@ exports.handler = async ({ body, headers }) => {
          template_id:"d-6dbf4eccd288476eab8255666fc3b3d9",
         };
         await sgMail.send(msg);
-        await sgMail.send({
-          to: "pegasusnotunicorn+sendgrid@gmail.com",
-          from: {
-            email: process.env.SENDGRID_FROM_EMAIL,
-            name: "Wonmin Lee",
-          },
+        await notifyMyself({
           subject: `A cart abandon email was sent to ${email}`,
           html: `<h1><a href="https://app.sendgrid.com/">Check sendgrid</a></h1>`,
         });
@@ -61,7 +77,6 @@ exports.handler = async ({ body, headers }) => {
     };
   } catch (err) {
     console.log(`Stripe webhook failed with ${err}`);
-
     return {
       statusCode: 400,
       body: `Webhook Error: ${err.message}`,
