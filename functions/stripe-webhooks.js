@@ -32,7 +32,7 @@ exports.handler = async ({ body, headers }) => {
     );
 
     // only do stuff if this is a successful Stripe Checkout purchase
-    if (stripeEvent.type === 'checkout.session.completed') {
+    if (stripeEvent.type === 'checkout.session.expired') {
       const session = stripeEvent.data.object;
 
       //everything looks good, lets send the email
@@ -63,8 +63,8 @@ exports.handler = async ({ body, headers }) => {
          },
          template_id:"d-6dbf4eccd288476eab8255666fc3b3d9",
          asm: {
-           group_id: 16361
-         }
+           group_id: 16361,
+         },
         };
         await sgMail.send(msg);
         await notifyMyself({
