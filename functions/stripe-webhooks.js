@@ -12,13 +12,13 @@ const notifyMyself = async (messageDetails) => {
       name: "Sup biatch",
     },
     subject: messageDetails.subject,
-    html: messageDetails.message,
+    html: messageDetails.html,
   };
 
   try {
     await client.send(data);
   } catch (err) {
-    errorCatch(err);
+    console.log(err);
   }
 }
 
@@ -34,6 +34,7 @@ exports.handler = async ({ body, headers }) => {
     // only do stuff if this is a successful Stripe Checkout purchase
     if (stripeEvent.type === 'checkout.session.expired') {
       const session = stripeEvent.data.object;
+      const paymentIntent = await stripe.paymentIntents.retrieve(session.payment_intent);
 
       //everything looks good, lets send the email
       if (session.customer_details
@@ -44,33 +45,53 @@ exports.handler = async ({ body, headers }) => {
         && session.consent.promotions === 'opt_in'
       ){
         const email = session.customer_details.email;
-        const recoveryUrl = (session.after_expiration) ? session.after_expiration.recovery.url : "https://sysifuscorp.com/buy";
 
-        const msg = {
-          personalizations:[
-            {
-              to: {
-                email: email,
-              },
-              dynamic_template_data:{
-                "weblink": recoveryUrl,
+        //send abandon email function
+        const sendAbandonEmail = async (template_id, abandon_email) => {
+          await sgMail.send({
+            personalizations:[
+              {
+                to: {
+                  email: email,
+                },
+                dynamic_template_data:{
+                  weblink: (session.after_expiration) ? session.after_expiration.recovery.url : "https://sysifuscorp.com/buy",
+                }
               }
-            }
-         ],
-         from: {
-           email: process.env.SENDGRID_FROM_EMAIL,
-           name: "Wonmin Lee"
-         },
-         template_id:"d-6dbf4eccd288476eab8255666fc3b3d9",
-         asm: {
-           group_id: 16361,
-         },
-        };
-        await sgMail.send(msg);
-        await notifyMyself({
-          subject: `A cart abandon email was sent to ${email}`,
-          html: `<h1><a href="https://app.sendgrid.com/">Check sendgrid</a></h1>`,
-        });
+           ],
+           from: {
+             email: process.env.SENDGRID_FROM_EMAIL,
+             name: "Wonmin Lee"
+           },
+           template_id: template_id,
+           asm: {
+             group_id: 16361,
+           },
+         });
+
+         //update the payment intent so we know that the first email was sent
+         await stripe.paymentIntents.update(
+           session.payment_intent,
+           {metadata: {abandon_email: abandon_email}}
+         );
+
+         //notify myself that an abandon email was sent
+         await notifyMyself({
+           subject: `A cart abandon email was sent to ${email}`,
+           html: `<h1><a href="https://app.sendgrid.com/">Check sendgrid</a></h1>`,
+         });
+        }
+
+        //send email depending on which one we've already sent
+        if (!paymentIntent.metadata.abandon_email){
+          sendAbandonEmail("d-6dbf4eccd288476eab8255666fc3b3d9", "first");
+        }
+        else if (paymentIntent.metadata.abandon_email === "first"){
+          sendAbandonEmail("d-215dc230e7aa4d7282aa664b33e1aef2", "second");
+        }
+        else if (paymentIntent.metadata.abandon_email === "second"){
+          sendAbandonEmail("d-d27ccf184dfc49eeb5bf6fd4dd829063", "third");
+        }
       }
     }
 
