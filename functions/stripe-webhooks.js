@@ -13,23 +13,46 @@ exports.handler = async ({ body, headers }) => {
     );
 
     // only do stuff if this is a successful Stripe Checkout purchase
-    if (stripeEvent.type === 'checkout.session.expired') {
+    if (stripeEvent.type === 'checkout.session.completed') {
       const session = stripeEvent.data.object;
-      const email = session.customer_details?.email
-      const recoveryUrl = session.after_expiration?.recovery?.url
 
-      const msg = {
-        personalizations:[
-          {
-            to: email,
-            dynamic_template_data:{
-              "weblink": recoveryUrl,
+      //everything looks good, lets send the email
+      if (session.customer_details
+        && session.customer_details.email
+        && session.after_expiration
+        && session.after_expiration.recovery
+      ){
+        const email = session.customer_details.email;
+        const recoveryUrl = (session.after_expiration) ? session.after_expiration.recovery.url : "https://sysifuscorp.com/buy";
+
+        const msg = {
+          personalizations:[
+            {
+              to: {
+                email: email,
+              },
+              dynamic_template_data:{
+                "weblink": recoveryUrl,
+              }
             }
-          }
-       ],
-       template_id:"d-6dbf4eccd288476eab8255666fc3b3d9"
-      };
-      await sgMail.send(msg);
+         ],
+         from: {
+           email: process.env.SENDGRID_FROM_EMAIL,
+           name: "Wonmin Lee"
+         },
+         template_id:"d-6dbf4eccd288476eab8255666fc3b3d9",
+        };
+        await sgMail.send(msg);
+        await sgMail.send({
+          to: "pegasusnotunicorn+sendgrid@gmail.com",
+          from: {
+            email: process.env.SENDGRID_FROM_EMAIL,
+            name: "Wonmin Lee",
+          },
+          subject: `A cart abandon email was sent to ${email}`,
+          html: `<h1><a href="https://app.sendgrid.com/">Check sendgrid</a></h1>`,
+        });
+      }
     }
 
     return {
