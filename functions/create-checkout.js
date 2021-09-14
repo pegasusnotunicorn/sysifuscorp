@@ -30,7 +30,6 @@ exports.handler = async (event) => {
       recovery: {
         enabled: true,
         allow_promotion_codes: true,
-        expires_at: Math.floor(Date.now() / 1000) + (3600 * 1) + (3600 * 24)    //configured to expire after 1 hour + 1 day
       },
     },
   });
