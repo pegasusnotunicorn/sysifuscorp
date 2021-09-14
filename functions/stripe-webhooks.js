@@ -62,6 +62,9 @@ exports.handler = async ({ body, headers }) => {
            name: "Wonmin Lee"
          },
          template_id:"d-6dbf4eccd288476eab8255666fc3b3d9",
+         asm: {
+           group_id: 16361
+         }
         };
         await sgMail.send(msg);
         await notifyMyself({
