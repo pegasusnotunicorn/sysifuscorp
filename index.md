@@ -27,7 +27,7 @@ game-images-2:
 
 ---
 
-## Hate your job? Angry with your coworkers?
+## Stressful job? Angry with your coworkers?
 
 <p>Need to relieve that stress in a way that won’t get you fired or sued?</p>
 
@@ -47,25 +47,13 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
 
 {% include stripe-button.html %}
 
-<br>
-<br>
-Or keep scrolling down to learn more!
-
 ---
 
-## What makes this game fun explained in 30 seconds
+## What makes this game fun in 30 seconds
 
 <div class="video-container is-threequarter">
   <iframe class="video" src="https://www.youtube.com/embed/OOGUH8D_7qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
----
-
-## What are people saying?
-
-{% include image.html img-details=page.quote %}
-{% include image.html img-details=page.game-images %}
-{% include image.html img-details=page.game-images-2 %}
 
 ---
 
@@ -99,5 +87,22 @@ Or keep scrolling down to learn more!
 </div>
 
 ---
+
+## 69 seconds of 4K HD unboxing ASMR
+
+<div class="video-container is-threequarter">
+  <iframe class="video" src="https://www.youtube.com/embed/faNubeIbLTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+---
+
+## What are people saying?
+
+{% include image.html img-details=page.quote %}
+{% include image.html img-details=page.game-images %}
+{% include image.html img-details=page.game-images-2 %}
+
+---
+
 
 {% include signup.html %}

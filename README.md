@@ -19,7 +19,7 @@ Technical Notes:
 3. Use `ntl dev` to start Netlify dev environment
 
 * Might need to `bundle update`
-* Or use `bundle exec jekyll serve`
+* Or use `bundle exec jekyll serve --force-polling`
 
 Markdown guide:
 https://www.markdownguide.org/basic-syntax
