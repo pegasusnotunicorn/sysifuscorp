@@ -29,8 +29,8 @@ layout: page
 <div class="logo-top-mobile is-hidden-desktop">
   <p class="lead lead-top">Welcome to</p>
   <div class="site-title">
-    <p>{{ site.title }}</p>
-    <img class="logo-transparent" src="/assets/images/logo_transparent.png" />
+    <a href="/" class="no-select">{{ site.title }}</a>
+    <a href="/" class="no-select"><img class="logo-transparent" src="/assets/images/logo_transparent.png" /></a>
   </div>
 </div>
 
