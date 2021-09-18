@@ -46,6 +46,7 @@ flipBox = () => {
 <div class="heroImage">
   <p id="boxFlipper" class="flipBox" onclick="flipBox()">hey! click here to flip the box.</p>
   <img id="heroImage" src="/assets/images/gallery/Box1.jpg" />
+  <img class="is-invisible" src="/assets/images/gallery/Box2.jpg" />
 </div>
 
 ## What makes this game fun in 30 seconds
