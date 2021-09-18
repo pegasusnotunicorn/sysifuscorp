@@ -14,20 +14,30 @@ game-details:
 
 game-images:
   images:
-    - path: "/assets/images/gallery/11-min.jpg"
     - path: "/assets/images/gallery/1-min.jpg"
     - path: "/assets/images/gallery/2-min.jpg"
     - path: "/assets/images/gallery/3-min.jpg"
     - path: "/assets/images/gallery/4-min.jpg"
+    - path: "/assets/images/gallery/5-min.jpg"
+    - path: "/assets/images/gallery/6-min.jpg"
 
 game-images-2:
   images:
-    - path: "/assets/images/gallery/5-min.jpg"
-    - path: "/assets/images/gallery/6-min.jpg"
     - path: "/assets/images/gallery/7-min.jpg"
     - path: "/assets/images/gallery/8-min.jpg"
     - path: "/assets/images/gallery/9-min.jpg"
     - path: "/assets/images/gallery/10-min.jpg"
+    - path: "/assets/images/gallery/11-min.jpg"
+    - path: "/assets/images/gallery/12-min.jpg"
+
+game-images-3:
+  images:
+    - path: "/assets/images/gallery/13-min.jpg"
+    - path: "/assets/images/gallery/14-min.jpg"
+    - path: "/assets/images/gallery/15-min.jpg"
+    - path: "/assets/images/gallery/16-min.jpg"
+    - path: "/assets/images/gallery/17-min.jpg"
+    - path: "/assets/images/gallery/18-min.jpg"
 
 splash-images:
   images:
@@ -128,6 +138,7 @@ We are currently looking for game reviewers who will review the game for us! Ple
 If you need any high quality versions of the images, please feel free to reach out.
 {% include image.html img-details=page.game-images %}
 {% include image.html img-details=page.game-images-2 %}
+{% include image.html img-details=page.game-images-3 %}
 
 #### Logo
 The logo symbolizes [Sisyphus](https://en.wikipedia.org/wiki/Sisyphus), the person who was punished with endlessly pushing a boulder up a hill in Ancient Greek mythology.

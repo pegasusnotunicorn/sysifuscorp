@@ -75,9 +75,9 @@ Here are some of the many ways you can get in touch with us:
 
 ## Are you a #boardgame content creator?
 
-[Click here for press details](/press). 
+[Click here for press details](/press).
 
-Please get in contact with us if you are a reviewer / content creator and want a copy of the game to review. We can work out the details on shipping and logistics of the review via email.
+Please get in contact with me if you are a reviewer / content creator and want a copy of the game to review. We can work out the details on shipping and logistics of the review via email.
 
 Thank you very much for helping spread the word!
 

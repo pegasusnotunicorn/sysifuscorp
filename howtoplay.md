@@ -36,7 +36,7 @@ The objective of the game is to race around the office, backstab coworkers, suck
 
 It's quite literally _"rat-race, the board game."_
 
-[Click here for the full rulebook PDF!](/rulebook.pdf)
+<a class="buttonlink is-blue" href="/rulebook.pdf">Click here for the full rulebook PDF!</a>
 
 ---
 

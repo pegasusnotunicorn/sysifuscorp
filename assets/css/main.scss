@@ -1,16 +1,16 @@
 ---
 ---
 $sidebar-width: 23rem !default;
+$sidebar-smaller-width: 15rem !default;
+$mid-breakpoint: 75rem !default;
+$large-breakpoint: 55rem !default;
+
 @import "hydeout";
 
 //<editor-fold>------------------------------------------GLOBAL---------------------------------------
 
 h2{
   margin-bottom:2rem;
-}
-
-.content {
-  max-width:none;
 }
 
 img {
@@ -44,7 +44,7 @@ is-display-flex{
 .is-hidden-mobile {
   display:none !important;
   @media (min-width: $large-breakpoint) {
-    display:initial;
+    display:initial !important;
   }
 }
 
@@ -89,9 +89,9 @@ is-display-flex{
   }
 }
 
-.buttonlink.is-yellow{background-color:#fbc95f;color:black;}
-.buttonlink.is-blue{background-color:#8b8ec5;}
-.buttonlink.is-green{background-color:#81c99e;}
+.buttonlink.is-yellow, .button.is-yellow{background-color:#fbc95f;color:black;}
+.buttonlink.is-blue, .button.is-blue{background-color:#8b8ec5;}
+.buttonlink.is-green, .button.is-green{background-color:#81c99e;}
 
 .buttonlink:hover{
   text-decoration: none;
@@ -170,10 +170,13 @@ input[type="submit"]:hover, button:hover {
     text-align:left;
   }
 
+  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+    width: $sidebar-smaller-width !important;
+  }
+
   @media (min-width: $large-breakpoint) {
     text-align:left;
-    width: 23rem;
-    min-width: 450px !important;
+    width: $sidebar-width;
     position:relative!important;
     display:flex !important;
   }
@@ -205,6 +208,11 @@ input[type="submit"]:hover, button:hover {
 
 .logo-transparent {
   width: 2.5rem;
+
+  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+    float: right;
+    margin-top: -3.2rem;
+  }
 }
 
 .lead-top {
@@ -288,6 +296,12 @@ input[type="submit"]:hover, button:hover {
 
 .container{
   padding-top:39px;
+  overflow-x:hidden;
+
+  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+    padding-left:$section-spacing !important;
+    padding-right:$section-spacing !important;
+  }
 
   @media (min-width: $large-breakpoint) {
     padding-top:$section-spacing !important;
@@ -302,6 +316,10 @@ input[type="submit"]:hover, button:hover {
   margin-top:0.5rem;
   padding-top:5px;
   color:black;
+}
+
+.content {
+  max-width:none;
 }
 
 //</editor-fold>
@@ -373,6 +391,58 @@ img {
 
 //<editor-fold>------------------------------------------MAIN PAGE---------------------------------------
 
+.flipBox{
+  position: absolute;
+  z-index: 999;
+  color: white;
+  transform: rotate(-4.5deg);
+  cursor: pointer;
+  font-size:10px;
+  opacity:.75;
+  left: 20%;
+  top: 12%;
+
+  @media (min-width: $large-breakpoint) {
+    font-size:small;
+    left: 35%;
+    top: 17%;
+  }
+}
+.flipBox.is-flipped{
+  top:11%;
+  @media (min-width: $large-breakpoint) {
+    top: 15%;
+  }
+}
+.flipBox:hover{
+  opacity:1;
+}
+
+.heroImage{
+  position:relative;
+  margin-left: -2rem;
+  width:100vw;
+  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+    width: calc(100vw - #{$sidebar-smaller-width}) !important;
+    margin-left: -$section-spacing !important;
+  }
+  @media (min-width: $large-breakpoint) {
+    margin-left: -$section-spacing * 2;
+    margin-top: -$section-spacing;
+    height: 100vh;
+    width: calc(100vw - #{$sidebar-width});
+  }
+}
+
+.heroImage img{
+  border-radius: 0;
+  object-fit: contain;
+  @media (min-width: $large-breakpoint) {
+    object-fit: cover;
+    height: 100vh;
+  }
+}
+
 //graphics and steps
 .main-steps-block {
   text-align:center;
@@ -412,6 +482,27 @@ img {
     padding-bottom: 56.25%;
 }
 
+//desktop
+@media (min-width: $mid-breakpoint) {
+  .video-container {
+    position: relative;
+    height: 0;
+    display:inline-block;
+  }
+  .video-container.is-third{
+    width: 30%;
+    padding-bottom: 16.95%;
+  }
+  .video-container.is-half{
+    width: 47%;
+    padding-bottom: 26.55%;
+  }
+  .video-container.is-threequarter{
+    width: 75%;
+    padding-bottom: 42.2%;
+  }
+}
+
 .video {
     position: absolute;
     top: 0;
@@ -425,18 +516,51 @@ img {
   text-align:center;
   vertical-align: bottom;
   margin-bottom: 20px;
+
+  @media (min-width: $large-breakpoint) {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 160px;
+  }
+
+  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+    height:auto !important;
+    flex-wrap:wrap;
+  }
 }
 
 .gameIconWrapper{
   text-align:center;
   display:inline-block;
   width:40vw;
+
+  @media (min-width: $large-breakpoint) {
+    .gameIconWrapper{
+      width:200px !important;
+    }
+  }
+  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+    width:auto;
+  }
 }
 
 .gameIcon{
   width:75px;
   height:75px;
   margin:auto;
+  border-radius:0 !important;
+
+  @media (min-width: $large-breakpoint) {
+    width:100px !important;
+    height:100px !important;
+  }
+
+  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+    width:75px !important;
+    height:75px !important;
+    margin:10px;
+  }
 }
 
 .gameIconText{
@@ -444,39 +568,6 @@ img {
   line-height:100%;
 }
 
-//desktop
-@media (min-width: $large-breakpoint) {
-  .gameIconsWrapper{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 160px;
-  }
-  .gameIconWrapper{
-    width:200px !important;
-  }
-  .gameIcon{
-    width:100px !important;
-    height:100px !important;
-  }
-  .video-container {
-      position: relative;
-      height: 0;
-      display:inline-block;
-  }
-  .video-container.is-third{
-      width: 30%;
-      padding-bottom: 16.95%;
-  }
-  .video-container.is-half{
-      width: 47%;
-      padding-bottom: 26.55%;
-  }
-  .video-container.is-threequarter{
-      width: 75%;
-      padding-bottom: 42.2%;
-  }
-}
 
 //mobile
 #main-image-wrapper {

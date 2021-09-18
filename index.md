@@ -12,7 +12,9 @@ game-images:
   images:
     - path: "/assets/images/gallery/1-min.jpg"
     - path: "/assets/images/gallery/2-min.jpg"
+      class: "is-hidden-mobile"
     - path: "/assets/images/gallery/3-min.jpg"
+      class: "is-hidden-mobile"
     - path: "/assets/images/gallery/4-min.jpg"
     - path: "/assets/images/gallery/5-min.jpg"
 
@@ -20,40 +22,49 @@ game-images-2:
   images:
     - path: "/assets/images/gallery/6-min.jpg"
     - path: "/assets/images/gallery/7-min.jpg"
+      class: "is-hidden-mobile"
     - path: "/assets/images/gallery/8-min.jpg"
     - path: "/assets/images/gallery/9-min.jpg"
     - path: "/assets/images/gallery/10-min.jpg"
-
+      class: "is-hidden-mobile"
 
 ---
 
-## Stressful job? Angry with your coworkers?
+<script>
+flipBox = () => {
+  const heroImage = document.getElementById("heroImage");
+  if (heroImage.src.indexOf("Box1.jpg") != -1){
+    heroImage.src = "/assets/images/gallery/Box2.jpg"
+  }
+  else {
+    heroImage.src = "/assets/images/gallery/Box1.jpg"
+  }
+  document.getElementById("boxFlipper").classList.toggle("is-flipped");
+}
+</script>
 
-<p>Need to relieve that stress in a way that won’t get you fired or sued?</p>
-
-We have the perfect game for you. _Welcome to Sysifus Corp._
-
-<div class="video-container is-threequarter">
-  <iframe class="video" src="https://www.youtube.com/embed/9gfzyzldHC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="heroImage">
+  <p id="boxFlipper" class="flipBox" onclick="flipBox()">hey! click here to flip the box.</p>
+  <img id="heroImage" src="/assets/images/gallery/Box1.jpg" />
 </div>
-
-## Backstab your unsuspecting coworkers in a tactical race to the promotion!
-
-Quite literally _"rat-race, the board game."_
-
-Perfect for relieving all your work-related stresses out on your fellow coworkers in a HR-approved and totally legal manner.
-
-Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter on March 2021</a> and now available for purchase!
-
-{% include stripe-button.html %}
-
----
 
 ## What makes this game fun in 30 seconds
 
 <div class="video-container is-threequarter">
   <iframe class="video" src="https://www.youtube.com/embed/OOGUH8D_7qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+---
+
+## Backstab your coworkers in a tactical race to the promotion!
+
+Angry coworkers? Stressful job? Relieve that stress in a way that won’t get you fired or sued!
+
+The perfect game for relieving stress in an HR-approved and legal manner.
+
+Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter on March 2021</a> and now available for purchase!
+
+{% include stripe-button.html %}
 
 ---
 
@@ -96,7 +107,7 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
 
 ---
 
-## What are people saying?
+## Show me some sexy closeup photos
 
 {% include image.html img-details=page.quote %}
 {% include image.html img-details=page.game-images %}
@@ -104,5 +115,19 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
 
 ---
 
-
 {% include signup.html %}
+
+---
+
+## So...welcome! To Sysifus Corp!
+
+We hope you will be a valuable addition to our glorious corporation.
+
+Click the video below to watch the keynote presentation by one of our great founding leaders.
+
+<div class="video-container is-threequarter">
+  <iframe class="video" src="https://www.youtube.com/embed/9gfzyzldHC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<br>
+All hail Sysifus Corp!
