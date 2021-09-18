@@ -11,7 +11,7 @@ layout: page
 .logo-top-mobile{
   width: 100vw;
   margin-left: -2rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
   background: #000000;
   padding-bottom:2rem;
 }
