@@ -1,0 +1,32 @@
+<script>
+  window.addEventListener("scroll", function() {
+    let stickyMarker = document.getElementById("stickyMarker");
+    let stickyStripeButton = document.getElementById("stickyStripeButton");
+    let replacementSpace = document.getElementById("replacementSpace");
+    let whiteStuckBackground = document.getElementById("whiteStuckBackground");
+
+    if (window.scrollY + window.screen.height > (stickyMarker.offsetTop + stickyMarker.offsetHeight) && !stickyMarker.classList.contains("is-hidden")) {
+      stickyStripeButton.classList.remove("is-hidden");
+      whiteStuckBackground.classList.remove("is-hidden");
+      replacementSpace.classList.remove("is-hidden");
+      stickyMarker.classList.add("is-hidden");
+    }
+    if (window.scrollY + window.screen.height <= (replacementSpace.offsetTop + replacementSpace.offsetHeight)) {
+      stickyStripeButton.classList.add("is-hidden");
+      whiteStuckBackground.classList.add("is-hidden");
+      replacementSpace.classList.add("is-hidden");
+      stickyMarker.classList.remove("is-hidden");
+    }
+  });
+</script>
+
+{% include stripe-button.html id="stickyMarker" classes="is-fat" %}
+
+<div id=replacementSpace class="buttonlink no-select is-hidden is-fat is-transparent">
+  <div class="buttonContent"> </div>
+</div>
+
+{% include stripe-button.html id="stickyStripeButton" classes="is-fat is-stuck is-hidden" %}
+<div id="whiteStuckBackground" class="buttonlink no-select is-hidden is-fat is-stuck">
+  <div class="buttonContent">HI DEVELOPER</div>
+</div>

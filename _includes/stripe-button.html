@@ -1,4 +1,4 @@
-<div target="_blank" class="buttonlink stripebutton">
+<div {% if include.id %}id={{include.id}}{% endif %} class="buttonlink stripebutton {{include.classes}}">
   <div class="buttonContent">Click here to buy now!</div>
   <div class="buttonSpinnerWrapper">
     <div class="buttonContent ld ld-ring"></div>

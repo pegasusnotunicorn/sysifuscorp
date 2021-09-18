@@ -43,8 +43,8 @@ flipBox = () => {
 }
 </script>
 
-<div class="heroImage">
-  <p id="boxFlipper" class="flipBox" onclick="flipBox()">hey! click here to flip the box.</p>
+<div onclick="flipBox()" class="heroImage no-select">
+  <p id="boxFlipper" class="flipBox">hey! click to flip the box.</p>
   <img id="heroImage" src="/assets/images/gallery/Box1.jpg" />
   <img class="is-invisible" src="/assets/images/gallery/Box2.jpg" />
 </div>
@@ -65,7 +65,7 @@ The perfect game for relieving stress in an HR-approved and legal manner.
 
 Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter on March 2021</a> and now available for purchase!
 
-{% include stripe-button.html %}
+{% include sticky-stripe-button.html %}
 
 ---
 

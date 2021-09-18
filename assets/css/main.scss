@@ -62,6 +62,19 @@ is-display-flex{
   margin-bottom:0 !important;
 }
 
+.no-select {
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+.no-select:focus {
+    outline: none !important;
+}
+
 //</editor-fold>
 
 //<editor-fold>------------------------------------------BUTTONS & INPUTS---------------------------------------
@@ -92,10 +105,29 @@ is-display-flex{
 .buttonlink.is-yellow, .button.is-yellow{background-color:#fbc95f;color:black;}
 .buttonlink.is-blue, .button.is-blue{background-color:#8b8ec5;}
 .buttonlink.is-green, .button.is-green{background-color:#81c99e;}
+.buttonlink.is-fat, .button.is-fat{padding:20px;}
+.buttonlink.is-transparent, .button.is-transparent{background-color:white;}
 
-.buttonlink:hover{
+#whiteStuckBackground{
+  background-color:white;
+  z-index:1;
+}
+#whiteStuckBackground:hover, #whiteStuckBackground:active{
+  opacity:1 !important;
+}
+.buttonlink.is-fat.is-stuck {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  margin-bottom: 0;
+  border-radius: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.buttonlink:not(.is-transparent):hover{
   text-decoration: none;
-  opacity:.75;
+  opacity:.85;
 }
 
 .buttonContent{
@@ -396,7 +428,6 @@ img {
   z-index: 1;
   color: white;
   transform: rotate(-4.5deg);
-  cursor: pointer;
   font-size:10px;
   opacity:.75;
   left: 20%;
@@ -418,11 +449,9 @@ img {
     top: 15%;
   }
 }
-.flipBox:hover{
-  opacity:1;
-}
 
 .heroImage{
+  cursor: pointer;
   position:relative;
   margin-left: -2rem;
   background-color:black;
@@ -450,6 +479,8 @@ img {
 
 .heroImage .is-invisible{
   position:absolute;
+  z-index:-999;
+  top:0;
 }
 
 //graphics and steps
