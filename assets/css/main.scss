@@ -425,6 +425,7 @@ img {
 .heroImage{
   position:relative;
   margin-left: -2rem;
+  background-color:black;
   width:100vw;
   @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
     width: calc(100vw - #{$sidebar-smaller-width}) !important;
@@ -445,6 +446,10 @@ img {
     object-fit: cover;
     height: 100vh;
   }
+}
+
+.heroImage .is-invisible{
+  position:absolute;
 }
 
 //graphics and steps
