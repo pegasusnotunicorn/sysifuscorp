@@ -5,8 +5,8 @@ header-title: A cut-throat corporate board game
 
 quote:
   images:
-    - path: "/assets/images/game-quote.png"
-      class: "is-full"
+    - path: "/assets/images/quotes.png"
+      class: "is-threequarter"
 
 game-images:
   images:
@@ -33,11 +33,11 @@ game-images-2:
 <script>
 flipBox = () => {
   const heroImage = document.getElementById("heroImage");
-  if (heroImage.src.indexOf("Box1.jpg") != -1){
-    heroImage.src = "/assets/images/gallery/Box2.jpg"
+  if (heroImage.src.indexOf("Box1.png") != -1){
+    heroImage.src = "/assets/images/gallery/Box2.png"
   }
   else {
-    heroImage.src = "/assets/images/gallery/Box1.jpg"
+    heroImage.src = "/assets/images/gallery/Box1.png"
   }
   document.getElementById("boxFlipper").classList.toggle("is-flipped");
 }
@@ -45,8 +45,8 @@ flipBox = () => {
 
 <div onclick="flipBox()" class="heroImage no-select">
   <p id="boxFlipper" class="flipBox">hey! click to flip the box.</p>
-  <img id="heroImage" src="/assets/images/gallery/Box1.jpg" />
-  <img class="is-invisible" src="/assets/images/gallery/Box2.jpg" />
+  <img id="heroImage" src="/assets/images/gallery/Box1.png" />
+  <img class="is-invisible" src="/assets/images/gallery/Box2.png" />
 </div>
 
 ## What makes this game fun in 30 seconds
@@ -100,6 +100,12 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
 
 ---
 
+## What are people saying?
+
+{% include image.html img-details=page.quote %}
+
+---
+
 ## 69 seconds of 4K HD unboxing ASMR
 
 <div class="video-container is-threequarter">
@@ -108,9 +114,10 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
 
 ---
 
-## Show me some sexy closeup photos
+## Sexy closeup photos
 
-{% include image.html img-details=page.quote %}
+Click on an image to zoom in on those sexy plastic curves.
+
 {% include image.html img-details=page.game-images %}
 {% include image.html img-details=page.game-images-2 %}
 
