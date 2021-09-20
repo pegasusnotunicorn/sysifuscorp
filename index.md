@@ -6,7 +6,7 @@ header-title: A cut-throat corporate board game
 quote:
   images:
     - path: "/assets/images/quotes.png"
-      class: "is-threequarter"
+      class: "is-half"
 
 game-images:
   images:
