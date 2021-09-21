@@ -389,7 +389,7 @@ input[type="submit"]:hover, button:hover {
 .image-link.is-third{width:32%;}
 .image-link.is-fourth:not(:only-child){width:25%;}
 .image-link.is-fourth{@media (min-width: $large-breakpoint) {width:25%;}}
-.image-link.is-sharp{border-radius:0 !important;}
+.image-link.is-sharp > img{border-radius:0 !important;}
 .image-link.black-background{background-color:black;}
 .image-link.is-full{width:100%;}
 .image-link.has-shadow > img{

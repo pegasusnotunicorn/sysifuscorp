@@ -50,14 +50,16 @@ splash-images:
     - path: "/assets/images/main_office_politics.png"
       class: "is-sharp"
 
-logo:
+logo_text:
   images:
-    - path: "/assets/images/logo_transparent.png"
-      class: "is-sharp"
     - path: "/assets/images/text_logo.png"
       class: "is-sharp"
     - path: "/assets/images/text_logo_white.png"
       class: "black-background is-sharp"
+logo:
+  images:
+    - path: "/assets/images/logo_transparent.png"
+      class: "is-sharp is-fourth"
 
 ---
 
@@ -67,12 +69,13 @@ logo:
 ### Cheatsheet / At a glance
 - Started development in June 2018
 - Website built November 2018
-- [Kickstarter launching on February 2021](https://bit.ly/sysifuscorp)
+- [Kickstarter launched on February 2021](https://bit.ly/sysifuscorp)
+- Available to the public only 6 months later on August 2021
 - Located in New York, NY
 - Created by [Wonmin Lee](https://1minlee.com/)
 - 2 to 4 players
 - Ages 14+
-- Playtime between 1-2 hours (depending on # of players)
+- Playtime between 30 to 75minutes (~10-20 min per player)
 - [Pronounced like the greek myth Sisyphus](https://www.youtube.com/watch?v=PHP8YtUzRDw)
 {% include image.html img-details=page.game-details %}
 
@@ -95,7 +98,49 @@ logo:
 
 [Like the greek myth Sisyphus](https://www.youtube.com/watch?v=PHP8YtUzRDw)
 
-### What people are saying
+For those unfamiliar with the tale of Sisyphus, he is "a figure from Greek mythology who...ultimately got his comeuppance when Zeus dealt him the eternal punishment of forever rolling a boulder up a hill in the depths of Hades."
+
+I'm sure you've heard of him.
+
+When creating this game, I wanted the theme to be a sarcastic critique on corporate life. So when I was coming up with the name, I stumbled upon the story of Sisyphus and thought it was a brilliant metaphor of my own life as a corporate slave.
+
+So I made a fictional corporation for my game--Sysifus Corp. Even gave it an appropriate boulder-pushing logo.
+
+### Images
+
+#### The game
+If you need any high quality versions of the images, please feel free to [reach out](/contact).
+{% include image.html img-details=page.game-images %}
+{% include image.html img-details=page.game-images-2 %}
+{% include image.html img-details=page.game-images-3 %}
+
+#### Logo
+The logo symbolizes [Sisyphus](https://en.wikipedia.org/wiki/Sisyphus), the person who was punished with endlessly pushing a boulder up a hill in Ancient Greek mythology.
+{% include image.html img-details=page.logo %}
+
+#### Text Logo
+{% include image.html img-details=page.logo_text %}
+
+#### Artwork / Illustrations
+{% include image.html img-details=page.splash-images %}
+
+### Videos
+
+#### Sexy close up slow-mo shots
+
+<div class="video-container is-third">
+<iframe class="video" src="https://www.youtube.com/embed/3UbL82_Yyms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-third">
+<iframe class="video" src="https://www.youtube.com/embed/qGvmfjyA22g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="video-container is-third">
+<iframe class="video" src="https://www.youtube.com/embed/WGzDqhNB0-k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### What other people are saying
 
 We are currently looking for game reviewers who will review the game for us! Please get in touch at [any of the links on this page](/contact).
 
@@ -132,35 +177,8 @@ We are currently looking for game reviewers who will review the game for us! Ple
 <iframe class="video" src="https://www.youtube.com/embed/8iuNrIvNJ-w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### Images
-
-#### The game
-If you need any high quality versions of the images, please feel free to reach out.
-{% include image.html img-details=page.game-images %}
-{% include image.html img-details=page.game-images-2 %}
-{% include image.html img-details=page.game-images-3 %}
-
-#### Logo
-The logo symbolizes [Sisyphus](https://en.wikipedia.org/wiki/Sisyphus), the person who was punished with endlessly pushing a boulder up a hill in Ancient Greek mythology.
-{% include image.html img-details=page.logo %}
-
-#### Artwork / Illustrations
-{% include image.html img-details=page.splash-images %}
-
-### Videos
-
-#### Sexy close up slow-mo shots
-
-<div class="video-container is-third">
-<iframe class="video" src="https://www.youtube.com/embed/3UbL82_Yyms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="video-container is-third">
-<iframe class="video" src="https://www.youtube.com/embed/qGvmfjyA22g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<div class="video-container is-third">
-<iframe class="video" src="https://www.youtube.com/embed/WGzDqhNB0-k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container is-half">
+<iframe class="video" src="https://www.youtube.com/embed/JyxhUk4xMyM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 #### Funny skits about the work life at Sysifus Corp
@@ -199,5 +217,3 @@ The logo symbolizes [Sisyphus](https://en.wikipedia.org/wiki/Sisyphus), the pers
 ---
 
 {% include signup.html %}
-
----
