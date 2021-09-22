@@ -32,9 +32,16 @@ office-politics:
     - path: "/assets/images/main_office_politics.png"
 ---
 
-The objective of the game is to race around the office, backstab coworkers, suck up to the Bosses, and **be the first** to make it back to the Performance Review tile.
+The objective of the game is to race around the 5x5 board by building a path to each of the corners. All while backstabbing your fellow players by manipulating the tiles laid out in strategic ways.
 
 It's quite literally _"rat-race, the board game."_
+
+The gameplay is somewhat like a mix of...
+- [_Tsuro_'s](https://boardgamegeek.com/boardgame/16992/tsuro) tile placement but you can manipulate the tiles and there is no player elimination.
+- [_Saboteur's_](https://boardgamegeek.com/boardgame/9220/saboteur) exploration without the hidden roles—everyone is screwing over everyone.
+- [_Dominion's_](https://boardgamegeek.com/boardgame/36218/dominion) card/action chaining without the deck-building.
+- [_Magic the Gathering's_](https://boardgamegeek.com/boardgame/463/magic-gathering) resource/hand management except you need to move on a board to collect resources.
+- [_Chess's_](https://boardgamegeek.com/boardgame/171/chess) strategy of planning your move and adjusting them according to your opponent's moves.
 
 <a class="buttonlink is-blue" href="/rulebook.pdf">Click here for the full rulebook PDF!</a>
 
@@ -82,7 +89,7 @@ Use Office Politics Cards to advance your own career goals or to sabotage those 
 
 Chaining together multiple Office Politics Cards to create advantages schemes is the bread and butter of the culture here at Sysifus Corp. The more cards you can chain together in a combo, the further your career advances.
 
-[Click here for the full rulebook PDF!](/rulebook.pdf)
+<a class="buttonlink is-blue" href="/rulebook.pdf">Click here for the full rulebook PDF!</a>
 
 ---
 

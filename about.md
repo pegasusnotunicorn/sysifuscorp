@@ -14,9 +14,9 @@ wonmin-lee:
     - path: "/assets/images/wonmin_lee2.jpg"
 ---
 
-Welcome to the website and development blog for _Sysifus Corp_!
+Welcome to the website and development blog for the game, _Welcome to Sysifus Corp_!
 
-The development blog documents the process of creating and selling a board game from scratch. A place to record all of the ups & downs, inner-most secrets, and the blood / sweat / tears that go into creating a tangible product. I will share with you all of the lessons I learned and hopefully help you achieve your own goals.
+The blog documents the process of creating and selling a board game from scratch. A place to record all of the ups & downs, inner-most secrets, and the blood / sweat / tears that go into creating a tangible product. I will share with you all of the lessons I learned and hopefully help you achieve your own goals.
 
 {% include image.html img-details=page.wonmin-lee %}
 

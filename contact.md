@@ -54,15 +54,13 @@ logo:
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="0XX40C9g"></script>
 
-Here are some of the many ways you can get in touch with us:
+Here are some of the many ways you can get in touch.
 * [ **Email** - "Hopefully this won't get spam filtered."][email-us]
 * [ **Instagram** - "Hold on, this is _totally_ going on my 'gram."][instagram]
-* [ **Facebook** - "I just _have_ to share this to my grandma."][facebook]
-* [ **Twitter** - "280 characters is _more_ than enough to express myself."][twitter]
-* [ **Reddit** - "If I don't get distracted by cat memes on the way."][reddit]
-* [ **BoardGameGeek** - "A board game doesn't actual exist unless it's on BGG."][bgg]
-
-**NOTE**: Anything that isn't an email only has about a 25% chance of being replied to in a timely fashion.
+* [ **Facebook** - "I just _have_ to share with my nana."][facebook]
+* [ **Twitter** - "280 characters is not enough to express myself."][twitter]
+* [ **Reddit** - "If I don't get distracted by cat gifs on the way."][reddit]
+* [ **BoardGameGeek** - "A board game doesn't actually exist unless it's on BGG."][bgg]
 
 [email-us]: mailto:hello@sysifuscorp.com
 [instagram]: https://www.instagram.com/sysifuscorp
@@ -75,11 +73,11 @@ Here are some of the many ways you can get in touch with us:
 
 ## Are you a #boardgame content creator?
 
-[Click here for press details](/press).
+Please contact me if you are a reviewer / content creator and want a review copy of the game. We can work out the details on shipping and logistics of the review via email.
 
-Please get in contact with me if you are a reviewer / content creator and want a copy of the game to review. We can work out the details on shipping and logistics of the review via email.
+[Click here for press details, images, logos, and anything you might need.](/press).
 
-Thank you very much for helping spread the word!
+Thank you very much for helping me spread the good word about our great corporation!
 
 ---
 

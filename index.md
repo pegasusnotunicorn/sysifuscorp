@@ -98,6 +98,14 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
   </div>
 </div>
 
+Or if you like any of these games, then this game might interest you!
+
+- [_Tsuro_](https://boardgamegeek.com/boardgame/16992/tsuro)
+- [_Saboteur_](https://boardgamegeek.com/boardgame/9220/saboteur)
+- [_Dominion_](https://boardgamegeek.com/boardgame/36218/dominion)
+- [_Magic the Gathering_](https://boardgamegeek.com/boardgame/463/magic-gathering)
+- [_Chess_](https://boardgamegeek.com/boardgame/171/chess)
+
 ---
 
 ## What are people saying?
