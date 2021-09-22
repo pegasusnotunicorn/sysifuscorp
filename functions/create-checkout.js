@@ -5,10 +5,11 @@ exports.handler = async (event) => {
     payment_method_types: ['card'],
     billing_address_collection: 'auto',
     shipping_address_collection: {
-      allowed_countries: ['US', 'CA', "MX"],
+      allowed_countries: ['US', 'CA', "MX", "AT", "BE", "DK", "FR", "FI", "DE", "GR", "HU", "IE", "JP", "KR", "NL", "NO", "PT", "SG", "SE", "ES", "GB"],    
     },
     mode: "payment",
-    success_url: `${process.env.URL}/.netlify/functions/create-label?session_id={CHECKOUT_SESSION_ID}`,
+    // success_url: `${process.env.URL}/.netlify/functions/create-label?session_id={CHECKOUT_SESSION_ID}`,
+    success_url: `${process.env.URL}/thankyou`,
     cancel_url: process.env.URL,
     line_items: [
       {
