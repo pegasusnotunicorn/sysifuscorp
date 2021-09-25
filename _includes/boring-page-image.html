@@ -1,0 +1,11 @@
+
+<p class="image-wrapper">
+  <a id="random-image-link" class="image-link" target="_blank" href=""><img id="random-image" src="" /></a>
+</p>
+
+<script>
+  let randomNum = Math.floor((Math.random() * 18) + 1);
+  let randomImage = `/assets/images/gallery/${randomNum}-min.jpg`;
+  document.getElementById("random-image-link").href = randomImage;
+  document.getElementById("random-image").src= randomImage;
+</script>

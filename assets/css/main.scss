@@ -384,7 +384,7 @@ input[type="submit"]:hover, button:hover {
 }
 .image-link.left-align{margin:0;}
 .image-link.is-threequarter{@media (min-width: $large-breakpoint) {width:75%;}}
-.image-link.is-half:not(:only-child){width:50%;}
+.image-link.is-half:not(:only-child):not(.ignore-mobile){width:50%;}
 .image-link.is-half{@media (min-width: $large-breakpoint) {width:50%;}}
 .image-link.is-third{width:32%;}
 .image-link.is-fourth:not(:only-child){width:25%;}

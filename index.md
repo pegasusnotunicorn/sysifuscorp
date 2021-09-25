@@ -5,8 +5,10 @@ header-title: A cut-throat corporate board game
 
 quote:
   images:
-    - path: "/assets/images/quotes.png"
-      class: "is-half"
+    - path: "/assets/images/quotes1.png"
+      class: "is-half ignore-mobile"
+    - path: "/assets/images/quotes2.png"
+      class: "is-half ignore-mobile"
 
 game-images:
   images:
@@ -101,9 +103,10 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
 Or if you like any of these games, then this game might interest you!
 
 - [_Tsuro_](https://boardgamegeek.com/boardgame/16992/tsuro)
-- [_Saboteur_](https://boardgamegeek.com/boardgame/9220/saboteur)
+- [_Mario Kart_](https://mariokart8.nintendo.com/)
 - [_Dominion_](https://boardgamegeek.com/boardgame/36218/dominion)
 - [_Magic the Gathering_](https://boardgamegeek.com/boardgame/463/magic-gathering)
+- [_Saboteur_](https://boardgamegeek.com/boardgame/9220/saboteur)
 - [_Chess_](https://boardgamegeek.com/boardgame/171/chess)
 
 ---

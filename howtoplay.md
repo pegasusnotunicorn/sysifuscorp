@@ -38,9 +38,10 @@ It's quite literally _"rat-race, the board game."_
 
 The gameplay is somewhat like a mix of...
 - [_Tsuro_'s](https://boardgamegeek.com/boardgame/16992/tsuro) tile placement but you can manipulate the tiles and there is no player elimination.
-- [_Saboteur's_](https://boardgamegeek.com/boardgame/9220/saboteur) exploration without the hidden roles—everyone is screwing over everyone.
+- [_Mario Kart's_](https://mariokart8.nintendo.com/) racing, complete with cool items and abilities.
 - [_Dominion's_](https://boardgamegeek.com/boardgame/36218/dominion) card/action chaining without the deck-building.
 - [_Magic the Gathering's_](https://boardgamegeek.com/boardgame/463/magic-gathering) resource/hand management except you need to move on a board to collect resources.
+- [_Saboteur's_](https://boardgamegeek.com/boardgame/9220/saboteur) exploration without the hidden roles—everyone is screwing over everyone.
 - [_Chess's_](https://boardgamegeek.com/boardgame/171/chess) strategy of planning your move and adjusting them according to your opponent's moves.
 
 <a class="buttonlink is-blue" href="/rulebook.pdf">Click here for the full rulebook PDF!</a>
