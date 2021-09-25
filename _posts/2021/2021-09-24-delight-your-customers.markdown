@@ -86,3 +86,17 @@ Now the customer is immediately pulled into the theme of my game without even ha
 {% include image.html img-details=page.paperresponse2 %}
 
 ---
+
+### What about the actual game box?
+
+Well if you take a look at the unboxing video below, I've also made sure when designing my box, that the unboxing experience is as sexy as possible.
+
+<div class="video-container is-threequarter">
+  <iframe class="video" src="https://www.youtube.com/embed/faNubeIbLTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+It starts with the logo of the fake company, followed by more logos, and even more logos. I tried to emulate the [Apple packaging design](https://www.personalics.com/2016/02/03/sensory-design-packaging/) philosophy as much as possible.
+
+I wanted my box layout to be as clean as possible and layered. So that each uncovered piece told another story as the user traveled through the experience of unboxing (corporate marketing BS translator: so that the pieces wouldn't fall out when the box is turned upside down).
+
+What do you think? What is the optimal layout of a board game box?
