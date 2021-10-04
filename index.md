@@ -1,7 +1,6 @@
 ---
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: main
-header-title: A cut-throat corporate board game
+header-title: The perfect gateway board game.
 
 quote:
   images:
@@ -33,23 +32,57 @@ game-images-2:
 ---
 
 <script>
-flipBox = () => {
-  const heroImage = document.getElementById("heroImage");
-  if (heroImage.src.indexOf("Box1.png") != -1){
-    heroImage.src = "/assets/images/gallery/Box2.png"
+  flipBox = () => {
+    const heroImage = document.getElementById("heroImage");
+    if (heroImage.src.indexOf("Box1.png") != -1){
+      heroImage.src = "/assets/images/gallery/Box2.png"
+    }
+    else {
+      heroImage.src = "/assets/images/gallery/Box1.png"
+    }
   }
-  else {
-    heroImage.src = "/assets/images/gallery/Box1.png"
-  }
-  document.getElementById("boxFlipper").classList.toggle("is-flipped");
-}
 </script>
 
 <div onclick="flipBox()" class="heroImage no-select">
-  <p id="boxFlipper" class="flipBox">hey! click to flip the box.</p>
   <img id="heroImage" src="/assets/images/gallery/Box1.png" />
   <img class="is-invisible" src="/assets/images/gallery/Box2.png" />
+  <div class="heroText">
+    <h2>The perfect gateway board game.</h2>
+    <small>Easy to learn, relatable theme, endlessly replayable.</small>
+  </div>
 </div>
+
+## Want to get your friends / family / partner into board games?
+
+Look no further, the **perfect gateway game** is here.
+
+Not everyone is into orcs killing dragons or settling colonies on Mars. But _everybody_ is into hating on their day jobs.
+
+We've all dreamt of stabbing our coworkers in the back—metaphorically, of course. Right? 😅
+
+Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter on March 2021</a> and now available for purchase!
+
+{% include sticky-stripe-button.html %}
+
+---
+
+## Why is this the perfect gateway board game?
+
+- You can teach the game in about 5 minutes—even to your non-gamer friends.
+- Endlessly replayable with over 3.2 million setup combinations.
+- Easy to learn, but hard to master with lots of depth in the gameplay. (So you won't be bored)
+
+---
+
+## Check out some of the reviews.
+
+- [_This game captured my attention and satisfied my desire to plan complex turns without being too intimidating for my less game heavy friends._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
+- [_Super unique and fun game. Easy to learn and also interesting for more dedicated gamers._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
+- [_I don’t really play board games...but still really enjoyed playing._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
+- [_Everything is funny and cut-throat, highly recommend it._](https://www.instagram.com/p/CULlWGZrZ37/)
+- [_Very interactive, backstabby game. Really good fun._](https://twitter.com/PunchboardUK/status/1439508059794157572)
+
+---
 
 ## What makes this game fun in 30 seconds
 
@@ -59,21 +92,13 @@ flipBox = () => {
 
 ---
 
-## Backstab your coworkers in a tactical race to the promotion!
-
-Angry coworkers? Stressful job? Relieve that stress in a way that won’t get you fired or sued!
-
-The perfect game for relieving stress in an HR-approved and legal manner.
-
-Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter on March 2021</a> and now available for purchase!
-
-{% include sticky-stripe-button.html %}
-
----
-
 ## If you like any of these mechanics then this game is for you!
 
 <div class="gameIconsWrapper is-display-flex">
+  <div class="gameIconWrapper">
+    <img class="gameIcon" src="/assets/images/icons/tile placement.png" />
+    <p class="gameIconText">Tile Placement</p>
+  </div>
   <div class="gameIconWrapper">
     <img class="gameIcon" src="/assets/images/icons/card chaining.png" />
     <p class="gameIconText">Card Chaining</p>
@@ -91,23 +116,10 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
     <p class="gameIconText">Race</p>
   </div>
   <div class="gameIconWrapper">
-    <img class="gameIcon" src="/assets/images/icons/tile placement.png" />
-    <p class="gameIconText">Tile Placement</p>
-  </div>
-  <div class="gameIconWrapper">
     <img class="gameIcon" src="/assets/images/icons/take that.png" />
     <p class="gameIconText">Take That</p>
   </div>
 </div>
-
-Or if you like any of these games, then this game might interest you!
-
-- [_Tsuro_](https://boardgamegeek.com/boardgame/16992/tsuro)
-- [_Mario Kart_](https://mariokart8.nintendo.com/)
-- [_Dominion_](https://boardgamegeek.com/boardgame/36218/dominion)
-- [_Magic the Gathering_](https://boardgamegeek.com/boardgame/463/magic-gathering)
-- [_Saboteur_](https://boardgamegeek.com/boardgame/9220/saboteur)
-- [_Chess_](https://boardgamegeek.com/boardgame/171/chess)
 
 ---
 

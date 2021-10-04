@@ -36,6 +36,8 @@ The objective of the game is to race around the 5x5 board by building a path to 
 
 It's quite literally _"rat-race, the board game."_
 
+You can teach the game in about 5 minutes and in a few rounds, everybody will have understood all of the mechanics. Very easy to learn but hard to master.
+
 The gameplay is somewhat like a mix of...
 - [_Tsuro_'s](https://boardgamegeek.com/boardgame/16992/tsuro) tile placement but you can manipulate the tiles and there is no player elimination.
 - [_Mario Kart's_](https://mariokart8.nintendo.com/) racing, complete with cool items and abilities.

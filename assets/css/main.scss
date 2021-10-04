@@ -330,6 +330,7 @@ input[type="submit"]:hover, button:hover {
 .container{
   padding-top:39px;
   overflow-x:hidden;
+  position:relative;
 
   @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
     padding-left:$section-spacing !important;
@@ -656,6 +657,35 @@ img {
   @media (min-width: $large-breakpoint) {
     margin-left:50px;
   }
+}
+
+//</editor-fold>
+
+//<editor-fold>------------------------------------------GATEWAY---------------------------------------
+
+.heroText{
+  position:absolute;
+  left:$section-spacing;
+  top:$section-spacing*-1;
+
+  @media (min-width: $large-breakpoint) {
+    top:$section-spacing;
+    left:$section-spacing*2;
+  }
+
+  > h2 {
+    font-size:1.25rem;
+
+    @media (min-width: $large-breakpoint) {
+      font-size:2rem;
+    }
+  }
+}
+
+.heroText > * {
+  margin-bottom:0;
+  margin-top:0;
+  color:white;
 }
 
 //</editor-fold>
