@@ -76,13 +76,13 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
 
 ## Check out some of the reviews.
 
-- [_This game captured my attention and satisfied my desire to plan complex turns without being too intimidating for my less game heavy friends._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
+- [_Captured my attention and satisfied my desire to plan complex turns without being too intimidating for my less game heavy friends._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
 - [_A well-made, balanced, riot of a race game, and I’ve had loads of fun with it._](https://punchboard.co.uk/welcome-to-sysifus-corp-review/)
 - [_Super unique and fun game. Easy to learn and also interesting for more dedicated gamers._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
 - [_I don’t really play board games...but still really enjoyed playing._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
 - [_Very interactive, backstabby game. Really good fun._](https://twitter.com/PunchboardUK/status/1439508059794157572)
 - [_Everything is funny and cut-throat, highly recommend it._](https://www.instagram.com/p/CULlWGZrZ37/)
-- [_Very high replay value...the rules are quite simple once you get started_](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
+- [_Very high replay value...the rules are quite simple once you get started._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
 
 ---
 
