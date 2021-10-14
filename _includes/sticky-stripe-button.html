@@ -5,7 +5,8 @@
     let replacementSpace = document.getElementById("replacementSpace");
     let whiteStuckBackground = document.getElementById("whiteStuckBackground");
 
-    if (window.scrollY + window.screen.height > (stickyMarker.offsetTop + stickyMarker.offsetHeight) && !stickyMarker.classList.contains("is-hidden")) {
+    //make sticky
+    if (window.scrollY + window.innerHeight > (stickyMarker.offsetTop + stickyMarker.offsetHeight) && !stickyMarker.classList.contains("is-hidden")) {
       stickyStripeButton.classList.remove("is-hidden");
       whiteStuckBackground.classList.remove("is-hidden");
       replacementSpace.classList.remove("is-hidden");
