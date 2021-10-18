@@ -1,6 +1,8 @@
 ---
 layout: main
 ---
+{% include gtag_body.html %}
+
 <style>
   .pagination-wrapper{
     {% if paginator.previous_page and paginator.next_page == nil %}

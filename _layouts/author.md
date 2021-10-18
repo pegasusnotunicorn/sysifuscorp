@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+{% include gtag_body.html %}
 
 <header>
   {{ content }}

@@ -1,6 +1,7 @@
 ---
 layout: main
 ---
+{% include gtag_body.html %}
 
 <style>
   .post-title{
