@@ -1,0 +1,304 @@
+---
+---
+$mid-breakpoint: 75rem !default;
+$large-breakpoint: 55rem !default;
+$section-spacing: 2em !default;
+
+//<editor-fold>------------------------------GLOBAL---------------------------------------
+
+.fadeable {
+
+}
+
+.deemphasized.is-active{
+  opacity:.2 !important;
+}
+
+span.is-red {color: #ef5559;}
+span.is-bold {font-weight:bolder;}
+
+.fade:not(.is-fixed) {
+  opacity:0;
+  position:absolute;
+  display: block;
+  z-index:0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.fade.is-active {
+  opacity: 1;
+  z-index:9;
+}
+
+.gamebutton{
+  text-decoration: none;
+  color:white;
+  font-family:monospace;
+  text-transform:uppercase;
+  cursor:pointer;
+  position: absolute;
+  font-size: .8em;
+  box-shadow: 2px 2px 2px #7e7e7e;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.gamebutton.is-red{background-color: #ef5559;}
+
+//</editor-fold>
+
+//<editor-fold>------------------------------PUZZLE WRAPPER---------------------------------------
+
+#puzzleWrapper{
+  width:100vw;
+  margin-left:-2em;
+
+  //tablet
+  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+    width: 100%;
+  }
+
+  //desktop
+  @media (min-width: $large-breakpoint) {
+    margin-left:0;
+    width: 75%;
+  }
+}
+
+#startButton{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999999;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+//</editor-fold>
+
+//<editor-fold>------------------------------GAME OBJECTS---------------------------------------
+
+.gameObj{
+  position: absolute;
+}
+
+#gameboardWrapper{
+  height: 177px;
+  overflow: hidden;
+  position: relative;
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+  border-bottom: 2px black solid;
+  border-top: 2px black dashed;
+
+  //desktop
+  @media (min-width: $large-breakpoint) {
+    height: 410px;
+  }
+}
+
+#playerMeeple{
+  width:6.5%;
+  top:60%;
+  left:10%;
+  z-index:10;
+}
+
+.squareCard{
+  width: 19%;
+  z-index: 8;
+}
+
+#redBoss{
+  left: 0.5%;
+  bottom: 1%;
+}
+
+#perfReview{
+  right:0.5%;
+  bottom:1%;
+}
+
+#gameboard{
+  bottom:0;
+  left:0;
+  opacity:.75;
+}
+
+//<editor-fold>------------------------------TUTORIAL SPECIFIC---------------------------------------
+
+.arrow{width:20%;position: absolute;}
+#arrow1{left: 10%;top: 46%;transform: rotate(-45deg);}
+#arrow2{left: 30%;top: 46%;transform: rotate(45deg);}
+#arrow3{left: 50%;top: 46%;transform: rotate(-45deg);}
+#arrow4{left: 20%;top: 52%;transform: rotate(90deg);}
+#arrow5{left: 47%;top: 21%;transform: rotate(180deg);}
+
+.influenceCircle{width:10%;position: absolute;}
+#influenceCircle1{left: 18%;top: 1.5%;}
+#influenceCircle2{left: 71.5%;top: 1.5%;}
+#influenceCircle3{left: 51.5%;top: 79.5%;}
+
+//</editor-fold>
+
+//</editor-fold>
+
+//<editor-fold>------------------------------GAME BOARD TEXT---------------------------------------
+
+#gameBoardTextWrapper{
+  padding: 25px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  z-index:99;
+  inline-size: fit-content;
+  transform:translate(-50%,-50%);
+}
+
+#gameBoardText{
+  margin:0;
+}
+
+.gameBoardTextButton{
+  transform: translate(25%, 50%);
+  color: white;
+  bottom: 0;
+}
+
+#gameBoardTextPrevButton{
+  left: -40px;
+  background: #fbc95f;
+  color:black;
+}
+
+#gameBoardTextResetButton{
+  right: -5px;
+  background: #81c99e;
+}
+
+#gameBoardTextNextButton{
+  right: -5px;
+  background: #ef5559;
+}
+
+//</editor-fold>
+
+//<editor-fold>------------------------------PLAYER BOARD---------------------------------------
+
+#playerBoard{
+  padding-left:$section-spacing;
+  padding-right:$section-spacing;
+
+  //tablet
+  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+
+  }
+
+  //desktop
+  @media (min-width: $large-breakpoint) {
+    display:flex;
+    justify-content: space-between;
+    padding-left:0;
+    padding-right:0;
+  }
+}
+
+.playerBoardSection{
+  > p {
+    font-size:.75em;
+    margin-top: 0.5em;
+  }
+  > p:not(:last-child) {
+    margin-bottom:0;
+  }
+}
+
+.playerBoardElem{
+  margin-bottom:0;
+}
+
+.playerBoardElem > span{
+  font-weight:normal;
+}
+
+#handWrapper{
+  order:1;
+
+  //desktop
+  @media (min-width: $large-breakpoint) {
+    margin-left:1em;
+  }
+}
+
+#handOutlineWrapper{
+  margin-top: 0.5em;
+  border-top: 1px dashed grey;
+  border-left: 1px dashed grey;
+  border-right: 1px dashed grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#handOverflowWrapper{
+  //desktop
+  @media (min-width: $large-breakpoint) {
+    overflow-y:hidden;
+    margin-right: -200px;
+    padding-right: 200px;
+    margin-top: -100px;
+    padding-top: 100px;
+  }
+}
+
+#opCardsWrapper{
+  position:relative;
+  display:block;
+  height:12em;
+  margin-top:-4.5em;
+  width: 100vw;
+  margin-left: -2em;
+  border-bottom:1px solid gray;
+  overflow-y:hidden;
+
+  //desktop
+  @media (min-width: $large-breakpoint) {
+    overflow-y:visible;
+    margin-left: 0;
+    width: 23.25em;
+  }
+}
+
+#opCardsShadow{
+  box-shadow:0 4px 2px -2px grey;
+}
+
+.opCard{
+  width:35%;
+  top:4.5em;
+  position:absolute;
+  box-shadow: 2px 2px 2px #7e7e7e;
+  cursor:pointer;
+}
+
+.opCard.is-fixed{
+  position:fixed !important;
+  top:50% !important;
+  left:50% !important;
+  transform:translate(-50%,-50%) !important;
+  width:25vw !important;
+  z-index:999 !important;
+  opacity:1 !important;
+}
+
+#playerDetails{
+  order:0;
+}
+
+//</editor-fold>

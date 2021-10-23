@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="../assets/css/puzzle.css">
+<div id="puzzleWrapper" class="puzzle-section">
+
+  <!-- game board -->
+  <div id="gameboardWrapper">
+
+    <!-- start button -->
+    <p id="startButton" class="gamebutton is-red">Click here to start</p>
+
+    <!-- default objects -->
+    <img id="gameboard" class="gameObj fadeable deemphasized is-active" src="../assets/images/puzzle/gameboard.png" />
+    <img id="playerMeeple" class="gameObj fadeable fade" src="../assets/images/puzzle/meeple1.png" />
+    <img id="redBoss" class="gameObj fadeable squareCard fade" src="../assets/images/puzzle/redBoss.png" />
+    <img id="perfReview" class="gameObj fadeable squareCard fade" src="../assets/images/puzzle/perfReview.png" />
+
+    <!-- any overlay text to display -->
+    <div id="gameBoardTextWrapper" class="fade">
+      <p id="gameBoardText"></p>
+      <p id="gameBoardTextNextButton" class="gameBoardTextButton gamebutton">Next →</p>
+      <p id="gameBoardTextResetButton" class="gameBoardTextButton gamebutton is-hidden">Reset</p>
+      <p id="gameBoardTextPrevButton" class="gameBoardTextButton gamebutton is-hidden">← Prev</p>
+    </div>
+
+    <!-- put project cards in here -->
+    <div id="projectCardsWrapper"></div>
+
+    <!-- tutorial specific -->
+    <div id="arrowsWrapper">
+      <img id="arrow1" class="fade arrow" src="../assets/images/puzzle/yesArrow.png" />
+      <img id="arrow2" class="fade arrow" src="../assets/images/puzzle/yesArrow.png" />
+      <img id="arrow3" class="fade arrow" src="../assets/images/puzzle/yesArrow.png" />
+      <img id="arrow4" class="fade arrow" src="../assets/images/puzzle/noArrow.png" />
+      <img id="arrow5" class="fade arrow" src="../assets/images/puzzle/noArrow.png" />
+    </div>
+    <div id="influenceCircleWrapper">
+      <img id="influenceCircle1" class="fade influenceCircle" src="../assets/images/puzzle/influenceCircle.png" />
+      <img id="influenceCircle2" class="fade influenceCircle" src="../assets/images/puzzle/influenceCircle.png" />
+      <img id="influenceCircle3" class="fade influenceCircle" src="../assets/images/puzzle/influenceCircle.png" />
+    </div>
+
+  </div>
+
+  <!-- player board -->
+  <div id="playerBoard">
+    <div id="playerDetails">
+      <div id="movesSection" class="fadeable playerBoardSection is-active deemphasized">
+        <h4 class="playerBoardElem">Moves left : <span id="movesLeftNum"></span></h4>
+        <p>"1 move" moves you by 1 tile. 2 moves, 2 tiles. etc.</p>
+      </div>
+      <div id="influenceSection" class="fadeable playerBoardSection is-active deemphasized">
+        <h4 class="playerBoardElem">Company Influence : <span id="companyInfNum">0</span></h4>
+        <p>Used to pay for the <span class="is-bold">Office Politics</span> cards in your hand.</p>
+        <p>Some cards require you to discard cards as additional payment.</p>
+      </div>
+    </div>
+    <div id="handWrapper">
+      <div class="fadeable playerBoardSection is-active deemphasized">
+        <h4 class="playerBoardElem">Office Politics cards in hand:</h4>
+        <p>Special ability cards that can alter the cards on the board.</p>
+        <p>Can be used any time on your turn. Click a card to view details.</p>
+      </div>
+      <div id="handOutlineWrapper">
+        <div id="handOverflowWrapper">
+          <div id="opCardsWrapper"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
