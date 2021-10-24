@@ -5,7 +5,7 @@ import * as puzzleFunctions from "./puzzleFunctions.js";
 //the various steps to the tutorial
 const steps = [
   {
-    text:"This is the bottom half of the</br>game board. It is a 5 x 5 grid.",
+    text:"This is the bottom half of the game board. It is a 5 x 5 grid.",
     top:"50%",
     left:"50%",
     func: () => {
@@ -29,7 +29,7 @@ const steps = [
     }
   },
   {
-    text: "You are currently on the</br><span class='is-bold'><span class='is-red'>Red</span> Boss</span> card.",
+    text: "You are currently on the <span class='is-bold'><span class='is-red'>Red</span> Boss</span> card.",
     top:"35%",
     left:"21%",
     func: () => {
@@ -41,7 +41,7 @@ const steps = [
     }
   },
   {
-    text: "You need to get to the</br><span class='is-bold'>Performance Review</span> card to win.",
+    text: "You need to get to the <span class='is-bold'>Performance Review</span> card to win.",
     top: "70%",
     left: "58.5%",
     func: () => {
@@ -71,7 +71,7 @@ const steps = [
     }
   },
   {
-    text: "The yellow sticky notes on the</br>edges indicate where you can move.",
+    text: "The yellow sticky notes on the edges indicate where you can move.",
     top: "80%",
     left: "77%",
     func: () => {
@@ -84,7 +84,7 @@ const steps = [
     }
   },
   {
-    text: "The top left number shows how much </br><span class='is-bold'>Company Influence</span> you receive every</br>time you move onto a <span class='is-bold'>Project Card</span>.",
+    text: "The top left number shows how much  <span class='is-bold'>Company Influence</span> you receive every time you move onto a <span class='is-bold'>Project Card</span>.",
     top: "50%",
     left: "50%",
     func: () => {
@@ -100,7 +100,7 @@ const steps = [
     }
   },
   {
-    text: "You have 3 moves and 3 <span class='is-bold'>Office Politics</span> cards</br>in your hand. Click on a card to see more details.",
+    text: "You have 3 moves and 3 <span class='is-bold'>Office Politics</span> cards in your hand. Click on a card to see more details.",
     top: "80%",
     left: "50%",
     func: () => {
@@ -116,7 +116,7 @@ const steps = [
     }
   },
   {
-    text: "Can you win in 1 turn?</br>Click next to see the answer.",
+    text: "Can you win in 1 turn? Click next to see the answer.",
     top: "15%",
     left: "42%",
     func: () => {
@@ -130,7 +130,7 @@ const steps = [
     }
   },
   {
-    text: "Step 1. Move once.</br>Gain 1 <span class='is-bold'>Company Influence</span>.",
+    text: "Step 1. Move once. Gain 1 <span class='is-bold'>Company Influence</span>.",
     top: "69%",
     left: "39%",
     func: () => {
@@ -141,7 +141,7 @@ const steps = [
     }
   },
   {
-    text: "Step 2. Move again.</br>Gain 1 <span class='is-bold'>Company Influence</span>.",
+    text: "Step 2. Move again. Gain 1 <span class='is-bold'>Company Influence</span>.",
     top: "26%",
     left: "60%",
     func: () => {
@@ -156,7 +156,7 @@ const steps = [
     }
   },
   {
-    text: "Step 3. Use the card <span class='is-bold'>Spread a rumor</span></br>by paying 1 <span class='is-bold'>Company Influence</span>.",
+    text: "Step 3. Use the card <span class='is-bold'>Spread a rumor</span> by paying 1 <span class='is-bold'>Company Influence</span>.",
     top: "79%",
     left: "71%",
     func: () => {
@@ -191,7 +191,7 @@ const steps = [
     }
   },
   {
-    text: "Now we can move once more.</br>Gain 1 <span class='is-bold'>Company Influence</span>.",
+    text: "Now we can move once more. Gain 1 <span class='is-bold'>Company Influence</span>.",
     top: "19%",
     left: "41%",
     func: () => {
@@ -225,7 +225,7 @@ const steps = [
     }
   },
   {
-    text: "Use the card <span class='is-bold'>Work overtime</span> by paying</br>3 <span class='is-bold'>Company Influence</span> and discarding</br>1 additional card.",
+    text: "Use the card <span class='is-bold'>Work overtime</span> by paying 3 <span class='is-bold'>Company Influence</span> and discarding 1 additional card.",
     top: "76%",
     left: "71%",
     func: () => {
@@ -257,7 +257,7 @@ const steps = [
     }
   },
   {
-    text: "Move onto the <span class='is-bold'>Performance</br>Review</span> card. You just won!",
+    text: "Move onto the <span class='is-bold'>Performance Review</span> card. You just won!",
     top: "73%",
     left: "61%",
     func: () => {
@@ -305,6 +305,10 @@ export function runTutorial() {
     puzzleFunctions.showPuzzleText(steps, 0, resetTutorial, true);
     startButton.classList.add("is-hidden");
   });
+
+  //resizing for mobile
+  window.addEventListener('resize', puzzleFunctions.setupMobile);
+
 }
 
 //</editor-fold>

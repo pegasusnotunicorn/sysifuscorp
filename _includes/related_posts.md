@@ -13,5 +13,3 @@
     {% endfor %}
   </ul>
 </section>
-
-{% include signup.html %}

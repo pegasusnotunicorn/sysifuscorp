@@ -19,4 +19,7 @@ layout: main
 </div>
 
 {% include comments.html %}
-{% include related_posts.html %}
+
+{% include related_posts.md %}
+
+{% include trytutorial.md %}

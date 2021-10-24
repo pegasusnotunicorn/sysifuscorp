@@ -13,4 +13,6 @@ description: "The authors of this blog for Welcome to Sysifus Corp"
   <p>{{ author.content | markdownify }}</p>
 {% endfor %}
 
-{{ content }}
+---
+
+{% include trytutorial.md %}

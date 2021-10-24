@@ -52,6 +52,9 @@ span.is-bold {font-weight:bolder;}
 }
 
 .gamebutton.is-red{background-color: #ef5559;}
+.gamebutton.is-yellow{background-color:#fbc95f;color:black;}
+.gamebutton.is-blue{background-color:#8b8ec5;}
+.gamebutton.is-green{background-color:#81c99e;}
 
 //</editor-fold>
 
@@ -59,7 +62,7 @@ span.is-bold {font-weight:bolder;}
 
 #puzzleWrapper{
   width:100vw;
-  margin-left:-2em;
+  margin-left:-$section-spacing;
 
   //tablet
   @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
@@ -83,6 +86,67 @@ span.is-bold {font-weight:bolder;}
 }
 //</editor-fold>
 
+//<editor-fold>------------------------------GAME BOARD TEXT---------------------------------------
+
+#gameBoardTextWrapper{
+  padding-bottom:$section-spacing;
+  background-color: white;
+  color: black;
+  z-index:99;
+  width:100%;
+  position:unset;
+
+  @media (min-width: $large-breakpoint) {
+    inline-size: fit-content !important;
+    max-width:44%;
+    padding: $section-spacing;
+    position:absolute;
+    box-shadow:0 4px 2px -2px grey;
+    border-radius: 10px;
+    transform:translate(-50%,-50%);
+  }
+}
+
+#gameBoardText{
+  margin:0;
+  padding-top:$section-spacing / 2;
+  @media (min-width: $large-breakpoint) {
+    min-height:auto;
+    padding-top:0;
+  }
+}
+
+#gameBoardTextButtonWrapper{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.gameBoardTextButton{
+  color: white;
+  bottom: 0;
+  position:unset;
+
+  @media (min-width: $large-breakpoint) {
+    transform: translate(25%, 50%);
+    position:absolute;
+  }
+}
+
+#gameBoardTextPrevButton{
+  left: -40px;
+}
+
+#gameBoardTextResetButton{
+  right: -5px;
+}
+
+#gameBoardTextNextButton{
+  right: -5px;
+}
+
+//</editor-fold>
+
 //<editor-fold>------------------------------GAME OBJECTS---------------------------------------
 
 .gameObj{
@@ -90,18 +154,28 @@ span.is-bold {font-weight:bolder;}
 }
 
 #gameboardWrapper{
-  height: 177px;
-  overflow: hidden;
   position: relative;
   border-left: 2px black solid;
   border-right: 2px black solid;
   border-bottom: 2px black solid;
   border-top: 2px black dashed;
+}
+
+#gameboardOverflowWrapper{
+  height: 177px;
+  overflow: hidden;
+  position:relative;
 
   //desktop
   @media (min-width: $large-breakpoint) {
     height: 410px;
   }
+}
+
+#gameboard{
+  bottom:0;
+  left:0;
+  opacity:.75;
 }
 
 #playerMeeple{
@@ -126,12 +200,6 @@ span.is-bold {font-weight:bolder;}
   bottom:1%;
 }
 
-#gameboard{
-  bottom:0;
-  left:0;
-  opacity:.75;
-}
-
 //<editor-fold>------------------------------TUTORIAL SPECIFIC---------------------------------------
 
 .arrow{width:20%;position: absolute;}
@@ -147,46 +215,6 @@ span.is-bold {font-weight:bolder;}
 #influenceCircle3{left: 51.5%;top: 79.5%;}
 
 //</editor-fold>
-
-//</editor-fold>
-
-//<editor-fold>------------------------------GAME BOARD TEXT---------------------------------------
-
-#gameBoardTextWrapper{
-  padding: 25px;
-  border-radius: 10px;
-  background-color: white;
-  color: black;
-  z-index:99;
-  inline-size: fit-content;
-  transform:translate(-50%,-50%);
-}
-
-#gameBoardText{
-  margin:0;
-}
-
-.gameBoardTextButton{
-  transform: translate(25%, 50%);
-  color: white;
-  bottom: 0;
-}
-
-#gameBoardTextPrevButton{
-  left: -40px;
-  background: #fbc95f;
-  color:black;
-}
-
-#gameBoardTextResetButton{
-  right: -5px;
-  background: #81c99e;
-}
-
-#gameBoardTextNextButton{
-  right: -5px;
-  background: #ef5559;
-}
 
 //</editor-fold>
 
@@ -212,7 +240,7 @@ span.is-bold {font-weight:bolder;}
 
 .playerBoardSection{
   > p {
-    font-size:.75em;
+    font-size:.7em;
     margin-top: 0.5em;
   }
   > p:not(:last-child) {
@@ -228,6 +256,10 @@ span.is-bold {font-weight:bolder;}
   font-weight:normal;
 }
 
+#playerDetails{
+  order:0;
+}
+
 #handWrapper{
   order:1;
 
@@ -238,12 +270,15 @@ span.is-bold {font-weight:bolder;}
 }
 
 #handOutlineWrapper{
-  margin-top: 0.5em;
-  border-top: 1px dashed grey;
-  border-left: 1px dashed grey;
-  border-right: 1px dashed grey;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  //desktop
+  @media (min-width: $large-breakpoint) {
+    margin-top: 0.5em;
+    border-top: 1px dashed grey;
+    border-left: 1px dashed grey;
+    border-right: 1px dashed grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 }
 
 #handOverflowWrapper{
@@ -263,7 +298,7 @@ span.is-bold {font-weight:bolder;}
   height:12em;
   margin-top:-4.5em;
   width: 100vw;
-  margin-left: -2em;
+  margin-left: -$section-spacing;
   border-bottom:1px solid gray;
   overflow-y:hidden;
 
@@ -295,10 +330,6 @@ span.is-bold {font-weight:bolder;}
   width:25vw !important;
   z-index:999 !important;
   opacity:1 !important;
-}
-
-#playerDetails{
-  order:0;
 }
 
 //</editor-fold>

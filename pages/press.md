@@ -216,4 +216,4 @@ We are currently looking for game reviewers who will review the game for us! Ple
 
 ---
 
-{% include signup.html %}
+{% include trytutorial.md %}

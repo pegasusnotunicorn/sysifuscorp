@@ -5,20 +5,28 @@
   <div id="gameboardWrapper">
 
     <!-- start button -->
-    <p id="startButton" class="gamebutton is-red">Click here to start</p>
+    <p id="startButton" class="gamebutton is-green">Click here to start</p>
+
+    <!-- gameboard -->
+    <div id="gameboardOverflowWrapper">
+      <img id="gameboard" class="gameObj fadeable deemphasized is-active" src="../assets/images/puzzle/gameboard.png" />
+    </div>
 
     <!-- default objects -->
-    <img id="gameboard" class="gameObj fadeable deemphasized is-active" src="../assets/images/puzzle/gameboard.png" />
     <img id="playerMeeple" class="gameObj fadeable fade" src="../assets/images/puzzle/meeple1.png" />
     <img id="redBoss" class="gameObj fadeable squareCard fade" src="../assets/images/puzzle/redBoss.png" />
     <img id="perfReview" class="gameObj fadeable squareCard fade" src="../assets/images/puzzle/perfReview.png" />
 
     <!-- any overlay text to display -->
-    <div id="gameBoardTextWrapper" class="fade">
-      <p id="gameBoardText"></p>
-      <p id="gameBoardTextNextButton" class="gameBoardTextButton gamebutton">Next →</p>
-      <p id="gameBoardTextResetButton" class="gameBoardTextButton gamebutton is-hidden">Reset</p>
-      <p id="gameBoardTextPrevButton" class="gameBoardTextButton gamebutton is-hidden">← Prev</p>
+    <div id="gameBoardTextLocation">
+      <div id="gameBoardTextWrapper" class="fade is-hidden">
+        <div id="gameBoardTextButtonWrapper">
+          <p id="gameBoardTextNextButton" class="gameBoardTextButton gamebutton is-green">Next →</p>
+          <p id="gameBoardTextResetButton" class="gameBoardTextButton gamebutton is-hidden is-blue">Reset</p>
+          <p id="gameBoardTextPrevButton" class="gameBoardTextButton gamebutton is-hidden is-yellow">← Prev</p>
+        </div>
+        <p id="gameBoardText"></p>
+      </div>
     </div>
 
     <!-- put project cards in here -->
@@ -50,14 +58,14 @@
       <div id="influenceSection" class="fadeable playerBoardSection is-active deemphasized">
         <h4 class="playerBoardElem">Company Influence : <span id="companyInfNum">0</span></h4>
         <p>Used to pay for the <span class="is-bold">Office Politics</span> cards in your hand.</p>
-        <p>Some cards require you to discard cards as additional payment.</p>
+        <p>Some effects require additional cards as added payment.</p>
       </div>
     </div>
     <div id="handWrapper">
       <div class="fadeable playerBoardSection is-active deemphasized">
         <h4 class="playerBoardElem">Office Politics cards in hand:</h4>
         <p>Special ability cards that can alter the cards on the board.</p>
-        <p>Can be used any time on your turn. Click a card to view details.</p>
+        <p>For use any time on your turn. Click to view details.</p>
       </div>
       <div id="handOutlineWrapper">
         <div id="handOverflowWrapper">

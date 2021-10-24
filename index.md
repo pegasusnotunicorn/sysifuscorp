@@ -47,49 +47,22 @@ game-images-2:
   <img id="heroImage" src="/assets/images/gallery/Box1.png" />
   <img class="is-invisible" src="/assets/images/gallery/Box2.png" />
   <div class="heroText">
-    <h2>The perfect gateway board game.</h2>
-    <small>Easy to learn, relatable theme, endlessly replayable.</small>
+    <h2>A delightful puzzle in every turn.</h2>
+    <small>A strategic, competitive, and corporate board game.</small>
   </div>
 </div>
 
-## Want to get your friends / family / partner into board games?
+## A corporate board game about making optimal moves
 
-Look no further, the **perfect gateway game** is here.
+Climb the corporate ladder. Plan the perfect turn by carefully managing your cards and resources.
 
-Not everyone is into orcs killing dragons or settling colonies on Mars. But _everybody_ is into hating on their day jobs.
+Play crazy multi-card combos that leave your fellow coworkers in the dust.
 
-We've all dreamt of stabbing our coworkers in the back—metaphorically, of course. Right? 😅
-
-Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/welcome-to-sysifus-corp-a-cut-throat-corporate-board-game">Kickstarter on March 2021</a> and now available for purchase!
-
-{% include sticky-stripe-button.html %}
+The closest you can get to legally stabbing your coworkers in the back. 😈
 
 ---
 
-## Why is this the perfect gateway board game?
-
-- You can teach the game in about 5 minutes—even to your non-gamer friends.
-- Endlessly replayable with over 3.2 million setup combinations.
-- Easy to learn, but hard to master with lots of depth in the gameplay. (So you won't be bored)
-
----
-
-## Check out some of the reviews.
-
-- [_Captured my attention and satisfied my desire to plan complex turns without being too intimidating for my less game heavy friends._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
-- [_A well-made, balanced, riot of a race game, and I’ve had loads of fun with it._](https://punchboard.co.uk/welcome-to-sysifus-corp-review/)
-- [_Super unique and fun game. Easy to learn and also interesting for more dedicated gamers._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
-- [_So much fun and is absolutely hilarious...quick and easy to learn, making it a great introduction to newer gamers_](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
-- [_Everything is funny and cut-throat, highly recommend it._](https://www.instagram.com/p/CULlWGZrZ37/)
-- [_Very high replay value...the rules are quite simple once you get started._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
-
----
-
-## What makes this game fun in 30 seconds
-
-<div class="video-container is-threequarter">
-  <iframe class="video" src="https://www.youtube.com/embed/OOGUH8D_7qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include trytutorial.md %}
 
 ---
 
@@ -128,12 +101,27 @@ Fully funded via <a href="https://www.kickstarter.com/projects/pegasusgamesnyc/w
 
 {% include image.html img-details=page.quote %}
 
+- [_Captured my attention and satisfied my desire to plan complex turns without being too intimidating for my less game heavy friends._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
+- [_A well-made, balanced, riot of a race game, and I’ve had loads of fun with it._](https://punchboard.co.uk/welcome-to-sysifus-corp-review/)
+- [_Super unique and fun game. Easy to learn and also interesting for more dedicated gamers._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
+- [_So much fun and is absolutely hilarious...quick and easy to learn, making it a great introduction to newer gamers_](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
+- [_Everything is funny and cut-throat, highly recommend it._](https://www.instagram.com/p/CULlWGZrZ37/)
+- [_Very high replay value...the rules are quite simple once you get started._](https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp/ratings)
+
 ---
 
-## 69 seconds of 4K HD unboxing ASMR
+## The perfect gateway board game for your loved ones
+
+- You can teach the game in about 5 minutes—even to your non-gamer friends.
+- Easy to learn, but hard to master with lots of depth in the gameplay. (So you won't be bored)
+- Endlessly replayable with over 3.2 million setup combinations. (We counted)
+
+---
+
+## What makes this game fun in 30 seconds
 
 <div class="video-container is-threequarter">
-  <iframe class="video" src="https://www.youtube.com/embed/faNubeIbLTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="video" src="https://www.youtube.com/embed/OOGUH8D_7qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ---
@@ -144,6 +132,14 @@ Click on an image to zoom in on those sexy plastic curves.
 
 {% include image.html img-details=page.game-images %}
 {% include image.html img-details=page.game-images-2 %}
+
+---
+
+## 69 seconds of 4K HD unboxing ASMR
+
+<div class="video-container is-threequarter">
+  <iframe class="video" src="https://www.youtube.com/embed/faNubeIbLTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ---
 

@@ -38,6 +38,14 @@ It's quite literally _"rat-race, the board game."_
 
 You can teach the game in about 5 minutes and in a few rounds, everybody will have understood all of the mechanics. Very easy to learn but hard to master.
 
+---
+
+{% include trytutorial.md %}
+
+---
+
+## Any similar games?
+
 The gameplay is somewhat like a mix of...
 - [_Tsuro_'s](https://boardgamegeek.com/boardgame/16992/tsuro) tile placement but you can manipulate the tiles and there is no player elimination.
 - [_Mario Kart's_](https://mariokart8.nintendo.com/) racing, complete with cool items and abilities.
@@ -47,6 +55,15 @@ The gameplay is somewhat like a mix of...
 - [_Chess's_](https://boardgamegeek.com/boardgame/171/chess) strategy of planning your move and adjusting them according to your opponent's moves.
 
 <a class="buttonlink is-blue" href="/rulebook.pdf">Click here for the full rulebook PDF!</a>
+
+---
+
+## Playthrough and how-to-play videos
+
+* [Just let Terence explain it - How to play](https://youtu.be/odPoq8RUq98)
+* [Board Game Empire - How to play](https://youtu.be/-tRSgOXT6ZM)
+* [Cardboard Stacker - Preview and playthough](https://youtu.be/NGZcS1XwG-o)
+* [Unfiltered Gamer - Review and how-to-play](https://youtu.be/qqVmOL7WBqQ)
 
 ---
 
@@ -71,28 +88,17 @@ The gameplay is somewhat like a mix of...
 
 ---
 
-## Playthrough and how-to-play videos
-
-* [Just let Terence explain it - How to play](https://youtu.be/odPoq8RUq98)
-* [Board Game Empire - How to play](https://youtu.be/-tRSgOXT6ZM)
-* [Cardboard Stacker - Preview and playthough](https://youtu.be/NGZcS1XwG-o)
-* [Unfiltered Gamer - Review and how-to-play](https://youtu.be/qqVmOL7WBqQ)
-
----
-
 ## More details
-
-{% include image.html img-details=page.bosses %}
 
 You traverse the office by laying down Project Cards to build out a collective career path--what path you choose to take is totally up to you. Remember though, any cards laid down can also be utilized by your fellow coworkers so place the Project Cards carefully. Together with the u̶n̶w̶i̶t̶t̶i̶n̶g̶ help of your coworkers, you can forge your path to the coveted promotion!
 
-{% include image.html img-details=page.office-politics-1 %}
+{% include image.html img-details=page.bosses %}
 
 Use Office Politics Cards to advance your own career goals or to sabotage those around you. You'll find that an employee who successfully utilizes Office Politics will go very far here at Sysifus Corp.
 
 Chaining together multiple Office Politics Cards to create advantages schemes is the bread and butter of the culture here at Sysifus Corp. The more cards you can chain together in a combo, the further your career advances.
 
-<a class="buttonlink is-blue" href="/rulebook.pdf">Click here for the full rulebook PDF!</a>
+{% include image.html img-details=page.office-politics-1 %}
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: main
-title: How To Play
+title: Interactive Tutorial
 header-title: Tutorial
 permalink: /tutorial
 sidebar_link: false
@@ -22,16 +22,18 @@ description: "A simplified tutorial on how to play Welcome to Sysifus Corp."
   });
 </script>
 
-This is a simplied tutorial on how to play the game <span class="is-bold">Welcome to Sysifus Corp</span>.
+<div id="topTextWrapper">
+  <p>This is a simplied tutorial on how to play the game <span class="is-bold">Welcome to Sysifus Corp</span>.</p>
+  <p>It should take about 5 minutes to complete, depending on your reading speed.</p>
+</div>
 
-It should take about 5 minutes to complete, depending on your reading speed.
-
-{% include puzzleBoard.html %}
-
----
-
-{% include trypuzzle.md %}
+{% include puzzle-board.html %}
 
 ---
 
 {% include signup.html %}
+
+<!--
+---
+
+{% include trypuzzle.md %} -->

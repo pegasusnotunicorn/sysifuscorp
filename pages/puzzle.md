@@ -2,7 +2,7 @@
 layout: main
 title: Win free shipping!
 header-title: Puzzle
-permalink: /puzzle
+<!-- permalink: /puzzle -->
 sidebar_link: false
 showheader_mobile: true
 description: "Solve a puzzle and win a coupon for free shipping!"
@@ -17,7 +17,7 @@ If you can solve the following puzzle, I will give you a coupon for free shippin
 
 No strings attached. No signups. No tricks. Just a good ol' fashioned puzzle.
 
-{% include puzzleBoard.html %}
+{% include puzzle-board.html %}
 
 ---
 

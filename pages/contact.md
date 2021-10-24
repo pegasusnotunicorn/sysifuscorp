@@ -55,12 +55,12 @@ logo:
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="0XX40C9g"></script>
 
 Here are some of the many ways you can get in touch.
-* [ **Email** - "Hopefully this won't get spam filtered."][email-us]
-* [ **Instagram** - "Hold on, this is _totally_ going on my 'gram."][instagram]
-* [ **Facebook** - "I just _have_ to share with my nana."][facebook]
-* [ **Twitter** - "280 characters is not enough to express myself."][twitter]
-* [ **Reddit** - "If I don't get distracted by cat gifs on the way."][reddit]
-* [ **BoardGameGeek** - "A board game doesn't actually exist unless it's on BGG."][bgg]
+* [ **Email**][email-us]
+* [ **Instagram** ][instagram]
+* [ **Facebook**][facebook]
+* [ **Twitter**][twitter]
+* [ **Reddit**][reddit]
+* [ **BoardGameGeek**][bgg]
 
 [email-us]: mailto:hello@sysifuscorp.com
 [instagram]: https://www.instagram.com/sysifuscorp
@@ -81,4 +81,4 @@ Thank you very much for helping me spread the good word about our great corporat
 
 ---
 
-{% include signup.html %}
+{% include trytutorial.md %}

@@ -2,6 +2,7 @@
 layout: index
 title: Rulebook
 header-title: Rulebook
+permalink: /rulebook
 description: "Click here to read the rulebook for Welcome to Sysifus Corp."
 image: "/assets/images/rulebook.png"
 ---
