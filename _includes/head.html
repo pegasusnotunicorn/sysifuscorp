@@ -46,14 +46,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sysifuscorp.com{{ page.url }}" />
 
-  <!-- CHANGE TITLE  BASED ON PAGE -->
-  {% if page.layout == "main" %}
-    <title>{{ page.title }}</title>
+  <!-- CHANGE TITLE BASED ON PAGE -->
+  {% if page.title %}
+    <title>Sysifus Corp - {{ page.title }}</title>
     <meta name="title" content="Sysifus Corp - {{ page.title }}" />
     <meta property="og:title" content="Sysifus Corp - {{ page.title }}" />
     <meta name="twitter:title" content="Sysifus Corp - {{ page.title }}">
   {% else %}
-    <title>Sysifus Corp - {{ page.header-title }}</title>
+    <title>Sysifus Corp - A delightful puzzle every turn.</title>
     <meta name="title" content="Sysifus Corp - A delightful puzzle every turn." />
     <meta property="og:title" content="Sysifus Corp - A delightful puzzle every turn." />
   {% endif %}

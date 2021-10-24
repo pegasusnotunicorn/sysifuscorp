@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Buy now!
 header-title: Buy now!
 permalink: /buy
 showheader_mobile: true
