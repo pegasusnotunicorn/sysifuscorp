@@ -3,9 +3,8 @@
   {% for image in include.img-details.images %}
     <a class="image-link {{ image.class }}" target="_blank" href="{{ image.path }}">
       {% if include.img-details.video %}
-        <video autoplay loop controls>
-          <source src="{{ image.path }}" type="video/mp4">
-          Your browser does not support the video tag.
+        <video>
+            <source src="{{ image.path }}" type="video/mp4">
         </video>
       {% else %}
         <img src="{{ image.path }}" alt="{{ include.img-details.caption }}" />

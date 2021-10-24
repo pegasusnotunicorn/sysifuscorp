@@ -25,6 +25,7 @@ description: "A simplified tutorial on how to play Welcome to Sysifus Corp."
 <div id="topTextWrapper">
   <p>This is a simplied tutorial on how to play the game <span class="is-bold">Welcome to Sysifus Corp</span>.</p>
   <p>It should take about 5 minutes to complete, depending on your reading speed.</p>
+  <p>Click the green button below to start. <span class="is-hidden-mobile is-hidden-tablet-mobile">If you are on a computer, you can use arrow keys to navigate.</span></p>
 </div>
 
 {% include puzzle-board.html %}

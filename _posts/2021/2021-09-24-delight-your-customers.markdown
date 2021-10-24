@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Delight your customers before they even open your game"
-date: 2021-09-06 12:00:00 -0500
+date: 2021-09-24 12:00:00 -0500
 tags: marketing
 author: Wonmin
 author-url: wonmin

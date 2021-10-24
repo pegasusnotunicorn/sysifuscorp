@@ -4,9 +4,6 @@ layout: page
 {% include gtag_body.html %}
 
 <style>
-.container{
-  padding-top:0;
-}
 .container > header{
   display:none !important;
 }

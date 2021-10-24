@@ -2,8 +2,8 @@
 ---
 $sidebar-width: 23rem !default;
 $sidebar-smaller-width: 15rem !default;
-$mid-breakpoint: 75rem !default;
-$large-breakpoint: 55rem !default;
+$mid-breakpoint: 55rem !default;
+$large-breakpoint: 75rem !default;
 
 @import "hydeout";
 
@@ -21,6 +21,12 @@ body {
   min-width: 0 !important;
   background-color:white;
   background-image:none;
+  overflow-x:hidden;
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
+    flex-direction:row !important;
+  }
 }
 
 article {
@@ -42,14 +48,19 @@ is-display-flex{
 }
 
 .is-hidden-mobile {
-  display:none !important;
-  @media (min-width: $large-breakpoint) {
-    display:initial !important;
+  @media only screen and (max-width: $mid-breakpoint) {
+    display:none !important;
+  }
+}
+
+.is-hidden-tablet-mobile{
+  @media only screen and (max-width: $large-breakpoint) {
+    display:none !important;
   }
 }
 
 .is-hidden-desktop {
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $mid-breakpoint) {
     display:none !important;
   }
 }
@@ -90,14 +101,18 @@ is-display-flex{
   padding:10px;
   border-radius:5px;
   opacity:1;
-  display:block;
   margin-bottom:10px;
   text-align:center;
   cursor:pointer;
   position:relative;
 
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint) {
+    display:block;
+  }
+
   //desktop
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $mid-breakpoint) {
     display:inline-block;
   }
 }
@@ -161,10 +176,13 @@ input, button {
 }
 
 input[type="text"], input[type="email"] {
-  width:calc(100% - 106px);
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint) {
+    width:calc(100% - 106px);
+  }
 
   //desktop
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $mid-breakpoint) {
     width:50%;
   }
 }
@@ -186,31 +204,41 @@ input[type="submit"]:hover, button:hover {
 
 
 #sidebar {
-  display:none !important;
-  z-index: 999;
-  text-align:center;
-  position:fixed;
-  width:100vw;
-  height:100vh;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: rgb(75,75,75);
   background-image: linear-gradient(to bottom, rgb(75,75,75), #000);
+  height:100vh;
+  z-index: 999;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x:hidden;
 
   .lead-bot {
     border-top:1px solid white;
     text-align:left;
   }
 
-  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
-    width: $sidebar-smaller-width !important;
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    width:100vw;
+    display:none;
+    text-align:center;
+    position:fixed;
   }
 
-  @media (min-width: $large-breakpoint) {
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    width: $sidebar-smaller-width !important;
+    position:fixed !important;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     text-align:left;
     width: $sidebar-width;
-    position:relative!important;
-    display:flex !important;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
   }
 }
 #sidebar.is-active{display:flex !important;}
@@ -242,7 +270,8 @@ input[type="submit"]:hover, button:hover {
 .logo-transparent {
   width: 2.5rem;
 
-  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
     float: right;
     margin-top: -3.2rem;
   }
@@ -256,10 +285,15 @@ input[type="submit"]:hover, button:hover {
 #sidebar-nav-links > a {
   display:block !important;
   margin:0 !important;
-  text-align:center;
-  font-size:1.75rem;
 
-  @media (min-width: $large-breakpoint) {
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    font-size:1.75rem;
+    text-align:center;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     text-align:left;
     font-size:1rem;
   }
@@ -284,9 +318,6 @@ input[type="submit"]:hover, button:hover {
   height:35px;
   width:35px;
   z-index:999;
-  @media (min-width: $large-breakpoint) {
-    display:none !important;
-  }
 }
 
 .sidebaricon{
@@ -328,26 +359,32 @@ input[type="submit"]:hover, button:hover {
 //<editor-fold>------------------------------------------CONTAINER---------------------------------------
 
 .container{
-  padding-top:39px;
-  overflow-x:hidden;
-  position:relative;
 
-  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
-    padding-left:$section-spacing !important;
-    padding-right:$section-spacing !important;
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+
   }
 
-  @media (min-width: $large-breakpoint) {
-    padding-top:$section-spacing !important;
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    padding-left: $sidebar-smaller-width !important;
+    padding-top:0 !important;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
+    overflow-x:hidden;
+    position:relative;
     padding-left:$section-spacing * 2;
     padding-right:$section-spacing * 2;
     padding-bottom:$section-spacing * 2;
+    padding-top:$section-spacing;
   }
 }
 
 .container > header{
   margin-bottom:0;
-  margin-top:0.5rem;
+  margin-top:0;
   padding-top:5px;
   color:black;
 }
@@ -361,8 +398,14 @@ input[type="submit"]:hover, button:hover {
 //<editor-fold>------------------------------------------IMAGE-------------------------------------------
 
 .image-wrapper{
-  text-align:center;
-  @media (min-width: $large-breakpoint) {
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    text-align:center;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     text-align:left;
     display:flex;
   }
@@ -370,26 +413,50 @@ input[type="submit"]:hover, button:hover {
 
 .image-link{
   display:inline-block;
-  margin:auto;
-  @media (min-width: $large-breakpoint) {
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    margin:auto;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     margin:0;
   }
 }
 
 .image-link:not(:last-child){
-  margin-bottom:10px;
-  @media (min-width: $large-breakpoint) {
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    margin-bottom:10px;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     margin-right:15px;
     margin-bottom:0px;
   }
 }
 .image-link.left-align{margin:0;}
-.image-link.is-threequarter{@media (min-width: $large-breakpoint) {width:75%;}}
+.image-link.is-threequarter{
+  @media only screen and (min-width: $mid-breakpoint) {
+    width:75%;
+  }
+}
 .image-link.is-half:not(:only-child):not(.ignore-mobile){width:50%;}
-.image-link.is-half{@media (min-width: $large-breakpoint) {width:50%;}}
+.image-link.is-half{
+  @media only screen and (min-width: $mid-breakpoint) {
+    width:50%;
+  }
+}
 .image-link.is-third{width:32%;}
 .image-link.is-fourth:not(:only-child){width:25%;}
-.image-link.is-fourth{@media (min-width: $large-breakpoint) {width:25%;}}
+.image-link.is-fourth{
+  @media only screen and (min-width: $mid-breakpoint) {
+    width:25%;
+  }
+}
 .image-link.is-sharp > img{border-radius:0 !important;}
 .image-link.black-background{background-color:black;}
 .image-link.is-full{width:100%;}
@@ -411,8 +478,13 @@ img {
   margin-top: -10px;
   font-size: .75em;
   margin-bottom: 25px;
-  text-align:center;
-  @media (min-width: $large-breakpoint) {
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    text-align:center;
+  }
+
+  @media only screen and (min-width: $mid-breakpoint) {
     text-align:left;
   }
 }
@@ -430,24 +502,35 @@ img {
   z-index: 1;
   color: white;
   transform: rotate(-4.5deg);
-  font-size:10px;
   opacity:.75;
-  left: 20%;
-  top: 12%;
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
-  @media (min-width: $large-breakpoint) {
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    left: 20%;
+    top: 12%;
+    font-size:10px;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     font-size:small;
     left: 35%;
     top: 17%;
   }
 }
 .flipBox.is-flipped{
-  top:11%;
-  @media (min-width: $large-breakpoint) {
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    top:11%;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     top: 15%;
   }
 }
@@ -455,14 +538,22 @@ img {
 .heroImage{
   cursor: pointer;
   position:relative;
-  margin-left: -2rem;
   background-color:black;
-  width:100vw;
-  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    margin-left: -2rem;
+    width:100vw;
+  }
+
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
     width: calc(100vw - #{$sidebar-smaller-width}) !important;
     margin-left: -$section-spacing !important;
   }
-  @media (min-width: $large-breakpoint) {
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     margin-left: -$section-spacing * 2;
     margin-top: -$section-spacing;
     height: 100vh;
@@ -472,8 +563,14 @@ img {
 
 .heroImage img{
   border-radius: 0;
-  object-fit: contain;
-  @media (min-width: $large-breakpoint) {
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    object-fit: contain;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     object-fit: cover;
     height: 100vh;
   }
@@ -487,10 +584,14 @@ img {
 
 //graphics and steps
 .main-steps-block {
-  text-align:center;
   margin:auto;
 
-  @media (min-width: $large-breakpoint) {
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    text-align:center;
+  }
+
+  @media only screen and (min-width: $mid-breakpoint) {
     border-bottom:0;
     display:inline-block;
     width:32%;
@@ -500,15 +601,20 @@ img {
 }
 
 #main-steps-container .main-steps-block:not(:last-child){
-  border-bottom:1px solid #eee;
-  margin-bottom:25px;
-  padding-bottom:10px;
 
-  @media (min-width: $large-breakpoint) {
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    border-bottom:1px solid #eee;
+    margin-bottom:25px;
+    padding-bottom:10px;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     border-right:1px solid #eee;
     border-bottom:0;
-    padding-bottom:0;
     margin-bottom:0;
+    padding-bottom:0;
   }
 }
 
@@ -525,7 +631,7 @@ img {
 }
 
 //desktop
-@media (min-width: $mid-breakpoint) {
+@media only screen and (min-width: $large-breakpoint) {
   .video-container {
     position: relative;
     height: 0;
@@ -554,55 +660,72 @@ img {
 }
 
 .gameIconsWrapper{
-  display:block;
   text-align:center;
   vertical-align: bottom;
   margin-bottom: 20px;
 
-  @media (min-width: $large-breakpoint) {
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    display:block;
+  }
+
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    height:auto !important;
+    flex-wrap:wrap;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     display:flex;
     align-items: center;
     justify-content: space-around;
     height: 160px;
-  }
-
-  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
-    height:auto !important;
-    flex-wrap:wrap;
   }
 }
 
 .gameIconWrapper{
   text-align:center;
   display:inline-block;
-  width:40vw;
 
-  @media (min-width: $large-breakpoint) {
-    .gameIconWrapper{
-      width:200px !important;
-    }
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    width:40vw;
   }
-  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
     width:auto;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
+    width:200px !important;
   }
 }
 
 .gameIcon{
-  width:75px;
-  height:75px;
-  margin:auto;
   border-radius:0 !important;
 
-  @media (min-width: $large-breakpoint) {
-    width:100px !important;
-    height:100px !important;
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    width:75px;
+    height:75px;
   }
 
-  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
     width:75px !important;
     height:75px !important;
     margin:10px;
   }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
+    width:100px !important;
+    height:100px !important;
+  }
+
 }
 
 .gameIconText{
@@ -611,26 +734,32 @@ img {
 }
 
 
-//mobile
 #main-image-wrapper {
-  text-align:center;
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    text-align:center;
+  }
 
   //desktop
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $mid-breakpoint) {
     text-align:left;
   }
 }
 
 .main-image {
-  //mobile
-  margin: 5px;
-
-  //desktop
-  @media (min-width: $large-breakpoint) {
-    margin:0 10px 10px 0;
-  }
   width: calc(32% - 15px);
   display: inline-block;
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    margin: 5px;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
+    margin:0 10px 10px 0;
+  }
 }
 
 //</editor-fold>
@@ -639,8 +768,14 @@ img {
 
 .pagination-wrapper {
   display:flex;
-  justify-content: space-between;
-  @media (min-width: $large-breakpoint) {
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    justify-content: space-between;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     justify-content: left !important;
   }
 }
@@ -654,7 +789,8 @@ img {
 }
 
 .pagination-item:last-child {
-  @media (min-width: $large-breakpoint) {
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     margin-left:50px;
   }
 }
@@ -665,18 +801,27 @@ img {
 
 .heroText{
   position:absolute;
-  left:$section-spacing;
-  top:$section-spacing*-1;
 
-  @media (min-width: $large-breakpoint) {
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    left:$section-spacing;
+    top:$section-spacing*-1;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
     top:$section-spacing;
     left:$section-spacing*2;
   }
 
   > h2 {
-    font-size:1.25rem;
+    //mobile
+    @media only screen and (max-width: $mid-breakpoint){
+      font-size:1.25rem;
+    }
 
-    @media (min-width: $large-breakpoint) {
+    //desktop
+    @media only screen and (min-width: $mid-breakpoint) {
       font-size:2rem;
     }
   }

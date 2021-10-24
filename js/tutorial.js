@@ -31,7 +31,7 @@ const steps = [
   {
     text: "You are currently on the <span class='is-bold'><span class='is-red'>Red</span> Boss</span> card.",
     top:"35%",
-    left:"21%",
+    left:"26%",
     func: () => {
       //this step
       puzzleFunctions.emphasizeElement("redBoss", "id", true);
@@ -43,7 +43,7 @@ const steps = [
   {
     text: "You need to get to the <span class='is-bold'>Performance Review</span> card to win.",
     top: "70%",
-    left: "58.5%",
+    left: "54.5%",
     func: () => {
       //this step
       puzzleFunctions.emphasizeElement("perfReview", "id", true);
@@ -54,8 +54,8 @@ const steps = [
   },
   {
     text: "These are <span class='is-bold'>Project Cards</span>.",
-    top: "65%",
-    left: "23%",
+    top: "71%",
+    left: "21%",
     func: () => {
       //this step
       let randomProjects = puzzleFunctions.xRandomIntFromInterval(3, 7, 16);
@@ -72,8 +72,8 @@ const steps = [
   },
   {
     text: "The yellow sticky notes on the edges indicate where you can move.",
-    top: "80%",
-    left: "77%",
+    top: "91%",
+    left: "72%",
     func: () => {
       //this step
       puzzleFunctions.emphasizeElement("arrow", "class", true);
@@ -101,7 +101,7 @@ const steps = [
   },
   {
     text: "You have 3 moves and 3 <span class='is-bold'>Office Politics</span> cards in your hand. Click on a card to see more details.",
-    top: "80%",
+    top: "75%",
     left: "50%",
     func: () => {
       //this step
@@ -117,8 +117,8 @@ const steps = [
   },
   {
     text: "Can you win in 1 turn? Click next to see the answer.",
-    top: "15%",
-    left: "42%",
+    top: "68%",
+    left: "86%",
     func: () => {
       //this step
       puzzleFunctions.emphasizeElement("fadeable", "class");
@@ -131,7 +131,7 @@ const steps = [
   },
   {
     text: "Step 1. Move once. Gain 1 <span class='is-bold'>Company Influence</span>.",
-    top: "69%",
+    top: "76%",
     left: "39%",
     func: () => {
       //this step / also undo's next step
@@ -173,7 +173,7 @@ const steps = [
   {
     text: "Which lets us rotate this card.",
     top: "19%",
-    left: "41%",
+    left: "34%",
     func: () => {
       //this step
       puzzleFunctions.emphasizeElement("projectCard2", "id", true);
@@ -211,7 +211,7 @@ const steps = [
   },
   {
     text: "But now we are out of moves!",
-    top: "82%",
+    top: "93%",
     left: "21%",
     func: () => {
       //undo next step
@@ -226,7 +226,7 @@ const steps = [
   },
   {
     text: "Use the card <span class='is-bold'>Work overtime</span> by paying 3 <span class='is-bold'>Company Influence</span> and discarding 1 additional card.",
-    top: "76%",
+    top: "87%",
     left: "71%",
     func: () => {
       //this step
@@ -240,7 +240,7 @@ const steps = [
   },
   {
     text: "Which gives us 1 more move.",
-    top: "80%",
+    top: "93%",
     left: "21%",
     func: () => {
       //this step, order matters here cuz the above functions deemphasize OP cards
@@ -258,8 +258,8 @@ const steps = [
   },
   {
     text: "Move onto the <span class='is-bold'>Performance Review</span> card. You just won!",
-    top: "73%",
-    left: "61%",
+    top: "76%",
+    left: "55%",
     func: () => {
       //this step, no undos bc final step
       puzzleFunctions.resetEmphasis();
@@ -302,8 +302,8 @@ export function runTutorial() {
   //click button to start
   let startButton = document.getElementById("startButton");
   startButton.addEventListener("click", () => {
-    puzzleFunctions.showPuzzleText(steps, 0, resetTutorial, true);
     startButton.classList.add("is-hidden");
+    puzzleFunctions.showPuzzleText(steps, 0, resetTutorial, true);
   });
 
   //resizing for mobile

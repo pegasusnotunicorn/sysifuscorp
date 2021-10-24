@@ -1,10 +1,18 @@
 ---
 ---
-$mid-breakpoint: 75rem !default;
-$large-breakpoint: 55rem !default;
+$sidebar-width: 23rem !default;
+$sidebar-smaller-width: 15rem !default;
+$mid-breakpoint: 55rem !default;
+$large-breakpoint: 1500px !default;
 $section-spacing: 2em !default;
 
 //<editor-fold>------------------------------GLOBAL---------------------------------------
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
 .fadeable {
 
@@ -61,18 +69,23 @@ span.is-bold {font-weight:bolder;}
 //<editor-fold>------------------------------PUZZLE WRAPPER---------------------------------------
 
 #puzzleWrapper{
-  width:100vw;
-  margin-left:-$section-spacing;
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    width:100vw;
+    margin-left:-$section-spacing;
+  }
 
   //tablet
-  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
-    width: 100%;
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    margin-left:0;
+    width: 100% !important;
   }
 
   //desktop
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $large-breakpoint) {
     margin-left:0;
-    width: 75%;
+    width: 85%;
   }
 }
 
@@ -96,10 +109,11 @@ span.is-bold {font-weight:bolder;}
   width:100%;
   position:unset;
 
-  @media (min-width: $large-breakpoint) {
+  //desktop
+  @media only screen and (min-width: $large-breakpoint) {
     inline-size: fit-content !important;
     max-width:44%;
-    padding: $section-spacing;
+    padding: $section-spacing / 2;
     position:absolute;
     box-shadow:0 4px 2px -2px grey;
     border-radius: 10px;
@@ -107,10 +121,17 @@ span.is-bold {font-weight:bolder;}
   }
 }
 
+#topTextWrapper{
+  min-height:143px;
+}
+
 #gameBoardText{
   margin:0;
+  min-height:88px;
   padding-top:$section-spacing / 2;
-  @media (min-width: $large-breakpoint) {
+
+  //desktop
+  @media only screen and (min-width: $large-breakpoint) {
     min-height:auto;
     padding-top:0;
   }
@@ -127,7 +148,7 @@ span.is-bold {font-weight:bolder;}
   bottom: 0;
   position:unset;
 
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $large-breakpoint) {
     transform: translate(25%, 50%);
     position:absolute;
   }
@@ -162,20 +183,16 @@ span.is-bold {font-weight:bolder;}
 }
 
 #gameboardOverflowWrapper{
-  height: 177px;
   overflow: hidden;
   position:relative;
-
-  //desktop
-  @media (min-width: $large-breakpoint) {
-    height: 410px;
-  }
+  height:fit-content;
 }
 
 #gameboard{
   bottom:0;
   left:0;
   opacity:.75;
+  position:unset;
 }
 
 #playerMeeple{
@@ -203,15 +220,15 @@ span.is-bold {font-weight:bolder;}
 //<editor-fold>------------------------------TUTORIAL SPECIFIC---------------------------------------
 
 .arrow{width:20%;position: absolute;}
-#arrow1{left: 10%;top: 46%;transform: rotate(-45deg);}
-#arrow2{left: 30%;top: 46%;transform: rotate(45deg);}
-#arrow3{left: 50%;top: 46%;transform: rotate(-45deg);}
-#arrow4{left: 20%;top: 52%;transform: rotate(90deg);}
-#arrow5{left: 47%;top: 21%;transform: rotate(180deg);}
+#arrow1{left: 10%;top: 49.5%;transform: rotate(-45deg);}
+#arrow2{left: 30%;top: 49.5%;transform: rotate(45deg);}
+#arrow3{left: 50%;top: 49.5%;transform: rotate(-45deg);}
+#arrow4{left: 20%;top: 57%;transform: rotate(90deg);}
+#arrow5{left: 47%;top: 28%;transform: rotate(180deg);}
 
 .influenceCircle{width:10%;position: absolute;}
-#influenceCircle1{left: 18%;top: 1.5%;}
-#influenceCircle2{left: 71.5%;top: 1.5%;}
+#influenceCircle1{left: 18%;top: 8.5%;}
+#influenceCircle2{left: 71.5%;top: 8.5%;}
 #influenceCircle3{left: 51.5%;top: 79.5%;}
 
 //</editor-fold>
@@ -221,16 +238,20 @@ span.is-bold {font-weight:bolder;}
 //<editor-fold>------------------------------PLAYER BOARD---------------------------------------
 
 #playerBoard{
-  padding-left:$section-spacing;
-  padding-right:$section-spacing;
 
-  //tablet
-  @media (min-width: $large-breakpoint) and (max-width: $mid-breakpoint){
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    padding-left:$section-spacing;
+    padding-right:$section-spacing;
+  }
 
+  //tablet and mobile
+  @media only screen and (max-width: $large-breakpoint){
+    display:block !important;
   }
 
   //desktop
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $large-breakpoint) {
     display:flex;
     justify-content: space-between;
     padding-left:0;
@@ -240,7 +261,7 @@ span.is-bold {font-weight:bolder;}
 
 .playerBoardSection{
   > p {
-    font-size:.7em;
+    font-size:.75em;
     margin-top: 0.5em;
   }
   > p:not(:last-child) {
@@ -264,26 +285,32 @@ span.is-bold {font-weight:bolder;}
   order:1;
 
   //desktop
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $mid-breakpoint) {
     margin-left:1em;
+  }
+
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    margin-left:0;
   }
 }
 
 #handOutlineWrapper{
+
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+
+  }
+
   //desktop
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $mid-breakpoint) {
     margin-top: 0.5em;
-    border-top: 1px dashed grey;
-    border-left: 1px dashed grey;
-    border-right: 1px dashed grey;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
   }
 }
 
 #handOverflowWrapper{
   //desktop
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $mid-breakpoint) {
     overflow-y:hidden;
     margin-right: -200px;
     padding-right: 200px;
@@ -299,11 +326,10 @@ span.is-bold {font-weight:bolder;}
   margin-top:-4.5em;
   width: 100vw;
   margin-left: -$section-spacing;
-  border-bottom:1px solid gray;
   overflow-y:hidden;
 
   //desktop
-  @media (min-width: $large-breakpoint) {
+  @media only screen and (min-width: $mid-breakpoint) {
     overflow-y:visible;
     margin-left: 0;
     width: 23.25em;
@@ -327,9 +353,14 @@ span.is-bold {font-weight:bolder;}
   top:50% !important;
   left:50% !important;
   transform:translate(-50%,-50%) !important;
-  width:25vw !important;
+  width:75vw !important;
   z-index:999 !important;
   opacity:1 !important;
+
+  @media only screen and (min-width: $mid-breakpoint) {
+    width:25vw !important;
+  }
+
 }
 
 //</editor-fold>
