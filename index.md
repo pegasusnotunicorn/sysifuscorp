@@ -60,6 +60,8 @@ Play crazy multi-card combos that leave your fellow coworkers in the dust.
 
 The closest you can get to legally stabbing your coworkers in the back. 😈
 
+{% include sticky-stripe-button.html %}
+
 ---
 
 {% include trytutorial.md %}
