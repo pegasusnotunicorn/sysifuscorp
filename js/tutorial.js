@@ -5,7 +5,7 @@ import * as puzzleFunctions from "./puzzleFunctions.js";
 //the various steps to the tutorial
 const steps = [
   {
-    text:"This is the bottom half of the game board. It is a 5 x 5 grid.",
+    text:"This is the bottom half of the 5 x 5 game board.",
     top:"50%",
     left:"50%",
     func: () => {
@@ -17,7 +17,7 @@ const steps = [
     }
   },
   {
-    text: "This is you.",
+    text: "This Meeple is you.",
     top:"42%",
     left:"20%",
     func: () => {
@@ -53,7 +53,7 @@ const steps = [
     }
   },
   {
-    text: "These are <span class='is-bold'>Project Cards</span>.",
+    text: `These are <span class='is-bold'>Project Cards</span> ( <img class="playerBoardIcon projectIcon" src="../assets/images/puzzle/projectIcon.png" /> ).`,
     top: "71%",
     left: "21%",
     func: () => {
@@ -71,7 +71,7 @@ const steps = [
     }
   },
   {
-    text: "The yellow sticky notes on the edges indicate where you can move.",
+    text: "The yellow sticky notes on the edges indicate where you can move. You cannot move to spaces without a Project Card.",
     top: "91%",
     left: "72%",
     func: () => {

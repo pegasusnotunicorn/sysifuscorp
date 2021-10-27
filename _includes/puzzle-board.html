@@ -5,7 +5,7 @@
   <div id="gameboardWrapper">
 
     <!-- start button -->
-    <p id="startButton" class="gamebutton is-green">Click here to start</p>
+    <p id="startButton" class="gamebutton is-green noselect">Click here to start</p>
 
     <!-- gameboard -->
     <div id="gameboardOverflowWrapper">
@@ -52,17 +52,17 @@
   <div id="playerBoard">
     <div id="playerDetails">
       <div id="movesSection" class="fadeable playerBoardSection is-active deemphasized">
-        <h4 class="playerBoardElem">Moves left : <span id="movesLeftNum"></span></h4>
+        <h4 class="playerBoardElem">Moves left : <span id="movesLeftNum">3</span></h4>
         <p>"1 move" moves you by 1 tile. 2 moves, 2 tiles. etc.</p>
       </div>
       <div id="influenceSection" class="fadeable playerBoardSection is-active deemphasized">
-        <h4 class="playerBoardElem">Company Influence : <span id="companyInfNum">0</span></h4>
+        <h4 class="playerBoardElem">Company Influence ( <img class="playerBoardIcon" src="../assets/images/puzzle/influenceIcon.png" /> ) : <span id="companyInfNum">0</span></h4>
         <p>Used to pay for the <span class="is-bold">Office Politics</span> cards in your hand.<br class="is-hidden-tablet-mobile"> Some effects require additional cards as added payment.</p>
       </div>
     </div>
     <div id="handWrapper">
       <div class="fadeable playerBoardSection is-active deemphasized">
-        <h4 class="playerBoardElem">Office Politics cards in hand:</h4>
+        <h4 class="playerBoardElem">Office Politics cards ( <img class="playerBoardIcon" src="../assets/images/puzzle/opIcon.png" /> ) in hand:</h4>
         <p>Special ability cards that can alter the cards on the board.<br class="is-hidden-tablet-mobile"> For use any time on your turn. Click to view details.</p>
       </div>
       <div id="handOutlineWrapper">

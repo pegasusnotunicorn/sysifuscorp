@@ -14,12 +14,26 @@ $section-spacing: 2em !default;
   -webkit-box-sizing: border-box;
 }
 
-.fadeable {
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .deemphasized.is-active{
-  opacity:.2 !important;
+  opacity:.25 !important;
 }
 
 span.is-red {color: #ef5559;}
@@ -274,7 +288,18 @@ span.is-bold {font-weight:bolder;}
 }
 
 .playerBoardElem > span{
-  font-weight:normal;
+  float:right;
+}
+
+.playerBoardIcon {
+  width:1em;
+  display:inline;
+  border-radius:0;
+  vertical-align: text-bottom;
+}
+
+.projectIcon {
+  border-radius: 3px;
 }
 
 #playerDetails{

@@ -96,6 +96,9 @@ export function showPuzzleText(steps, nextStep, specificReset, bypassReset){
 
   setupMobile();
 
+  //going to next step, remove any fixed OP cards
+  removeAllOpCardFixed();
+
   //position the gameboard text
   let gameBoardTextWrapper = document.getElementById("gameBoardTextWrapper");
   gameBoardTextWrapper.classList.remove("is-hidden");
@@ -285,6 +288,25 @@ export function createOPCard(imageNum, index){
   return opCard;
 }
 
+//if any OP cards are fixed / detail viewed, remove it
+export function removeAllOpCardFixed(){
+  let fixedOpCards = document.getElementsByClassName("opCard is-fixed");
+  for (let i = 0; i < fixedOpCards.length; i++){
+    removeOpCardFixed(fixedOpCards[i]);
+  }
+}
+
+//remove a single OP cards if fixed / detail viewed
+function removeOpCardFixed(opCard){
+  opCard.classList.remove("fade");
+  opCard.classList.toggle("is-fixed");
+
+  //so we avoid "fade" animations when clicking off
+  setTimeout(()=>{
+    opCard.classList.add("fade");
+  }, 1);
+}
+
 //set a OP card to a specific card and attach handlers
 export function setOPCard(idIndex, cardIndex){
   let opCard = document.getElementById(`opCard${idIndex}`);
@@ -293,14 +315,20 @@ export function setOPCard(idIndex, cardIndex){
   //if a card face is actually showing
   if (cardIndex != 0){
     opCard.addEventListener("click", (e)=>{
-      e.target.classList.remove("fade");
-      e.target.classList.toggle("is-fixed");
 
-      //so we avoid "fade" animations when clicking off
-      setTimeout(()=>{
-        e.target.classList.add("fade");
-      }, 1);
+      //hide current card if clicking a new card
+      let fixedOpCard = document.querySelector(".opCard.is-fixed");
+      if (fixedOpCard && e.target.id != fixedOpCard.id){
+        removeAllOpCardFixed();
+      }
+
+      removeOpCardFixed(e.target);
     });
+  }
+  //clone node and replace so we remove event listener
+  else if (cardIndex === 0) {
+    let opCardClone = opCard.cloneNode(true);
+    opCard.parentNode.replaceChild(opCardClone, opCard);
   }
 }
 
