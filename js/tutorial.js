@@ -164,7 +164,7 @@ const steps = [
     }
   },
   {
-    text: `Step 3. Use the card <span class='is-bold'>Spread a rumor</span> by paying 1 ${companyInfluence}.`,
+    text: `Step 3. Use the card <span class='is-bold is-monospace'>Spread a rumor</span> by paying 1 ${companyInfluence}.`,
     top: "79%",
     left: "71%",
     func: () => {
@@ -233,7 +233,7 @@ const steps = [
     }
   },
   {
-    text: `Use the card <span class='is-bold'>Work overtime</span> by paying 3 ${companyInfluence} and discarding 1 additional ${opCard}.`,
+    text: `Use the card <span class='is-bold is-monospace'>Work overtime</span> by paying 3 ${companyInfluence} and discarding 1 additional ${opCard}.`,
     top: "87%",
     left: "71%",
     func: () => {
@@ -265,7 +265,7 @@ const steps = [
     }
   },
   {
-    text: `Move onto the <span class='is-bold'>Performance Review</span> card. ${brDesktop}You just won!`,
+    text: `Move onto the <span class='is-bold is-monospace'>Performance Review</span> card. ${brDesktop}You just won!`,
     top: "76%",
     left: "55%",
     func: () => {

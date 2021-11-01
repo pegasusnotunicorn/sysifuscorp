@@ -83,6 +83,7 @@ export function start(steps, resetFunc, bypassReset, topText){
 
     //hide start button and text
     startButton.classList.add("is-hidden");
+    startButton.setAttribute("start", true);
 
     //check for mobile sizing
     setupMobile(topText);
@@ -113,7 +114,7 @@ export function setupMobile(topText){
   let topTextWrapper = document.getElementById("topTextWrapper");
 
   //mobile and has started
-  if (window.mobileCheck() && document.getElementById("startButton").classList.contains("is-hidden")){
+  if (window.mobileCheck() && document.getElementById("startButton").getAttribute("start") === true){
     topTextWrapper.innerHTML = "";
     topTextWrapper.setAttribute("viewType", "mobile");
     topTextWrapper.appendChild(gameBoardTextWrapper);
