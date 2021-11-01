@@ -114,7 +114,7 @@ export function setupMobile(topText){
   let topTextWrapper = document.getElementById("topTextWrapper");
 
   //mobile and has started
-  if (window.mobileCheck() && document.getElementById("startButton").getAttribute("start") === true){
+  if (window.mobileCheck() && document.getElementById("startButton").getAttribute("start") === 'true'){
     topTextWrapper.innerHTML = "";
     topTextWrapper.setAttribute("viewType", "mobile");
     topTextWrapper.appendChild(gameBoardTextWrapper);
@@ -201,7 +201,7 @@ export function showPuzzleText(steps, nextStep, specificReset, bypassReset){
 
     //hide button event handler
     hideButton.addEventListener("click", () => {
-      hidePuzzleText(bindKeyboard);
+      hidePuzzleText(bindKeyboard, specificReset);
     });
   }
   //next button shows except at end
@@ -243,7 +243,7 @@ export function toggleHideButton(){
 }
 
 //hide the floating text, unbind keyboard, and show reset buttons
-function hidePuzzleText(bindKeyboard){
+function hidePuzzleText(bindKeyboard, specificReset){
   document.getElementById("gameBoardTextWrapper").classList.add("is-hidden");
   bindKeyboard.cancel("keyboardListener");
 
@@ -251,6 +251,14 @@ function hidePuzzleText(bindKeyboard){
   let startText = document.getElementById("startText");
   startText.classList.remove("is-hidden");
   startText.innerHTML = `<a id='restartPuzzleExplanation'>Click here</a> to repeat the puzzle explanation. Or <a id="restartPuzzle">click here</a> to just reset the puzzle layout.`;
+
+  //restart the whole puzzle page
+  let restartPuzzleExplanation = document.getElementById("restartPuzzleExplanation");
+  restartPuzzleExplanation.addEventListener("click", () =>{
+    specificReset();
+  });
+
+  let restartPuzzle = document.getElementById("restartPuzzle");
 }
 
 //</editor-fold>
