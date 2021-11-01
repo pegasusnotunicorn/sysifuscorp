@@ -69,11 +69,11 @@ span.is-monospace {
   cursor:pointer;
   position: absolute;
   font-size: .8em;
-  box-shadow: 0px 0px 10px #7e7e7e;
   border-radius: 5px;
   margin: 0;
   padding-left: 10px;
   padding-right: 10px;
+  box-shadow: 0px 0px 10px #7e7e7e;
 
   //mobile
   @media only screen and (max-width: $mid-breakpoint){
@@ -189,6 +189,12 @@ span.is-monospace {
   bottom: 0;
   position:unset;
 
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    box-shadow:unset !important;
+  }
+
+  //desktop
   @media only screen and (min-width: $large-breakpoint) {
     transform: translate(25%, 50%);
     position:absolute;
