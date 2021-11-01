@@ -232,11 +232,13 @@ function cloneButton(buttonToClone, steps, nextStepNum, specificReset, bypassRes
 //show or hide hideButton
 export function toggleHideButton(){
   let topTextWrapper = document.getElementById("topTextWrapper");
-  if (document.getElementById("puzzleWrapper").getAttribute("step") === "last" && topTextWrapper.getAttribute("viewType") == "desktop"){
-    document.getElementById("gameBoardTextHideButton").classList.remove('is-hidden');
-  }
-  else {
-    document.getElementById("gameBoardTextHideButton").classList.add('is-hidden');
+  if (topTextWrapper.getAttribute("viewType") == "desktop"){
+    if (document.getElementById("puzzleWrapper").getAttribute("step") === "last"){
+      document.getElementById("gameBoardTextHideButton").classList.remove('is-hidden');
+    }
+    else {
+      document.getElementById("gameBoardTextHideButton").classList.add('is-hidden');
+    }
   }
 }
 
