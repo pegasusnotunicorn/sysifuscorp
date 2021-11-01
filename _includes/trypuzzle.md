@@ -4,4 +4,4 @@ Now that you know the basic rules, try solving this puzzle and win free shipping
 
 No strings attached. No signups. No tricks. Just a good ol' fashioned puzzle.
 
-<p><a href="/puzzle" class="puzzle-button buttonlink is-blue">Try the puzzle!</a></p>
+<p><a href="/puzzle" class="puzzle-button buttonlink is-blue">Click here to try the puzzle!</a></p>

@@ -2,10 +2,18 @@ import * as puzzleFunctions from "./puzzleFunctions.js";
 
 //<editor-fold>------------------------------------------TUTORIAL---------------------------------------
 
+//various variables for text
+const companyInfluence = puzzleFunctions.constVars.companyInfluence;
+const projectCard = puzzleFunctions.constVars.projectCard;
+const projectCards = puzzleFunctions.constVars.projectCards;
+const opCard = puzzleFunctions.constVars.opCard;
+const opCards = puzzleFunctions.constVars.opCards;
+const brDesktop = puzzleFunctions.constVars.brDesktop;
+
 //the various steps to the tutorial
 const steps = [
   {
-    text:"This is the bottom half of the 5 x 5 game board.",
+    text:`This is the bottom half of the 5 x 5 game board. Click next to continue.`,
     top:"50%",
     left:"50%",
     func: () => {
@@ -13,11 +21,11 @@ const steps = [
       puzzleFunctions.hideElement("playerMeeple", "id");
 
       //undo next step
-      puzzleFunctions.emphasizeElement("gameboard", "id");
+      puzzleFunctions.emphasizeElement("gameboard", "id", true);
     }
   },
   {
-    text: "This Meeple is you.",
+    text: "This meeple is you.",
     top:"42%",
     left:"20%",
     func: () => {
@@ -29,7 +37,7 @@ const steps = [
     }
   },
   {
-    text: "You are currently on the <span class='is-bold'><span class='is-red'>Red</span> Boss</span> card.",
+    text: "You are currently on the <span class='is-bold is-monospace'><span class='is-red'>Red</span> Boss</span> card.",
     top:"35%",
     left:"26%",
     func: () => {
@@ -41,7 +49,7 @@ const steps = [
     }
   },
   {
-    text: "You need to get to the <span class='is-bold'>Performance Review</span> card to win.",
+    text: "You need to get to the <span class='is-bold is-monospace'>Performance Review</span> card to win.",
     top: "70%",
     left: "54.5%",
     func: () => {
@@ -53,17 +61,17 @@ const steps = [
     }
   },
   {
-    text: `These are <span class='is-bold'>Project Cards</span> ( <img class="playerBoardIcon projectIcon" src="../assets/images/puzzle/projectIcon.png" /> ).`,
+    text: `These are ${projectCards}.`,
     top: "71%",
     left: "21%",
     func: () => {
       //this step
-      let randomProjects = puzzleFunctions.xRandomIntFromInterval(3, 7, 16);
+      let randomProjects1 = puzzleFunctions.xRandomIntFromInterval(3, 7, 16);
       let projectCardsWrapper = document.getElementById("projectCardsWrapper");
       projectCardsWrapper.innerHTML = "";
-      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(0, randomProjects[0], puzzleFunctions.gridCoords[0][1].left, puzzleFunctions.gridCoords[0][1].top, "top"));
-      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(1, randomProjects[1], puzzleFunctions.gridCoords[1][2].left, puzzleFunctions.gridCoords[1][2].bottom, "bottom", 180));
-      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(2, randomProjects[2], puzzleFunctions.gridCoords[0][3].left, puzzleFunctions.gridCoords[0][3].top, "top", 90));
+      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(0, randomProjects1[0], puzzleFunctions.gridCoords[0][1].left, puzzleFunctions.gridCoords[0][1].top, "top"));
+      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(1, randomProjects1[1], puzzleFunctions.gridCoords[1][2].left, puzzleFunctions.gridCoords[1][2].bottom, "bottom", 180));
+      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(2, randomProjects1[2], puzzleFunctions.gridCoords[0][3].left, puzzleFunctions.gridCoords[0][3].top, "top", 90));
       puzzleFunctions.emphasizeElement("projectCard", "class", true);
 
       //undo next step
@@ -71,7 +79,7 @@ const steps = [
     }
   },
   {
-    text: "The yellow sticky notes on the edges indicate where you can move. You cannot move to spaces without a Project Card.",
+    text: `The yellow sticky notes on the edges indicate where you can move. You cannot move to spaces without a ${projectCard}.`,
     top: "91%",
     left: "72%",
     func: () => {
@@ -84,7 +92,7 @@ const steps = [
     }
   },
   {
-    text: "The top left number shows how much  <span class='is-bold'>Company Influence</span> you receive every time you move onto a <span class='is-bold'>Project Card</span>.",
+    text: `The top left number shows how much ${companyInfluence} you receive every time you move onto a ${projectCard}.`,
     top: "50%",
     left: "50%",
     func: () => {
@@ -100,7 +108,7 @@ const steps = [
     }
   },
   {
-    text: "You have 3 moves and 3 <span class='is-bold'>Office Politics</span> cards in your hand. Click on a card to see more details.",
+    text: `You have 3 moves and 3 ${opCards} in your hand. Click on a card to see more details.`,
     top: "75%",
     left: "50%",
     func: () => {
@@ -116,7 +124,7 @@ const steps = [
     }
   },
   {
-    text: "Can you win in 1 turn? Click next to see the answer.",
+    text: `Do you think you can win in 1 turn? ${brDesktop}Click next to see the answer.`,
     top: "68%",
     left: "86%",
     func: () => {
@@ -130,7 +138,7 @@ const steps = [
     }
   },
   {
-    text: "Step 1. Move once. Gain 1 <span class='is-bold'>Company Influence</span>.",
+    text: `Step 1. Move once. ${brDesktop}Gain 1 ${companyInfluence}.`,
     top: "76%",
     left: "39%",
     func: () => {
@@ -141,7 +149,7 @@ const steps = [
     }
   },
   {
-    text: "Step 2. Move again. Gain 1 <span class='is-bold'>Company Influence</span>.",
+    text: `Step 2. Move again. ${brDesktop}Gain 1 ${companyInfluence}.`,
     top: "26%",
     left: "60%",
     func: () => {
@@ -151,12 +159,12 @@ const steps = [
       document.getElementById("movesLeftNum").innerHTML = "1";
 
       //undo next step
-      puzzleFunctions.resetEmphasis();
+      puzzleFunctions.emphasizeAll();
       puzzleFunctions.highlightOpCard(false);
     }
   },
   {
-    text: "Step 3. Use the card <span class='is-bold'>Spread a rumor</span> by paying 1 <span class='is-bold'>Company Influence</span>.",
+    text: `Step 3. Use the card <span class='is-bold'>Spread a rumor</span> by paying 1 ${companyInfluence}.`,
     top: "79%",
     left: "71%",
     func: () => {
@@ -191,12 +199,12 @@ const steps = [
     }
   },
   {
-    text: "Now we can move once more. Gain 1 <span class='is-bold'>Company Influence</span>.",
+    text: `Now we can move once more. ${brDesktop}Gain 1 ${companyInfluence}.`,
     top: "19%",
     left: "41%",
     func: () => {
       //this step
-      puzzleFunctions.resetEmphasis();
+      puzzleFunctions.emphasizeAll();
       puzzleFunctions.moveGameObj("playerMeeple", {top:"17%", left:"70%"});
       document.getElementById("companyInfNum").innerHTML = "3";
       document.getElementById("movesLeftNum").innerHTML = "0";
@@ -225,7 +233,7 @@ const steps = [
     }
   },
   {
-    text: "Use the card <span class='is-bold'>Work overtime</span> by paying 3 <span class='is-bold'>Company Influence</span> and discarding 1 additional card.",
+    text: `Use the card <span class='is-bold'>Work overtime</span> by paying 3 ${companyInfluence} and discarding 1 additional ${opCard}.`,
     top: "87%",
     left: "71%",
     func: () => {
@@ -257,12 +265,12 @@ const steps = [
     }
   },
   {
-    text: "Move onto the <span class='is-bold'>Performance Review</span> card. You just won!",
+    text: `Move onto the <span class='is-bold'>Performance Review</span> card. ${brDesktop}You just won!`,
     top: "76%",
     left: "55%",
     func: () => {
       //this step, no undos bc final step
-      puzzleFunctions.resetEmphasis();
+      puzzleFunctions.emphasizeAll();
       puzzleFunctions.moveGameObj("playerMeeple", {top:"60%", left:"90%"});
       puzzleFunctions.hideOrShowOpCard(1, true);
       document.getElementById("movesLeftNum").innerHTML = "0";
@@ -285,12 +293,8 @@ export function resetTutorial(){
   document.getElementById("companyInfNum").innerHTML = "1";
 }
 
-//delay for 1 sec, then start the steps, pass in cb for tutorial specific reset
+//start the step when start button is pressed, pass in cb for specific reset
 export function runTutorial() {
-
-  //set random player color, changes per page refresh
-  let playerMeeple = document.getElementById("playerMeeple");
-  playerMeeple.src = `../assets/images/puzzle/meeple${puzzleFunctions.randomIntFromInterval(0, 3)}.png`;
 
   //make OP cards
   let opCardsWrapper = document.getElementById("opCardsWrapper");
@@ -299,16 +303,15 @@ export function runTutorial() {
   opCardsWrapper.appendChild(puzzleFunctions.createOPCard(0, 1));
   opCardsWrapper.appendChild(puzzleFunctions.createOPCard(0, 2));
 
-  //click button to start
-  let startButton = document.getElementById("startButton");
-  startButton.addEventListener("click", () => {
-    startButton.classList.add("is-hidden");
-    puzzleFunctions.showPuzzleText(steps, 0, resetTutorial, true);
-  });
-
-  //resizing for mobile
-  window.addEventListener('resize', puzzleFunctions.setupMobile);
-
+  let topText = `
+    <p>This is a simplied tutorial on how to play the game <span class="is-bold">Welcome to Sysifus Corp</span>.</p>
+    <p>It should take about 5 minutes to complete.</p>
+    <p id="startText" class="is-hidden">
+      Click the green button below to start.
+      <span class="is-hidden-mobile is-hidden-tablet-mobile">If you are on a computer, you can use arrow keys to navigate.</span>
+    </p>
+  `;
+  puzzleFunctions.start(steps, resetTutorial, false, topText);
 }
 
 //</editor-fold>

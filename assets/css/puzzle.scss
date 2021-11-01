@@ -38,6 +38,11 @@ img {
 
 span.is-red {color: #ef5559;}
 span.is-bold {font-weight:bolder;}
+span.is-monospace {
+  font-family:monospace;
+  text-transform:uppercase;
+  font-size:.9em;
+}
 
 .fade:not(.is-fixed) {
   opacity:0;
@@ -64,19 +69,36 @@ span.is-bold {font-weight:bolder;}
   cursor:pointer;
   position: absolute;
   font-size: .8em;
-  box-shadow: 2px 2px 2px #7e7e7e;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  box-shadow: 0px 0px 10px #7e7e7e;
   border-radius: 5px;
   margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  //desktop
+  @media only screen and (min-width: $large-breakpoint) {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
 }
 
 .gamebutton.is-red{background-color: #ef5559;}
 .gamebutton.is-yellow{background-color:#fbc95f;color:black;}
 .gamebutton.is-blue{background-color:#8b8ec5;}
 .gamebutton.is-green{background-color:#81c99e;}
+.gamebutton.is-white{background-color:#FFFFFF;color:black;}
 
 //</editor-fold>
 
@@ -111,6 +133,11 @@ span.is-bold {font-weight:bolder;}
   padding-top:10px;
   padding-bottom:10px;
 }
+
+#startText a {
+  cursor:pointer;
+}
+
 //</editor-fold>
 
 //<editor-fold>------------------------------GAME BOARD TEXT---------------------------------------
@@ -126,10 +153,10 @@ span.is-bold {font-weight:bolder;}
   //desktop
   @media only screen and (min-width: $large-breakpoint) {
     inline-size: fit-content !important;
-    max-width:44%;
+    max-width:40%;
     padding: $section-spacing / 2;
     position:absolute;
-    box-shadow:0 4px 2px -2px grey;
+    box-shadow:0 0px 15px 3px grey;
     border-radius: 10px;
     transform:translate(-50%,-50%);
   }
@@ -172,11 +199,7 @@ span.is-bold {font-weight:bolder;}
   left: -40px;
 }
 
-#gameBoardTextResetButton{
-  right: -5px;
-}
-
-#gameBoardTextNextButton{
+#gameBoardTextResetButton, #gameBoardTextHideButton, #gameBoardTextNextButton{
   right: -5px;
 }
 
@@ -378,14 +401,76 @@ span.is-bold {font-weight:bolder;}
   top:50% !important;
   left:50% !important;
   transform:translate(-50%,-50%) !important;
-  width:75vw !important;
   z-index:999 !important;
   opacity:1 !important;
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    width:75vw !important;
+  }
 
   @media only screen and (min-width: $mid-breakpoint) {
     width:25vw !important;
   }
 
 }
+
+//</editor-fold>
+
+//<editor-fold>------------------------------OP CARD DETAIL VIEW---------------------------------------
+
+#opCardDetails{
+  position:fixed !important;
+  top:50% !important;
+  left:50% !important;
+  transform:translate(-50%,-50%) !important;
+  position:relative;
+  z-index:999 !important;
+  cursor:pointer;
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    width:95vw !important;
+    height:105vw !important;
+  }
+
+  @media only screen and (min-width: $mid-breakpoint) {
+    width:35vw !important;
+    height:35vw !important;
+  }
+}
+
+#detailsButton{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index:2;
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    transform: translate(-10%, -15%);
+  }
+
+  @media only screen and (min-width: $mid-breakpoint) {
+    transform: translate(-25%, -15%);
+  }
+}
+
+#detailsWrapper{
+  height:100%;
+
+  img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:0;
+  }
+}
+
+#nameDetail{z-index:10;}
 
 //</editor-fold>

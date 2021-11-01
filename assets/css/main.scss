@@ -53,6 +53,12 @@ is-display-flex{
   }
 }
 
+.is-hidden-tablet {
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    display:none !important;
+  }
+}
+
 .is-hidden-tablet-mobile{
   @media only screen and (max-width: $large-breakpoint) {
     display:none !important;
@@ -706,6 +712,7 @@ img {
 
 .gameIcon{
   border-radius:0 !important;
+  margin:auto;
 
   //mobile
   @media only screen and (max-width: $mid-breakpoint){
@@ -717,7 +724,7 @@ img {
   @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
     width:75px !important;
     height:75px !important;
-    margin:10px;
+    margin:auto;
   }
 
   //desktop

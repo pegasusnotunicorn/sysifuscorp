@@ -11,7 +11,7 @@ Thank you for signing up to our newsletter.
 
 You can click the button below to download your free PDF copy of the print-and-play version of the game. All you need is a printer and a scissor to cut out all of the printed pieces of the game. For the non-printed parts, you can use game pieces from other board games or just random little trinkets lying around the house like buttons or coins.
 
-<a target="_blank" href="/pnp.pdf" class="buttonlink is-yellow">
+<a target="_blank" href="/assets/pdf/pnp.pdf" class="buttonlink is-yellow">
   <span class="buttonContent">Print-and-Play version</span>
 </a>
 

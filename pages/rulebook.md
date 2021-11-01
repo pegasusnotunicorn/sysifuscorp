@@ -8,9 +8,9 @@ image: "/assets/images/rulebook.png"
 ---
 <meta http-equiv="refresh" content="1;url=/rulebook.pdf">
 <script type="text/javascript">
-    window.location.href = "/rulebook.pdf"
+    window.location.href = "/assets/pdf/rulebook.pdf"
 </script>
 
 <body>
-    <h3 style="margin:0">If you are not redirected automatically, please click the link <a href="/rulebook.pdf">here!</a></h3>
+    <h3 style="margin:0">If you are not redirected automatically, please click the link <a href="/assets/pdf/rulebook.pdf">here!</a></h3>
 </body>

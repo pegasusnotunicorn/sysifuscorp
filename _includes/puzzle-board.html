@@ -5,7 +5,7 @@
   <div id="gameboardWrapper">
 
     <!-- start button -->
-    <p id="startButton" class="gamebutton is-green noselect">Click here to start</p>
+    <p id="startButton" class="gamebutton is-green noselect is-hidden">Click here to start</p>
 
     <!-- gameboard -->
     <div id="gameboardOverflowWrapper">
@@ -22,7 +22,8 @@
       <div id="gameBoardTextWrapper" class="fade is-hidden">
         <div id="gameBoardTextButtonWrapper">
           <p id="gameBoardTextNextButton" class="gameBoardTextButton gamebutton is-green">Next →</p>
-          <p id="gameBoardTextResetButton" class="gameBoardTextButton gamebutton is-hidden is-blue">Reset</p>
+          <p id="gameBoardTextResetButton" class="gameBoardTextButton gamebutton is-hidden is-blue">⟲ Restart</p>
+          <p id="gameBoardTextHideButton" class="gameBoardTextButton gamebutton is-hidden is-red">✕ Hide</p>
           <p id="gameBoardTextPrevButton" class="gameBoardTextButton gamebutton is-hidden is-yellow">← Prev</p>
         </div>
         <p id="gameBoardText"></p>
@@ -57,7 +58,7 @@
       </div>
       <div id="influenceSection" class="fadeable playerBoardSection is-active deemphasized">
         <h4 class="playerBoardElem">Company Influence ( <img class="playerBoardIcon" src="../assets/images/puzzle/influenceIcon.png" /> ) : <span id="companyInfNum">0</span></h4>
-        <p>Used to pay for the <span class="is-bold">Office Politics</span> cards in your hand.<br class="is-hidden-tablet-mobile"> Some effects require additional cards as added payment.</p>
+        <p>Used to pay for the <span class="is-bold is-monospace">Office Politics</span> cards in your hand.<br class="is-hidden-tablet-mobile"> Some effects require additional cards as added payment.</p>
       </div>
     </div>
     <div id="handWrapper">
@@ -69,6 +70,19 @@
         <div id="handOverflowWrapper">
           <div id="opCardsWrapper"></div>
         </div>
+      </div>
+    </div>
+    <div id="opCardDetails" class="noselect is-hidden">
+      <div id="detailsButtonWrapper" class="noselect">
+        <p id="detailsButton" class="gamebutton noselect">✓ Click here for more details</p>
+      </div>
+      <div id="detailsWrapper" class="noselect">
+        <img id="nameDetail" src="../assets/images/puzzle/opCards/details/name.png" class="is-hidden detail noselect" />
+        <img id="typeDetail" src="../assets/images/puzzle/opCards/details/type.png" class="is-hidden detail noselect" />
+        <img id="effectDetail" src="../assets/images/puzzle/opCards/details/effect.png" class="is-hidden detail noselect" />
+        <img id="costDetail" src="../assets/images/puzzle/opCards/details/cost.png" class="is-hidden detail noselect" />
+        <img id="addonDetail" src="../assets/images/puzzle/opCards/details/addon.png" class="is-hidden detail noselect" />
+        <img id="addon2Detail" src="../assets/images/puzzle/opCards/details/addon2.png" class="is-hidden detail noselect" />
       </div>
     </div>
   </div>

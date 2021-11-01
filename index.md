@@ -52,7 +52,7 @@ game-images-2:
   </div>
 </div>
 
-## A corporate board game about making optimal moves
+## A board game about making optimal moves
 
 Climb the corporate ladder. Plan the perfect turn by carefully managing your cards and resources.
 

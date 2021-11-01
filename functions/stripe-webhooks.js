@@ -35,7 +35,7 @@ exports.handler = async ({ body, headers }) => {
     // only do stuff if this we have all the info we need
     if (stripeEvent.type === 'checkout.session.expired') {
       const session = stripeEvent.data.object;
-      const email = session.customer_details.email;
+      const email = (session.customer_details) ? session.customer_details.email : false
 
       //everything looks good, lets send the email
       if (session.customer_details

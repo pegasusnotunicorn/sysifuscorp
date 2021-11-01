@@ -32,7 +32,7 @@ office-politics:
     - path: "/assets/images/main_office_politics.png"
 ---
 
-The objective of the game is to race around the 5x5 board by building a path to each of the corners. All while backstabbing your fellow players by manipulating the tiles laid out in strategic ways.
+The objective of the game is to race around the 5 x 5 board by building a path to each of the corners. All while backstabbing your fellow players by manipulating the tiles laid out in strategic ways.
 
 It's quite literally _"rat-race, the board game."_
 
