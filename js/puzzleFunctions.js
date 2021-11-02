@@ -113,16 +113,17 @@ export function setupMobile(topText){
   let gameBoardTextLocation = document.getElementById("gameBoardTextLocation");
   let topTextWrapper = document.getElementById("topTextWrapper");
 
+  let mobileCheck = window.mobileCheck();
+  topTextWrapper.setAttribute("viewType", (mobileCheck) ? "mobile" : "desktop");
+
   //mobile and has started
   if (window.mobileCheck() && document.getElementById("startButton").getAttribute("start") === 'true'){
     topTextWrapper.innerHTML = "";
-    topTextWrapper.setAttribute("viewType", "mobile");
     topTextWrapper.appendChild(gameBoardTextWrapper);
   }
   //desktop
   else {
     topTextWrapper.innerHTML = topText;
-    topTextWrapper.setAttribute("viewType", "desktop");
     gameBoardTextLocation.appendChild(gameBoardTextWrapper);
   }
 
@@ -201,7 +202,7 @@ export function showPuzzleText(steps, nextStep, specificReset, bypassReset){
 
     //hide button event handler
     hideButton.addEventListener("click", () => {
-      hidePuzzleText(bindKeyboard, specificReset);
+      hidePuzzleText(bindKeyboard, steps, specificReset);
     });
   }
   //next button shows except at end
@@ -243,22 +244,27 @@ export function toggleHideButton(){
 }
 
 //hide the floating text, unbind keyboard, and show reset buttons
-function hidePuzzleText(bindKeyboard, specificReset){
+function hidePuzzleText(bindKeyboard, steps, specificReset){
   document.getElementById("gameBoardTextWrapper").classList.add("is-hidden");
+  document.getElementById("puzzleWrapper").setAttribute("step", "notlast");
   bindKeyboard.cancel("keyboardListener");
 
   //restart puzzle
   let startText = document.getElementById("startText");
   startText.classList.remove("is-hidden");
-  startText.innerHTML = `<a id='restartPuzzleExplanation'>Click here</a> to repeat the puzzle explanation. Or <a id="restartPuzzle">click here</a> to just reset the puzzle layout.`;
+  startText.innerHTML = `<a id='restartPuzzleExplanation'>Click here</a> to repeat the puzzle explanation. Or <a id="restartPuzzleOnly">click here</a> to just reset the puzzle layout.`;
 
   //restart the whole puzzle page
   let restartPuzzleExplanation = document.getElementById("restartPuzzleExplanation");
   restartPuzzleExplanation.addEventListener("click", () =>{
-    specificReset();
+    showPuzzleText(steps, 0, specificReset);
   });
 
-  let restartPuzzle = document.getElementById("restartPuzzle");
+  //reset the puzzle only
+  let restartPuzzleOnly = document.getElementById("restartPuzzleOnly");
+  restartPuzzleOnly.addEventListener("click", () =>{
+    showPuzzleText(steps, steps.length - 1, specificReset);
+  });
 }
 
 //</editor-fold>

@@ -7,6 +7,7 @@ published: false
 sidebar_link: false
 showheader_mobile: true
 description: "Solve a puzzle and win a coupon for free shipping!"
+
 ---
 
 <link rel="stylesheet" href="../assets/css/puzzle.css">

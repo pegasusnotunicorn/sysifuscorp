@@ -52,9 +52,9 @@ game-images-2:
   </div>
 </div>
 
-## A board game about making optimal moves
+## A delightful puzzle in every turn
 
-Climb the corporate ladder. Plan the perfect turn by carefully managing your cards and resources.
+Plan the perfect turn by carefully managing your cards and resources.
 
 Play crazy multi-card combos that leave your fellow coworkers in the dust.
 

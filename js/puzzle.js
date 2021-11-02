@@ -60,7 +60,7 @@ const steps = [
       puzzleFunctions.emphasizeElement("perfReview", "id", true);   //also undos next step
 
       //undos next step
-      document.getElementById("puzzleWrapper").setAttribute("step", "notlast")
+      document.getElementById("puzzleWrapper").setAttribute("step", "notlast");
       puzzleFunctions.toggleHideButton();
     }
   },
@@ -70,6 +70,7 @@ const steps = [
     left: "50%",
     func: () => {
       //lets gooo
+      puzzleFunctions.setupMobile(topText);
       puzzleFunctions.emphasizeAll();
       document.getElementById("gameBoardTextButtonWrapper").style.flexDirection = "row";
       document.getElementById("gameBoardTextResetButton").classList.add("is-hidden");
@@ -78,6 +79,15 @@ const steps = [
     }
   },
 ];
+
+const topText = `
+  <p>If you can solve the following puzzle, I will give you a coupon for free shipping for my board game.</p>
+  <p>No strings attached. No signups. No tricks. Just a good ol' fashioned puzzle.</p>
+  <p id="startText" class="is-hidden">
+    Click the green button below to start.
+    <span class="is-hidden-mobile is-hidden-tablet-mobile">If you are on a computer, you can use arrow keys to navigate.</span>
+  </p>
+`;
 
 //reset the puzzle
 export function resetPuzzle(){
@@ -108,6 +118,8 @@ export function resetPuzzle(){
   puzzleFunctions.emphasizeElement("redBoss", "id", false);
   puzzleFunctions.emphasizeElement("perfReview", "id", false);
 
+  //check for mobile sizing
+  puzzleFunctions.setupMobile(topText);
 }
 
 //start the step when start button is pressed, pass in cb for specific reset
@@ -121,14 +133,6 @@ export function runPuzzle() {
   opCardsWrapper.appendChild(puzzleFunctions.createOPCard(0, 2));
   opCardsWrapper.appendChild(puzzleFunctions.createOPCard(0, 3));
 
-  let topText = `
-    <p>If you can solve the following puzzle, I will give you a coupon for free shipping for my board game.</p>
-    <p>No strings attached. No signups. No tricks. Just a good ol' fashioned puzzle.</p>
-    <p id="startText" class="is-hidden">
-      Click the green button below to start.
-      <span class="is-hidden-mobile is-hidden-tablet-mobile">If you are on a computer, you can use arrow keys to navigate.</span>
-    </p>
-  `;
   puzzleFunctions.start(steps, resetPuzzle, false, topText);
 }
 
