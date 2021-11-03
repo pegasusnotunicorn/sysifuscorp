@@ -14,17 +14,9 @@ Will you be the one to receive coveted promotion?
 
 Technical Notes:
 
-1. Start cmd prompt
-2. Type `jek` to compile website (if necessary, install Jekyll https://jekyllrb.com/docs/installation)
-3. Use `ntl dev` to start Netlify dev environment
+1. Start cmd prompt / terminal
+2. Type `jek --force-polling` to compile website (if necessary, install Jekyll https://jekyllrb.com/docs/installation)
+3. Use `ntl dev` to start Netlify dev environment for anything Stripe related
 
 * Might need to `bundle update`
 * Or use `bundle exec jekyll serve --force-polling`
-
-Markdown guide:
-https://www.markdownguide.org/basic-syntax
-
-Liquid guide:
-https://shopify.dev/docs/themes/liquid/reference/basics/operators
-
----
