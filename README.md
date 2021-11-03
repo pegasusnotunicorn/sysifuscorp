@@ -1,8 +1,8 @@
-# Sysifus Corp
+# Welcome to Sysifus Corp!
 
 ---
 
-_Welcome To Sysifus Corp_ is a board game about being the first to be promoted at a cut-throat corporation.
+[_Welcome To Sysifus Corp_](https://sysifuscorp.com) is a board game about being the first to be promoted at a cut-throat corporation.
 
 * Choose your own career path by laying down Project Cards.
 * Earn Company Influence by working on Projects.
