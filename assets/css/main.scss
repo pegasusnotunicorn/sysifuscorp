@@ -1,9 +1,9 @@
 ---
 ---
-$sidebar-width: 23rem !default;
-$sidebar-smaller-width: 15rem !default;
-$mid-breakpoint: 55rem !default;
-$large-breakpoint: 75rem !default;
+$sidebar-width: 23em !default;
+$sidebar-smaller-width: 15em !default;
+$mid-breakpoint: 55em !default;
+$large-breakpoint: 75em !default;
 
 @import "hydeout";
 
@@ -233,18 +233,22 @@ input[type="submit"]:hover, button:hover {
 
   //tablet
   @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
-    width: $sidebar-smaller-width !important;
-    position:fixed !important;
+    width: $sidebar-smaller-width;
+    position:fixed;
   }
 
-  //desktop
+  //desktop + tablet
   @media only screen and (min-width: $mid-breakpoint) {
     text-align:left;
-    width: $sidebar-width;
-    position:relative;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
+  }
+
+  //desktop
+  @media only screen and (min-width: $large-breakpoint) {
+    width: $sidebar-width;
+    position:relative;
   }
 }
 #sidebar.is-active{display:flex !important;}
@@ -365,6 +369,7 @@ input[type="submit"]:hover, button:hover {
 //<editor-fold>------------------------------------------CONTAINER---------------------------------------
 
 .container{
+  width:100%;
 
   //mobile
   @media only screen and (max-width: $mid-breakpoint){
@@ -373,17 +378,21 @@ input[type="submit"]:hover, button:hover {
 
   //tablet
   @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
-    padding-left: $sidebar-smaller-width !important;
-    padding-top:0 !important;
+    padding-left: $sidebar-smaller-width;
+    padding-top:0;
   }
 
-  //desktop
+  //desktop + tablet
   @media only screen and (min-width: $mid-breakpoint) {
     overflow-x:hidden;
     position:relative;
-    padding-left:$section-spacing * 2;
     padding-right:$section-spacing * 2;
     padding-bottom:$section-spacing * 2;
+  }
+
+  //desktop only
+  @media only screen and (min-width: $large-breakpoint) {
+    padding-left:$section-spacing * 2;
     padding-top:$section-spacing;
   }
 }
@@ -554,16 +563,20 @@ img {
 
   //tablet
   @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
-    width: calc(100vw - #{$sidebar-smaller-width}) !important;
-    margin-left: -$section-spacing !important;
+    width: calc(100vw - #{$sidebar-smaller-width});
+    margin-left: -$section-spacing;
+  }
+
+  //desktop + tablet
+  @media only screen and (min-width: $mid-breakpoint) {
+    margin-top: -$section-spacing;
+    height: 100vh;
   }
 
   //desktop
-  @media only screen and (min-width: $mid-breakpoint) {
-    margin-left: -$section-spacing * 2;
-    margin-top: -$section-spacing;
-    height: 100vh;
+  @media only screen and (min-width: $large-breakpoint) {
     width: calc(100vw - #{$sidebar-width});
+    margin-left: -$section-spacing * 2;
   }
 }
 
@@ -677,15 +690,20 @@ img {
 
   //tablet
   @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
-    height:auto !important;
+    height:auto;
     flex-wrap:wrap;
   }
 
-  //desktop
+  //desktop + tablet
   @media only screen and (min-width: $mid-breakpoint) {
     display:flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  //desktop
+  @media only screen and (min-width: $large-breakpoint) {
+    flex-wrap:initial;
     height: 160px;
   }
 }
@@ -705,8 +723,8 @@ img {
   }
 
   //desktop
-  @media only screen and (min-width: $mid-breakpoint) {
-    width:200px !important;
+  @media only screen and (min-width: $large-breakpoint) {
+    width:200px;
   }
 }
 
@@ -722,15 +740,15 @@ img {
 
   //tablet
   @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
-    width:75px !important;
-    height:75px !important;
+    width:75px;
+    height:75px;
     margin:auto;
   }
 
   //desktop
-  @media only screen and (min-width: $mid-breakpoint) {
-    width:100px !important;
-    height:100px !important;
+  @media only screen and (min-width: $large-breakpoint) {
+    width:100px;
+    height:100px;
   }
 
 }
