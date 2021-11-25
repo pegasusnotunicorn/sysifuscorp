@@ -83,7 +83,6 @@ span.not-monospace{
   margin: 0;
   padding-left: 10px;
   padding-right: 10px;
-  box-shadow: 0px 0px 10px #7e7e7e;
 
   //mobile
   @media only screen and (max-width: $mid-breakpoint){
@@ -111,7 +110,7 @@ span.not-monospace{
 :not(span).is-yellow{background-color:#fbc95f !important;color:black !important;}
 :not(span).is-blue{background-color:#8b8ec5 !important; color: white !important;}
 :not(span).is-green{background-color:#81c99e !important; color: white !important;}
-:not(span).is-white{background-color:#FFFFFF !important;color:black !important;}
+:not(span).is-white{background-color:#FFFFFF !important;color:black !important;border:0.5px solid rgba(0,0,0,0.3);}
 
 //</editor-fold>
 
@@ -146,6 +145,7 @@ span.not-monospace{
   padding-top:10px;
   padding-bottom:10px;
   width: fit-content;
+  box-shadow: 0px 0px 10px #7e7e7e;
 }
 
 #startText a {
@@ -527,6 +527,7 @@ span.not-monospace{
   padding-top: 5px;
   padding-bottom: 5px;
   z-index:2;
+  box-shadow: 0px 0px 10px #7e7e7e;
 }
 
 #detailsButton{

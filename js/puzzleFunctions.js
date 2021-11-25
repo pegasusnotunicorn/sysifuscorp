@@ -754,19 +754,9 @@ function showDetailedOpCard(e, cardIndex, opCard){
 
     //click for more details on OP card
     let detailsButton = document.getElementById("detailsButton");
-    let cardColor = (e.target.getAttribute("color") != null) ? `is-${e.target.getAttribute("color")}` : "is-white";
-
-    //buttons to use the OP cards in puzzle
-    let effectButtons = document.getElementsByClassName("effectButton");
-    for (let x = 0; x < effectButtons.length; x++){
-      effectButtons[x].classList.remove("is-green", "is-yellow", "is-red", "is-white", "is-blue");
-      effectButtons[x].classList.add(cardColor);
-    }
 
     //clone details button to remove event listener
     let buttonClone = detailsButton.cloneNode(true);
-    buttonClone.classList.remove("is-green", "is-yellow", "is-red", "is-white", "is-blue")
-    buttonClone.classList.add(cardColor);
     buttonClone.addEventListener("click", () => {
       createDetailedView(cardIndex);
     });
