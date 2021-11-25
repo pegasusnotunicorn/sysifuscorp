@@ -248,6 +248,15 @@ export function setupPuzzle() {
 }
 
 //game win!
+//---------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------
+//-------------------------------HELLO MR LAZY DEVELOPER---------------------------------
+//-------------------------------EMAIL ME AT 1MIN@UNICORNWITHWINGS>COM-------------------
+//---------------------------------------------------------------------------------------
+//-------------------------------THANK YOU-----------------------------------------------
+//---------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------
 function youWon(){
   puzzleFunctions.unhidePuzzleText();
   puzzleFunctions.deemphasizeAll();
@@ -260,21 +269,32 @@ function youWon(){
 
 //can't move and can't use any OP
 function checkForLoss(){
-  let spreadARumorCard = document.getElementById("opCard0");
-  let belittleTheCompetitionCard = document.getElementById("opCard3");
+  if (!canUseOPCard() && !checkCanMove()){
+    youLose();
+  }
+}
+
+//check if you can use a OP card
+function canUseOPCard(){
+  let rotateNotUsed = document.getElementById("opCard0").getAttribute("used") != "true";
+  let swapNotUsed = document.getElementById("opCard3").getAttribute("used") != "true";
+  let standInNotUsed = document.getElementById("opCard1").getAttribute("used") != "true";
+  let creditNotUsed = document.getElementById("opCard2").getAttribute("used") != "true";
+  let numCards = getNumAvailOPCards();
 
   //if we have less or = to 1 influence but we dont have either green card
-  let cantUseOP = getCompanyInfluence() <= 1 && spreadARumorCard.getAttribute("used") === "true" && belittleTheCompetitionCard.getAttribute("used") === "true";
+  let currentInfluence = getCompanyInfluence();
+  let canUseOP = (currentInfluence > 0 && (rotateNotUsed || swapNotUsed)) || (currentInfluence >= 2 && (numCards > 2 || standInNotUsed) && creditNotUsed);
 
-  //no moves or cant go anywhere
+  return canUseOP;
+}
+
+//check if you can move
+function checkCanMove(){
   let cardPlayerIsOn = document.getElementById(document.getElementById("playerMeeple").getAttribute("location"));
   let connectedCards = getConnectedCards(cardPlayerIsOn);
   let cantMove = getAmountMoves() <= 0 || connectedCards.length === 0;
-
-  //cant move / cant use OP
-  if (cantUseOP && cantMove){
-    youLose();
-  }
+  return !cantMove;
 }
 
 //loser
@@ -367,9 +387,12 @@ function cancelChoice(){
   //project card related stuff
   unhighlightConnectedCards();
 
-  //remove any OP related buttons
+  //payment related event handling
   paymentEls.removeEls();
   paymentEls.undoPayment();
+  paymentEls.els = [];
+
+  //remove any OP related buttons
   cancelRumor();   //removes all shit from rumor OP
   cancelBelittle();   //removes all shit from swap OP
   cancelStealCredit();    //removes shit from steal credit OP
@@ -382,8 +405,7 @@ function cancelChoice(){
 //set up move button if we have moves left
 function setupMoveButton(){
   let moveButton = document.getElementById("moveButton");
-  let movesLeft = parseInt(document.getElementById("movesLeftNum").innerHTML);
-  if (movesLeft > 0){
+  if (checkCanMove()){
     moveButton.addEventListener("click", clickedMoveButton);
     moveButton.classList.remove("disabled");
   }
@@ -396,8 +418,7 @@ function setupMoveButton(){
 //set up office politics button if we have company influence
 function setupOPButton(){
   let opButton = document.getElementById("opButton");
-  let companyInfluence = getCompanyInfluence();
-  if (companyInfluence > 0){
+  if (canUseOPCard()){
     opButton.addEventListener("click", clickedOPButton);
     opButton.classList.remove("disabled");
   }
@@ -964,7 +985,9 @@ function checkThreeSurroundings(xC, yC, currentRotation){
       highlightOPCardForPuzzle(spreadARumorCard);
       highlightOPCardForPuzzle(belittleTheCompetitionCard);
     }
-    if (influence >= 2 && checkIfEnemyIsNextToMe()){
+
+    //enough cards to pay for steal the credit
+    if (influence >= 2 && checkIfEnemyIsNextToMe() && (standInForSomeoneCard.getAttribute("used") != "true" || (belittleTheCompetitionCard.getAttribute("used") != "true" && spreadARumorCard.getAttribute("used") != "true"))){
       highlightOPCardForPuzzle(stealTheCreditCard);
     }
   }
@@ -998,6 +1021,23 @@ function checkThreeSurroundings(xC, yC, currentRotation){
     opCard.classList.remove("disabled");
   }
 
+  //get the number of unused cards
+  function getNumAvailOPCards(){
+    let num = 0;
+    let availOPCards = document.getElementsByClassName("opCard");
+    for (let x = 0; x < availOPCards.length; x++){
+      if (availOPCards[x].getAttribute("used") != "true"){
+        if (availOPCards[x].id === "opCard1"){
+          num += 2;
+        }
+        else {
+          num++;
+        }
+      }
+    }
+    return num;
+  }
+
   //click on a OP card. show effects that can be used
   function clickedOPCardToUse(opCard){
 
@@ -1029,8 +1069,8 @@ function checkThreeSurroundings(xC, yC, currentRotation){
 
       //only show effect buttons if we have enough influence + cards
       let influence = getCompanyInfluence();
-      let numCards = parseInt(document.getElementsByClassName("opCard").length);
-      let standInForSomeone = document.getElementById("opCard1");
+      let numCards = getNumAvailOPCards();
+      let standInForSomeone = document.getElementById("opCard1").getAttribute("used") != "true";
 
       switch (opCard.id){
         //spread a rumor
@@ -1084,7 +1124,6 @@ function checkThreeSurroundings(xC, yC, currentRotation){
       for (let x = 0; x < paymentEls.els.length; x++){
         paymentEls.els[x].card.removeEventListener("click", paymentEls.els[x].el);
       }
-      paymentEls.els = [];
     },
     undoPayment: () =>{
       for (let y = 0; y < paymentEls.els.length; y++){
@@ -1189,6 +1228,7 @@ function checkThreeSurroundings(xC, yC, currentRotation){
         els[x].card.removeEventListener("click", els[x].el);
       }
     },
+    chosenCard: false,
   };
 
   //chose to use spread a rumor
@@ -1217,6 +1257,7 @@ function checkThreeSurroundings(xC, yC, currentRotation){
           let el = () => {
             spawnRotateButtons(rotateableCards[x], addon, opCard, cardsPaid);
           }
+
           rotateEls.els.push({
             card: rotateableCards[x],
             el: el
@@ -1322,6 +1363,8 @@ function checkThreeSurroundings(xC, yC, currentRotation){
     buttonsWrapper.setAttribute("rotation", wrapperRotation);
     buttonsWrapper.style.transform = `rotate(${wrapperRotation}deg)`
 
+    rotateEls.chosenCard = cardToRotate;
+
     //returned to original rotation (aka did not rotate this card)
     if (Math.abs(currentRotation % 360) === Math.abs(originalRotation % 360)){
       enableButtonsWrappers(true, buttonsWrapper);
@@ -1343,11 +1386,7 @@ function checkThreeSurroundings(xC, yC, currentRotation){
   function confirmRotation(cardToRotate, addon, opCard, cardsPaid){
 
     //for undo, calculate a originalRotation to avoid super spins
-    let originalRotation = parseInt(cardToRotate.getAttribute("originalRotation"));
-    let rotation = parseInt(cardToRotate.getAttribute("rotation"));
-    let numRots = Math.floor(Math.abs(rotation / 360));
-    let negOrPos = parseInt(rotation) > 0 ? 1 : -1;
-    originalRotation = originalRotation + (360 * numRots * negOrPos);
+    let originalRotation = getSpinnyOldRotate(cardToRotate);
 
     cardToRotate.setAttribute("originalRotation", cardToRotate.getAttribute("rotation"));
     removeElementsByClass("rotateButtonsWrapper");
@@ -1372,6 +1411,9 @@ function checkThreeSurroundings(xC, yC, currentRotation){
         redrawOPCard(opCard);
       }
     });
+
+    rotateEls.removeEls(rotateEls.els);
+    rotateEls.chosenCard = false;
 
     discardOPCard(opCard);
     puzzleFunctions.unhighlightAllOPCards();
@@ -1404,17 +1446,33 @@ function checkThreeSurroundings(xC, yC, currentRotation){
     }
   }
 
+  //for undo and cancel, calculate a originalRotation to avoid super spins
+  function getSpinnyOldRotate(cardToRotate){
+    let originalRotation = parseInt(cardToRotate.getAttribute("originalRotation"));
+    let rotation = parseInt(cardToRotate.getAttribute("rotation"));
+    let numRots = Math.floor(Math.abs(rotation / 360));
+    let negOrPos = parseInt(rotation) > 0 ? 1 : -1;
+    originalRotation = originalRotation + (360 * numRots * negOrPos);
+    return originalRotation;
+  }
+
   //cancel all spread rumor related stuff
   function cancelRumor(){
     puzzleFunctions.unhighlightAllOPCards();
     removeElementsByClass("rotateButtonsWrapper");
+    resetSquareCardCursors();
 
+    //remove all event handlers
     rotateEls.removeEls(rotateEls.els);
+    rotateEls.els = new Array();
 
-    //undo z-indexes
-    let projectCards = document.getElementsByClassName("projectCard");
-    for (let x = 0; x < projectCards; x++){
-      projectCards[x].style.zIndex = "";
+    //undo rotations and zIndex
+    if (rotateEls.chosenCard){
+      if (rotateEls.chosenCard.getAttribute("rotation") != rotateEls.chosenCard.getAttribute("originalRotation")){
+        setRotation(rotateEls.chosenCard, getSpinnyOldRotate(rotateEls.chosenCard));
+      }
+      rotateEls.chosenCard.style.zIndex = "";
+      rotateEls.chosenCard = false;
     }
   }
 
@@ -1582,6 +1640,10 @@ function checkThreeSurroundings(xC, yC, currentRotation){
       }
     });
 
+    swapEls.removeEls(swapEls.firstEls);
+    swapEls.removeEls(swapEls.secondEls);
+    swapEls.firstEls = [];
+    swapEls.secondEls = [];
     cancelBelittle();
     discardOPCard(opCard);
     puzzleFunctions.unhighlightAllOPCards();
@@ -1623,6 +1685,12 @@ function checkThreeSurroundings(xC, yC, currentRotation){
   function cancelBelittle(){
 
     removeElementsByClass("numberDomWrapper");
+    resetSquareCardCursors();
+
+    swapEls.removeEls(swapEls.firstEls);
+    swapEls.removeEls(swapEls.secondEls);
+    swapEls.firstEls = [];
+    swapEls.secondEls = [];
 
     //undo the image only opacity when appending swap numbers
     let imagesOpaque = document.querySelectorAll("img.deemphasized.is-active");

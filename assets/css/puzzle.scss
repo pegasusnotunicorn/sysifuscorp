@@ -59,6 +59,14 @@ span.not-monospace{
   transition: all 0.25s ease-in-out;
 }
 
+.no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 .fade.is-active {
   opacity: 1;
   z-index:9;
