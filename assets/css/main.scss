@@ -126,8 +126,9 @@ is-display-flex{
 .buttonlink.is-yellow, .button.is-yellow{background-color:#fbc95f;color:black;}
 .buttonlink.is-blue, .button.is-blue{background-color:#8b8ec5;}
 .buttonlink.is-green, .button.is-green{background-color:#81c99e;}
+.buttonlink.is-white, .button.is-white{background-color:#FFFFFF;color:black;border:0.5px solid rgba(0,0,0,0.3)}
 .buttonlink.is-fat, .button.is-fat{padding:20px;}
-.buttonlink.is-transparent, .button.is-transparent{background-color:white;}
+.buttonlink.is-transparent, .button.is-transparent{background-color:#FFFFFF;}
 
 #whiteStuckBackground{
   background-color:white;

@@ -64,7 +64,7 @@ The closest you can get to legally stabbing your coworkers in the back. 😈
 
 ---
 
-{% include trytutorial.md %}
+{% include trypuzzle.md %}
 
 ---
 

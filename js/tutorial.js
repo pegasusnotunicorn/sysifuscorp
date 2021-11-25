@@ -69,9 +69,9 @@ const steps = [
       let randomProjects1 = puzzleFunctions.xRandomIntFromInterval(3, 7, 16);
       let projectCardsWrapper = document.getElementById("projectCardsWrapper");
       projectCardsWrapper.innerHTML = "";
-      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(0, randomProjects1[0], puzzleFunctions.gridCoords[0][1].left, puzzleFunctions.gridCoords[0][1].top, "top"));
-      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(1, randomProjects1[1], puzzleFunctions.gridCoords[1][2].left, puzzleFunctions.gridCoords[1][2].bottom, "bottom", 180));
-      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(2, randomProjects1[2], puzzleFunctions.gridCoords[0][3].left, puzzleFunctions.gridCoords[0][3].top, "top", 90));
+      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(0, randomProjects1[0], puzzleFunctions.gridCoords[0][1].left, puzzleFunctions.gridCoords[0][1].top));
+      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(1, randomProjects1[1], puzzleFunctions.gridCoords[1][2].left, puzzleFunctions.gridCoords[1][2].top, 180));
+      projectCardsWrapper.appendChild(puzzleFunctions.createProjectCard(2, randomProjects1[2], puzzleFunctions.gridCoords[0][3].left, puzzleFunctions.gridCoords[0][3].top, 90));
       puzzleFunctions.emphasizeElement("projectCard", "class", true);
 
       //undo next step

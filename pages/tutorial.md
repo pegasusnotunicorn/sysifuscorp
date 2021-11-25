@@ -30,9 +30,9 @@ description: "A simplified tutorial on how to play Welcome to Sysifus Corp."
 
 {% include puzzle-board.html %}
 
-<!-- ---
+---
 
-{% include trypuzzle.md %} -->
+{% include trypuzzle.md %}
 
 ---
 

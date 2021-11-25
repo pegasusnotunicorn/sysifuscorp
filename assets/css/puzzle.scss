@@ -43,6 +43,9 @@ span.is-monospace {
   text-transform:uppercase;
   font-size:.9em;
 }
+span.not-monospace{
+  font-family:initial !important;
+}
 
 .fade:not(.is-fixed) {
   opacity:0;
@@ -68,7 +71,6 @@ span.is-monospace {
   text-transform:uppercase;
   cursor:pointer;
   position: absolute;
-  font-size: .8em;
   border-radius: 5px;
   margin: 0;
   padding-left: 10px;
@@ -77,28 +79,31 @@ span.is-monospace {
 
   //mobile
   @media only screen and (max-width: $mid-breakpoint){
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: .9em;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   //tablet
   @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    font-size: .8em;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 
   //desktop
   @media only screen and (min-width: $large-breakpoint) {
+    font-size: .8em;
     padding-top: 2px;
     padding-bottom: 2px;
   }
 }
 
-.gamebutton.is-red{background-color: #ef5559;}
-.gamebutton.is-yellow{background-color:#fbc95f;color:black;}
-.gamebutton.is-blue{background-color:#8b8ec5;}
-.gamebutton.is-green{background-color:#81c99e;}
-.gamebutton.is-white{background-color:#FFFFFF;color:black;}
+:not(span).is-red{background-color: #ef5559 !important; color: white !important;}
+:not(span).is-yellow{background-color:#fbc95f !important;color:black !important;}
+:not(span).is-blue{background-color:#8b8ec5 !important; color: white !important;}
+:not(span).is-green{background-color:#81c99e !important; color: white !important;}
+:not(span).is-white{background-color:#FFFFFF !important;color:black !important;}
 
 //</editor-fold>
 
@@ -132,6 +137,7 @@ span.is-monospace {
   z-index: 999999;
   padding-top:10px;
   padding-bottom:10px;
+  width: fit-content;
 }
 
 #startText a {
@@ -176,6 +182,14 @@ span.is-monospace {
     min-height:auto;
     padding-top:0;
   }
+
+  > h1, > p {
+    text-align:center;
+  }
+
+  >h1 {
+    margin-top: 0;
+  }
 }
 
 #gameBoardTextButtonWrapper{
@@ -189,11 +203,6 @@ span.is-monospace {
   bottom: 0;
   position:unset;
 
-  //mobile
-  @media only screen and (max-width: $mid-breakpoint){
-    box-shadow:unset !important;
-  }
-
   //desktop
   @media only screen and (min-width: $large-breakpoint) {
     transform: translate(25%, 50%);
@@ -201,11 +210,25 @@ span.is-monospace {
   }
 }
 
-#gameBoardTextPrevButton{
+#gameBoardTextHideButton {
+  height: fit-content;
+  width: fit-content;
+  color: black;
+  top: 0%;
+  left: 95%;
+  padding: 0px;
+  transform: translate(-50%,0);
+  margin: 0;
+  position:absolute;
+  cursor:pointer;
+  font-size:1.25em;
+}
+
+#gameBoardTextPrevButton, #gameBoardTextCancelButton, #gameBoardTextUndoButton{
   left: -40px;
 }
 
-#gameBoardTextResetButton, #gameBoardTextHideButton, #gameBoardTextNextButton{
+#gameBoardTextResetButton, #gameBoardTextNextButton{
   right: -5px;
 }
 
@@ -238,26 +261,40 @@ span.is-monospace {
   position:unset;
 }
 
+.meeple {
+  z-index:10 !important;
+  width:6.5% !important;
+}
+
 #playerMeeple{
-  width:6.5%;
-  top:60%;
+  top:50%;
   left:10%;
-  z-index:10;
+}
+
+#enemyMeeple{
+  top:52%;
+  left:70%;
 }
 
 .squareCard{
+  position:relative;
   width: 19%;
   z-index: 8;
 }
 
 #redBoss{
   left: 0.5%;
-  bottom: 1%;
+  top: 57%;
 }
 
 #perfReview{
-  right:0.5%;
-  bottom:1%;
+  left:80.5%;
+  top: 57%;
+}
+
+.projectCardOuterWrapper{
+  width:fit-content;
+  height:fit-content;
 }
 
 //<editor-fold>------------------------------TUTORIAL SPECIFIC---------------------------------------
@@ -402,6 +439,10 @@ span.is-monospace {
   cursor:pointer;
 }
 
+.opCard.disabled{
+  cursor:not-allowed !important;
+}
+
 .opCard.is-fixed{
   position:fixed !important;
   top:50% !important;
@@ -446,20 +487,52 @@ span.is-monospace {
   }
 }
 
-#detailsButton{
+#effectButton0{
+  top:67.5%;
+}
+
+#effectButton1{
+  top:90%;
+}
+
+.effectButton{
+  left:4%;
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    font-size:0.75em;
+    transform: translate(-18%, -8%);
+    padding-top: 1px !important;
+    padding-bottom: 1.5px !important;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
+    font-size: 0.8em;
+    transform: translate(2%, -15%);
+  }
+}
+
+#detailsButton, .effectButton{
   position: absolute;
-  right: 0;
-  top: 0;
   width: fit-content;
   padding-top: 5px;
   padding-bottom: 5px;
   z-index:2;
+}
+
+#detailsButton{
+  top: 0;
+  right: 0;
 
   //mobile
   @media only screen and (max-width: $mid-breakpoint){
-    transform: translate(-10%, -15%);
+    transform: translate(-15.5%, 145%);
+    top: unset;
+    bottom: 0;
   }
 
+  //desktop
   @media only screen and (min-width: $mid-breakpoint) {
     transform: translate(-25%, -15%);
   }
@@ -478,5 +551,97 @@ span.is-monospace {
 }
 
 #nameDetail{z-index:10;}
+
+//</editor-fold>
+
+//<editor-fold>------------------------------PUZZLE SPECIFIC--------------------------------------
+
+.puzzleButtonWrapper{
+  display:flex;
+  flex-direction:column;
+  margin-top:1rem;
+}
+
+.puzzleButton{
+  position:relative !important;
+  padding:1rem !important;
+  margin-bottom:1rem;
+  text-align:center;
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+}
+
+.puzzleButton.disabled{
+  cursor:not-allowed !important;
+  opacity: 0.33 !important;
+}
+
+.rotateButtonsWrapper, .numberDomWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  cursor:default;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.rotateButtonsWrapper.disabled > div, .rotateButtonsWrapper > div.disabled{
+  opacity:0.25 !important;
+  cursor:not-allowed !important;
+}
+
+.rotateButtonsWrapper > div, .numberDom{
+  background-color: white;
+  box-shadow: 0px 0px 10px #7e7e7e;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+.rotateButtonsWrapper > div{
+  cursor:pointer;
+
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    font-size: 1em;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  //desktop
+  @media only screen and (min-width: $mid-breakpoint) {
+    font-size: 1.25em;
+    padding: 10px;
+    padding-top: 5px;
+  }
+}
+
+.numberDom{
+  font-size: 1.25em;
+  padding: 10px 15px;
+  line-height: 100%;
+}
+
+.rotateButton.cw{
+  -moz-transform:    scaleX(-1); /* Gecko */
+  -o-transform:      scaleX(-1); /* Opera */
+  -webkit-transform: scaleX(-1); /* Webkit */
+  transform:         scaleX(-1); /* Standard */
+  filter: FlipH;                 /* IE 6/7/8 */
+}
 
 //</editor-fold>

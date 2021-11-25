@@ -22,4 +22,4 @@ layout: main
 
 {% include related_posts.md %}
 
-{% include trytutorial.md %}
+{% include trypuzzle.md %}

@@ -36,11 +36,15 @@ The objective of the game is to race around the 5 x 5 board by building a path t
 
 It's quite literally _"rat-race, the board game."_
 
-You can teach the game in about 5 minutes and in a few rounds, everybody will have understood all of the mechanics. Very easy to learn but hard to master.
+You can teach the game in about 5 minutes. In just a few rounds, everybody will have understood the mechanics. A very easy to learn but hard to master game.
 
 ---
 
 {% include trytutorial.md %}
+
+---
+
+{% include trypuzzle.md %}
 
 ---
 
@@ -54,7 +58,7 @@ The gameplay is somewhat like a mix of...
 - [_Saboteur's_](https://boardgamegeek.com/boardgame/9220/saboteur) exploration without the hidden roles—everyone is screwing over everyone.
 - [_Chess's_](https://boardgamegeek.com/boardgame/171/chess) strategy of planning your move and adjusting them according to your opponent's moves.
 
-<a class="buttonlink is-blue" href="/rulebook.pdf">Click here for the full rulebook PDF!</a>
+<a class="buttonlink is-white" href="/rulebook.pdf">Click here for the full rulebook PDF!</a>
 
 ---
 

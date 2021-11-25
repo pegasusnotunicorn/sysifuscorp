@@ -28,4 +28,4 @@ I'd like to thank you for visiting and welcome you along on this journey. While 
 
 ---
 
-{% include trytutorial.md %}
+{% include trypuzzle.md %}

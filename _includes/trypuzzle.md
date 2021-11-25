@@ -1,7 +1,7 @@
 ## Want to win free shipping?
 
-Now that you know the basic rules, try solving this puzzle and win free shipping on the game! Click the button below to try!
+Are you feeling smart? Solve a puzzle and win free shipping on the game.
 
-No strings attached. No signups. No tricks. Just a good ol' fashioned puzzle.
+No strings attached. No signups. No tricks.
 
 <p><a href="/puzzle" class="puzzle-button buttonlink is-blue">Click here to try the puzzle!</a></p>

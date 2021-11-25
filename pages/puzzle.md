@@ -2,8 +2,8 @@
 layout: main
 title: Win free shipping!
 header-title: Puzzle
-<!-- permalink: /puzzle -->
-published: false
+permalink: /puzzle
+<!-- published: false -->
 sidebar_link: false
 showheader_mobile: true
 description: "Solve a puzzle and win a coupon for free shipping!"
@@ -12,11 +12,11 @@ description: "Solve a puzzle and win a coupon for free shipping!"
 
 <link rel="stylesheet" href="../assets/css/puzzle.css">
 <script type="module">
-  import { resetPuzzle, runPuzzle } from '../js/puzzle.js';
+  import { resetPuzzle, setupPuzzle } from '../js/puzzle.js';
 
   //run puzzle when page loads
   window.addEventListener('load', (event) => {
-    runPuzzle();
+    setupPuzzle();
   });
 </script>
 

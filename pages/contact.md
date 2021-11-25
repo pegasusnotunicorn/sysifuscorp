@@ -81,4 +81,4 @@ Thank you very much for helping me spread the good word about our great corporat
 
 ---
 
-{% include trytutorial.md %}
+{% include trypuzzle.md %}

@@ -5,15 +5,19 @@
   <div id="gameboardWrapper">
 
     <!-- start button -->
-    <p id="startButton" class="gamebutton is-green noselect is-hidden">Click here to start</p>
+    <p id="startButton" class="gamebutton noselect is-green noselect is-hidden">Click here to start</p>
 
     <!-- gameboard -->
     <div id="gameboardOverflowWrapper">
       <img id="gameboard" class="gameObj fadeable deemphasized is-active" src="../assets/images/puzzle/gameboard.png" />
     </div>
 
+    <!-- put project cards in here -->
+    <div id="projectCardsWrapper"></div>
+
     <!-- default objects -->
-    <img id="playerMeeple" class="gameObj fadeable fade" src="../assets/images/puzzle/meeple1.png" />
+    <img id="playerMeeple" class="meeple gameObj fadeable fade" src="../assets/images/puzzle/meeple1.png" />
+    <img id="enemyMeeple" class="meeple gameObj fadeable fade is-hidden" src="../assets/images/puzzle/meeple1.png" />
     <img id="redBoss" class="gameObj fadeable squareCard fade" src="../assets/images/puzzle/redBoss.png" />
     <img id="perfReview" class="gameObj fadeable squareCard fade" src="../assets/images/puzzle/perfReview.png" />
 
@@ -21,17 +25,16 @@
     <div id="gameBoardTextLocation">
       <div id="gameBoardTextWrapper" class="fade is-hidden">
         <div id="gameBoardTextButtonWrapper">
-          <p id="gameBoardTextNextButton" class="gameBoardTextButton gamebutton is-green">Next →</p>
-          <p id="gameBoardTextResetButton" class="gameBoardTextButton gamebutton is-hidden is-blue">⟲ Restart</p>
-          <p id="gameBoardTextHideButton" class="gameBoardTextButton gamebutton is-hidden is-red">✕ Hide</p>
-          <p id="gameBoardTextPrevButton" class="gameBoardTextButton gamebutton is-hidden is-yellow">← Prev</p>
+          <p id="gameBoardTextHideButton" class="noselect is-hidden">✕</p>
+          <p id="gameBoardTextNextButton" class="gameBoardTextButton gamebutton noselect is-green">Next →</p>
+          <p id="gameBoardTextPrevButton" class="gameBoardTextButton gamebutton noselect is-hidden is-yellow">← Prev</p>
+          <p id="gameBoardTextResetButton" class="gameBoardTextButton gamebutton noselect is-hidden is-blue">⟲ Restart</p>
+          <p id="gameBoardTextUndoButton" class="gameBoardTextButton gamebutton noselect is-hidden is-white">← Undo</p>
+          <p id="gameBoardTextCancelButton" class="gameBoardTextButton gamebutton noselect is-hidden is-red">✕ Cancel</p>
         </div>
         <p id="gameBoardText"></p>
       </div>
     </div>
-
-    <!-- put project cards in here -->
-    <div id="projectCardsWrapper"></div>
 
     <!-- tutorial specific -->
     <div id="arrowsWrapper">
@@ -58,7 +61,7 @@
       </div>
       <div id="influenceSection" class="fadeable playerBoardSection is-active deemphasized">
         <h4 class="playerBoardElem">Company Influence ( <img class="playerBoardIcon" src="../assets/images/puzzle/influenceIcon.png" /> ) : <span id="companyInfNum">0</span></h4>
-        <p>Used to pay for the <span class='is-bold is-monospace'>Office Politics </span> ( <img class="playerBoardIcon opIcon" src="../assets/images/puzzle/opIcon.png" /> ) cards in your hand.<br class="is-hidden-tablet-mobile"> Some effects require additional cards as added payment.</p>
+        <p>Used to pay for the <span class='is-bold is-monospace'>Office Politics </span> ( <img class="playerBoardIcon opIcon" src="../assets/images/puzzle/opIcon.png" /> ) cards in your hand.<br class="is-hidden-tablet-mobile"> Some effects require additional cards as added payment.<br class="is-hidden-tablet-mobile"> Capped at 5 influence.</p>
       </div>
     </div>
     <div id="handWrapper">
@@ -73,6 +76,10 @@
       </div>
     </div>
     <div id="opCardDetails" class="noselect is-hidden">
+      <div id="effectButtonsWrapper" class="noselect is-hidden">
+        <p id="effectButton0" class="effectButton gamebutton noselect">Use effect →</p>
+        <p id="effectButton1" class="effectButton gamebutton noselect">Use effect →</p>
+      </div>
       <div id="detailsButtonWrapper" class="noselect">
         <p id="detailsButton" class="gamebutton noselect">✓ Click here for more details</p>
       </div>
