@@ -1,6 +1,6 @@
 ---
 layout: main
-title: Contact Us
+title: Contact
 header-title: Contact
 permalink: /contact
 sidebar_link: true
