@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: main
 title: Buy now!
 header-title: Buy now!
 permalink: /buy
-showheader_mobile: true
+showheader_mobile: false
 description: "Now redirecting you to the purchase page..."
 
 wonmin-lee:
