@@ -6,7 +6,7 @@ permalink: /rulebook
 description: "Click here to read the rulebook for Welcome to Sysifus Corp."
 image: "/assets/images/rulebook.png"
 ---
-<meta http-equiv="refresh" content="1;url=/rulebook.pdf">
+<meta http-equiv="refresh" content="1;url=/assets/pdf/rulebook.pdf">
 <script type="text/javascript">
     window.location.href = "/assets/pdf/rulebook.pdf"
 </script>

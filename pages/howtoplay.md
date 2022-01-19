@@ -58,7 +58,7 @@ The gameplay is somewhat like a mix of...
 - [_Saboteur's_](https://boardgamegeek.com/boardgame/9220/saboteur) exploration without the hidden roles—everyone is screwing over everyone.
 - [_Chess's_](https://boardgamegeek.com/boardgame/171/chess) strategy of planning your move and adjusting them according to your opponent's moves.
 
-<a class="buttonlink is-white" href="/rulebook.pdf">Click here for the full rulebook PDF!</a>
+<a class="buttonlink is-white" href="/assets/pdf/rulebook.pdf">Click here for the full rulebook PDF!</a>
 
 ---
 
