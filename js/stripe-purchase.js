@@ -7,7 +7,10 @@ export async function handleFormSubmission(event) {
   buttonText.classList.add('is-invisible');
   buttonIcon.classList.add('is-active', "ld-spin");
 
-  const response = await fetch('/.netlify/functions/create-checkout', {
+  let params = (new URL(document.location)).searchParams;
+  let ref = params.get("ref");
+
+  const response = await fetch(`/.netlify/functions/create-checkout?ref=${ref}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

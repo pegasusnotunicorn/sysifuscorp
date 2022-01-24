@@ -1,6 +1,8 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 exports.handler = async (event) => {
+  let ref = event.queryStringParameters.ref;
+
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     billing_address_collection: 'auto',
@@ -21,6 +23,14 @@ exports.handler = async (event) => {
         },
       }
     ],
+    metadata: {
+      "referrer" : ref
+    },
+    payment_intent_data: {
+      metadata: {
+        "referrer" : ref
+      },
+    },
     shipping_rates: [process.env.SHIPPING_RATE_AMERICA],
     allow_promotion_codes: true,
     expires_at: Math.floor(Date.now() / 1000) + (3600 * 1),   //configured to expire after 1 hour
