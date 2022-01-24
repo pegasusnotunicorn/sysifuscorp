@@ -101,15 +101,15 @@
     document.addEventListener('DOMContentLoaded', function() {
       //if ref exists for seb
       let params = (new URL(document.location)).searchParams;
-      if (params.get("ref") === "seb"){
+      if (params.get("ref") !== null){
 
         //add window url params to to all href's params
         [...document.querySelectorAll('a')].forEach(e=>{
           const url = new URL(e.href)
           for (let [k,v] of new URLSearchParams(window.location.search).entries()){
 
-            //only the correct one
-            if (k === "ref" && v === "seb"){
+            //only for refs
+            if (k === "ref"){
               url.searchParams.set(k,v)
             }
           }
