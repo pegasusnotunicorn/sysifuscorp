@@ -22,8 +22,11 @@ wonmin-lee:
     document.getElementById("main-title").innerHTML = "Uh-oh. We encountered an error!";
   }
 
+  let params = (new URL(document.location)).searchParams;
+  let ref = params.get("ref");
+
   async function redirectStripe(){
-    const response = await fetch('/.netlify/functions/create-checkout', {
+    const response = await fetch(`/.netlify/functions/create-checkout?ref=${ref}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
