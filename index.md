@@ -47,7 +47,7 @@ game-images-2:
   <img id="heroImage" src="/assets/images/gallery/Box1.png" />
   <img class="is-invisible" src="/assets/images/gallery/Box2.png" />
   <div class="heroText">
-    <h2>A delightful puzzle in every turn.</h2>
+    <h2 class="is-hidden-mobile">A delightful puzzle in every turn</h2>
     <small>A strategic, competitive, and corporate board game.</small>
   </div>
 </div>

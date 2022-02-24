@@ -70,14 +70,13 @@ logo:
 - Started development in June 2018
 - Website built November 2018
 - [Kickstarter launched on February 2021](https://bit.ly/sysifuscorp)
-- Available to the public only 6 months later on August 2021
+- Available to the public only 6 months later on September 2021
 - Located in New York, NY
 - Created by [Wonmin Lee](https://1minlee.com/)
 - 2 to 4 players
 - Ages 14+
-- Playtime between 30 to 75minutes (~10-20 min per player)
+- Playtime around 10 to 20 min PER player
 - [Pronounced like the greek myth Sisyphus](https://www.youtube.com/watch?v=PHP8YtUzRDw)
-{% include image.html img-details=page.game-details %}
 
 ### Game Description
 >Welcome to Sysifus Corp! You are EMPLOYEE#318996 and are part of the most recent cohort of new hires here at Sysifus Corp. Your goal at this company is to suck up to all three Bosses before attending your annual Performance Review. The first employee to do so will be promoted! But be careful as your fellow coworkers will do anything to make you fail.
@@ -168,14 +167,14 @@ We are currently looking for game reviewers who will review the game for us! Ple
 <div class="video-container is-half">
 <iframe class="video" src="https://www.youtube.com/embed/Ck1RL-m3Bo0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
+<!-- 
 <div class="video-container is-half">
 <iframe class="video" src="https://www.youtube.com/embed/s10q7He6tTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <div class="video-container is-half">
 <iframe class="video" src="https://www.youtube.com/embed/8iuNrIvNJ-w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+</div> -->
 
 <div class="video-container is-half">
 <iframe class="video" src="https://www.youtube.com/embed/JyxhUk4xMyM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
