@@ -57,9 +57,10 @@ logo:
 Here are some of the many ways you can get in touch.
 * [ **Email**][email-us]
 * [ **Instagram** ][instagram]
-* [ **Facebook**][facebook]
-* [ **Twitter**][twitter]
 * [ **Reddit**][reddit]
+* [ **TikTok**][tiktok]
+* [ **Twitter**][twitter]
+* [ **Facebook**][facebook]
 * [ **BoardGameGeek**][bgg]
 
 [email-us]: mailto:hello@sysifuscorp.com
@@ -68,6 +69,7 @@ Here are some of the many ways you can get in touch.
 [twitter]: https://twitter.com/sysifuscorp
 [reddit]: https://www.reddit.com/user/sysifuscorp
 [bgg]: https://boardgamegeek.com/boardgame/318996/welcome-sysifus-corp
+[tiktok]: https://www.tiktok.com/@pegasusgamesnyc
 
 ---
 
