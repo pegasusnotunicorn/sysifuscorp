@@ -41,6 +41,16 @@ game-images-2:
       heroImage.src = "/assets/images/gallery/Box1.png"
     }
   }
+
+  //show popup after 5s
+  const myTimeout = setTimeout(()=>{
+    document.getElementById("popup").classList.remove('is-hidden');
+  }, 5000);
+
+  hidePopup = () => {
+    const popup = document.getElementById("popup")
+    popup.classList.add("is-hidden");
+  }
 </script>
 
 <div onclick="flipBox()" class="heroImage no-select">
@@ -67,6 +77,20 @@ The closest you can get to legally stabbing your coworkers in the back. 😈
 {% include trypuzzle.md %}
 
 ---
+
+<div id="popup" class="popup is-hidden">
+  <div class="popup-message">
+    <div onclick="hidePopup()" class="popup-x">✖</div>
+    <img src="/assets/images/lcm.jpg" />
+    <div class="popup-message-text">
+      <h2>Check out my new game!</h2>
+      <p>Play as one of 25 different mythical creatures with modern day jobs (orc hacker, dragon chef, troll lawyer, etc). Fall in love or stir up drama as part of a reality TV show!</p>
+      <a href="https://lovecareermagic.com" target="_blank">Learn more</a>
+    </div>
+  </div>
+  <div onclick="hidePopup()" class="popup-background"></div>
+</div>
+
 
 ## If you like any of these mechanics then this game is for you!
 
