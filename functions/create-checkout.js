@@ -26,6 +26,9 @@ exports.handler = async (event) => {
     metadata: {
       "referrer" : ref
     },
+    tax_id_collection: {
+      enabled: true,
+    },
     payment_intent_data: {
       metadata: {
         "referrer" : ref
