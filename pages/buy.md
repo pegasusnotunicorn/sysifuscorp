@@ -17,7 +17,13 @@ wonmin-lee:
 </div>
 
 <script type="module">
-  function errorHandling(){
+
+  window.location.href = "https://buy.stripe.com/fZeaGw7Co2AK3sYfYZ";
+
+</script>
+
+
+<!-- function errorHandling(){
     document.getElementById("main-text").innerHTML = "Something went wrong! Please refresh the page and try again.";
     document.getElementById("main-title").innerHTML = "Uh-oh. We encountered an error!";
   }
@@ -48,5 +54,4 @@ wonmin-lee:
 
   }
 
-  redirectStripe();
-</script>
+  redirectStripe(); -->
