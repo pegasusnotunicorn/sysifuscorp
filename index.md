@@ -44,12 +44,12 @@ game-images-2:
 
   //show popup after 5s
   const myTimeout = setTimeout(()=>{
-    document.getElementById("popup").classList.remove('is-hidden');
+    document.getElementById("popup_container").classList.remove('is-hidden');
   }, 5000);
 
   hidePopup = () => {
-    const popup = document.getElementById("popup")
-    popup.classList.add("is-hidden");
+    const popup_container = document.getElementById("popup_container")
+    popup_container.classList.add("is-hidden");
   }
 </script>
 
@@ -78,7 +78,7 @@ The closest you can get to legally stabbing your coworkers in the back. 😈
 
 ---
 
-<div id="popup" class="popup is-hidden">
+<div id="popup_container" class="popup_container is-hidden">
   <div class="popup-message">
     <div onclick="hidePopup()" class="popup-x">✖</div>
     <img src="/assets/images/lcm.jpg" />
