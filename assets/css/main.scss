@@ -94,7 +94,7 @@ is-display-flex{
 
 //</editor-fold>
 
-//<editor-fold>------------------------------------------GLOBAL---------------------------------------
+//<editor-fold>------------------------------------------POP UP ---------------------------------------
 
 .popup_container{
   height:100vh;
@@ -181,7 +181,6 @@ is-display-flex{
 }
 
 //</editor-fold>
-
 
 //<editor-fold>------------------------------------------BUTTONS & INPUTS---------------------------------------
 
@@ -298,7 +297,6 @@ input[type="submit"]:hover, button:hover {
 
 //<editor-fold>------------------------------------------SIDE BAR---------------------------------------
 
-
 #sidebar {
   background-color: rgb(75,75,75);
   background-image: linear-gradient(to bottom, rgb(75,75,75), #000);
@@ -319,6 +317,7 @@ input[type="submit"]:hover, button:hover {
     display:none;
     text-align:center;
     position:fixed;
+    padding-top:1rem;
   }
 
   //tablet
@@ -921,6 +920,7 @@ img {
   @media only screen and (max-width: $mid-breakpoint){
     left:$section-spacing;
     top:$section-spacing*-1;
+    margin-top:1em;
   }
 
   //desktop

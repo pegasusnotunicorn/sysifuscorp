@@ -42,16 +42,16 @@ game-images-2:
     }
   }
 
-  //show popup after 5s
-  const myTimeout = setTimeout(()=>{
-    document.getElementById("popup_container").classList.remove('is-hidden');
-  }, 5000);
-
-  hidePopup = () => {
-    const popup_container = document.getElementById("popup_container")
-    popup_container.classList.add("is-hidden");
-  }
 </script>
+<!-- //show popup after 5s
+const myTimeout = setTimeout(()=>{
+document.getElementById("popup_container").classList.remove('is-hidden');
+}, 5000);
+
+hidePopup = () => {
+const popup_container = document.getElementById("popup_container")
+popup_container.classList.add("is-hidden");
+} -->
 
 <div onclick="flipBox()" class="heroImage no-select">
   <img id="heroImage" src="/assets/images/gallery/Box1.png" />

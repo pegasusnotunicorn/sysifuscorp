@@ -51,7 +51,7 @@ const brDesktop = puzzleFunctions.constVars.brDesktop;
 //the various steps to the puzzle
 const steps = [
   {
-    text:`Welcome to the puzzle. ${brDesktop}Do you think you can win in 1 turn? ${brDesktop}Don't know the rules? <a href='/tutorial'>Click here for the tutorial</a>.`,
+    text:`Welcome to the puzzle. ${brDesktop}Do you think you can win in 1 turn? ${brDesktop}Don't know the rules? <a href='/tutorial'>Click here for the 5 minute tutorial</a>.`,
     top:"50%",
     left:"50%",
     func: () => {
@@ -145,11 +145,11 @@ const steps = [
 ];
 
 const topText = `
+  <h2 class="is-hidden-desktop">Win free shipping!</h2>
   <p>If you can solve the following puzzle, I will give you a coupon for free shipping for my board game.</p>
   <p>No strings attached. No signups. No tricks. Just a good ol' fashioned puzzle.</p>
-  <p id="startText" class="is-hidden">
-    Click the green button below to start.
-    <span class="is-hidden-mobile is-hidden-tablet-mobile">If you are on a computer, you can use arrow keys to navigate.</span>
+  <p id="startText" class="is-hidden-mobile is-hidden-tablet-mobile">
+    If you are on a computer, you can use the arrow keys to navigate.
   </p>
 `;
 

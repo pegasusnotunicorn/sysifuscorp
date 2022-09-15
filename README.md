@@ -20,3 +20,4 @@ Technical Notes:
 
 * Might need to `bundle update`
 * Or use `bundle exec jekyll serve --force-polling`
+* Maybe bundler is buggy? Try `gem uninstall bundler` and `gem install bundler`

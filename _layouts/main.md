@@ -12,11 +12,11 @@ layout: page
   margin-left: -2rem;
   color: rgba(255, 255, 255, 0.75);
   background: #000000;
-  padding-bottom:2rem;
+  padding-bottom:1rem;
 }
 .logo-top-mobile > .lead-top{
   margin-top: -2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-left: 2rem;
 }
 .logo-top-mobile > .site-title{

@@ -92,7 +92,7 @@ const steps = [
     }
   },
   {
-    text: `The top left number shows how much ${companyInfluence} you receive every time you move onto a ${projectCard}.`,
+    text: `The top left number shows exactly how much ${companyInfluence} you receive every time you move onto a ${projectCard}.`,
     top: "50%",
     left: "50%",
     func: () => {
@@ -304,11 +304,11 @@ export function runTutorial() {
   opCardsWrapper.appendChild(puzzleFunctions.createOPCard(0, 2));
 
   let topText = `
+    <h2 class="is-hidden-desktop">Interactive Tutorial</h2>
     <p>This is a simplied tutorial on how to play the game <span class="is-bold">Welcome to Sysifus Corp</span>.</p>
-    <p>It should take about 5 minutes to complete.</p>
-    <p id="startText" class="is-hidden">
-      Click the green button below to start.
-      <span class="is-hidden-mobile is-hidden-tablet-mobile">If you are on a computer, you can use arrow keys to navigate.</span>
+    <p>It should only take about 5 minutes to complete.</p>
+    <p id="startText" class="is-hidden-mobile is-hidden-tablet-mobile">
+      If you are on a computer, you can use the arrow keys to navigate.
     </p>
   `;
   puzzleFunctions.start(steps, resetTutorial, false, topText);

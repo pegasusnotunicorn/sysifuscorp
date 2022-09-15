@@ -33,7 +33,7 @@ img {
 }
 
 .deemphasized.is-active{
-  opacity:.25 !important;
+  opacity:.15 !important;
 }
 
 span.is-red {color: #ef5559;}
@@ -112,6 +112,12 @@ span.not-monospace{
 :not(span).is-green{background-color:#81c99e !important; color: white !important;}
 :not(span).is-white{background-color:#FFFFFF !important;color:black !important;border:0.5px solid rgba(0,0,0,0.3);}
 
+@media only screen and (max-width: $mid-breakpoint){
+  .content > h1 {
+    display:none;
+  }
+}
+
 //</editor-fold>
 
 //<editor-fold>------------------------------PUZZLE WRAPPER---------------------------------------
@@ -137,19 +143,39 @@ span.not-monospace{
   }
 }
 
-#startButton{
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 999999;
-  padding-top:10px;
-  padding-bottom:10px;
-  width: fit-content;
-  box-shadow: 0px 0px 10px #7e7e7e;
+.startButton{
+  text-align:center;
+
+  @media only screen and (max-width: $mid-breakpoint) {
+    position:relative;
+    margin-top:$section-spacing/2;
+  }
+
+  @media only screen and (min-width: $mid-breakpoint) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 90;
+    padding-top:10px;
+    padding-bottom:10px;
+    width: fit-content;
+    position:absolute;
+  }
+}
+
+#startText {
+  @media only screen and (max-width: $mid-breakpoint) {
+    margin-bottom:0;
+  }
 }
 
 #startText a {
   cursor:pointer;
+}
+
+#initialInstructions > h2{
+  margin-top:0;
+  margin-bottom:$section-spacing/2;
 }
 
 //</editor-fold>
@@ -158,14 +184,27 @@ span.not-monospace{
 
 #gameBoardTextWrapper{
   padding-bottom:$section-spacing;
-  background-color: white;
   color: black;
   z-index:99;
   width:100%;
   position:unset;
 
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom:0;
+    background-color: #F9F9F9;
+  }
+
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    padding-bottom:$section-spacing / 2;
+  }
+
   //desktop
   @media only screen and (min-width: $large-breakpoint) {
+    background-color: #F9F9F9;
     inline-size: fit-content !important;
     max-width:40%;
     padding: $section-spacing / 2;
@@ -177,16 +216,31 @@ span.not-monospace{
 }
 
 #topTextWrapper{
-  min-height:143px;
+  @media only screen and (max-width: $mid-breakpoint) {
+    position:fixed;
+    bottom:0;
+    left:0;
+    padding:$section-spacing;
+    z-index:10;
+    width:100%;
+    background-color:#F9F9F9;
+    border-top:1px solid #222;
+  }
 }
 
+
 #gameBoardText{
-  margin:0;
-  min-height:88px;
-  padding-top:$section-spacing / 2;
+
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    margin-bottom:0;
+    margin-top:$section-spacing / 2;
+  }
 
   //desktop
   @media only screen and (min-width: $large-breakpoint) {
+    margin:0;
+    padding-top:$section-spacing / 2;
     min-height:auto;
     padding-top:0;
   }
@@ -210,6 +264,12 @@ span.not-monospace{
   color: white;
   bottom: 0;
   position:unset;
+
+  //desktop
+  @media only screen and (max-width: $mid-breakpoint) {
+    width:calc(50% - 1em);
+    text-align: center;
+  }
 
   //desktop
   @media only screen and (min-width: $large-breakpoint) {
@@ -331,6 +391,7 @@ span.not-monospace{
   @media only screen and (max-width: $mid-breakpoint){
     padding-left:$section-spacing;
     padding-right:$section-spacing;
+    min-height:50vh;
   }
 
   //tablet and mobile
@@ -508,10 +569,8 @@ span.not-monospace{
 
   //mobile
   @media only screen and (max-width: $mid-breakpoint){
-    font-size:0.75em;
-    transform: translate(-18%, -8%);
-    padding-top: 1px !important;
-    padding-bottom: 1.5px !important;
+    font-size:0.8em;
+    transform: translate(-14%, -8%);
   }
 
   //desktop
@@ -569,24 +628,42 @@ span.not-monospace{
   display:flex;
   flex-direction:column;
   margin-top:1rem;
+
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    flex-direction:row;
+  }
 }
 
 .puzzleButton{
   position:relative !important;
-  padding:1rem !important;
-  margin-bottom:1rem;
   text-align:center;
 
   //mobile
   @media only screen and (max-width: $mid-breakpoint){
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
+    padding-top:$section-spacing/4;
+    padding-bottom:$section-spacing/4;
+    margin-bottom:$section-spacing/2;
+  }
+
+  //tablet
+  @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
+    margin-bottom:0;
+    margin-right:$section-spacing/4;
+    padding-top:$section-spacing/4;
+    padding-bottom:$section-spacing/4;
+  }
+
+  //tablet
+  @media only screen and (min-width: $large-breakpoint){
+    margin-bottom:$section-spacing/2;
+    padding:$section-spacing/2;
   }
 }
 
 .puzzleButton.disabled{
   cursor:not-allowed !important;
-  opacity: 0.33 !important;
+  opacity: 0.15 !important;
 }
 
 .rotateButtonsWrapper, .numberDomWrapper {
@@ -607,7 +684,7 @@ span.not-monospace{
 }
 
 .rotateButtonsWrapper.disabled > div, .rotateButtonsWrapper > div.disabled{
-  opacity:0.25 !important;
+  opacity:0.15 !important;
   cursor:not-allowed !important;
 }
 

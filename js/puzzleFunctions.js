@@ -75,23 +75,25 @@ export function start(steps, resetFunc, bypassReset, topText){
     removeAllOpCardFixed();
   });
 
-  //show start button in beginning
-  let startButton = document.getElementById("startButton");
-  startButton.classList.remove("is-hidden");
 
   //click button to start
-  startButton.addEventListener("click", () => {
-
+  let startButtonMobile = document.getElementById("startButtonMobile");
+  let startButtonDesktop = document.getElementById("startButtonDesktop");
+  let startPuzzle = () => {
     //hide start button and text
-    startButton.classList.add("is-hidden");
-    startButton.setAttribute("start", true);
+    startButtonMobile.classList.add("is-hidden");
+    startButtonDesktop.classList.add("is-hidden");
+    document.getElementById("puzzleWrapper").setAttribute("start", true);
 
     //check for mobile sizing
     setupMobile(topText);
 
     //start steps
     showPuzzleText(steps, 0, resetFunc, bypassReset);
-  });
+  }
+
+  startButtonDesktop.addEventListener("click", startPuzzle);
+  startButtonMobile.addEventListener("click", startPuzzle);
 }
 
 //reset the puzzle, add active to gameboard
@@ -112,19 +114,19 @@ function resetPuzzle(specificReset){
 export function setupMobile(topText){
   let gameBoardTextWrapper = document.getElementById("gameBoardTextWrapper");
   let gameBoardTextLocation = document.getElementById("gameBoardTextLocation");
-  let topTextWrapper = document.getElementById("topTextWrapper");
+  let initialInstructions = document.getElementById("initialInstructions");
 
   let mobileCheck = window.mobileCheck();
-  topTextWrapper.setAttribute("viewType", (mobileCheck) ? "mobile" : "desktop");
+  initialInstructions.setAttribute("viewType", (mobileCheck) ? "mobile" : "desktop");
 
   //mobile and has started
-  if (window.mobileCheck() && document.getElementById("startButton").getAttribute("start") === 'true'){
-    topTextWrapper.innerHTML = "";
-    topTextWrapper.appendChild(gameBoardTextWrapper);
+  if (window.mobileCheck() && document.getElementById("puzzleWrapper").getAttribute("start") === 'true'){
+    initialInstructions.innerHTML = "";
+    initialInstructions.appendChild(gameBoardTextWrapper);
   }
   //desktop
   else {
-    topTextWrapper.innerHTML = topText;
+    initialInstructions.innerHTML = topText;
     gameBoardTextLocation.appendChild(gameBoardTextWrapper);
   }
 
@@ -267,7 +269,7 @@ export function unhidePuzzleText(){
   }
 
   //unhide "hide" button on desktop
-  if (document.getElementById("topTextWrapper").getAttribute("viewType") === "desktop"){
+  if (document.getElementById("initialInstructions").getAttribute("viewType") === "desktop"){
     if (document.getElementById("puzzleWrapper").getAttribute("puzzle") === "started"){
       showHideButton(true);
     }
