@@ -120,15 +120,17 @@ export function setupMobile(topText){
   let mobileCheck = window.mobileCheck();
   initialInstructions.setAttribute("viewType", (mobileCheck) ? "mobile" : "desktop");
 
-  //mobile and has started
-  if (window.mobileCheck() && document.getElementById("puzzleWrapper").getAttribute("start") === 'true'){
-    initialInstructions.innerHTML = "";
-    initialInstructions.appendChild(gameBoardTextWrapper);
-  }
-  //desktop
-  else {
-    initialInstructions.innerHTML = topText;
-    gameBoardTextLocation.appendChild(gameBoardTextWrapper);
+  if (topText){
+    //mobile and has started
+    if (window.mobileCheck() && document.getElementById("puzzleWrapper").getAttribute("start") === 'true'){
+      initialInstructions.innerHTML = "";
+      initialInstructions.appendChild(gameBoardTextWrapper);
+    }
+    //desktop
+    else {
+      initialInstructions.innerHTML = topText;
+      gameBoardTextLocation.appendChild(gameBoardTextWrapper);
+    }
   }
 
   //unhide "hide" button on desktop
@@ -237,7 +239,7 @@ export function showPuzzleText(steps, nextStep, specificReset, bypassReset, topT
   }
 
   //fix playerboard height in mobile
-  setupMobile(topText);
+  setupMobile();
 }
 
 //clone a board text button and replace it, attach click listener
