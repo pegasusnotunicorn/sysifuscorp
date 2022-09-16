@@ -141,7 +141,6 @@ export function setupMobile(topText){
     //scroll to middle so that it's obvious theres more OP cards on mobile
     let opCardsWrapper = document.getElementById("opCardsWrapper");
     opCardsWrapper.scrollLeft = (opCardsWrapper.scrollWidth - opCardsWrapper.offsetWidth) / 2;
-    console.log("wha");
     showHideButton(false);
   }
 
@@ -153,7 +152,7 @@ export function setupMobile(topText){
   let topTextWrapper = document.getElementById("topTextWrapper");
   playerBoard.style.removeProperty("height");
 
-  if (window.innerWidth <= 900 && mobileNavbar.offsetHeight + puzzleWrapper.offsetHeight > window.innerHeight){
+  if (window.innerWidth <= 900 && mobileNavbar.offsetHeight + puzzleWrapper.offsetHeight > window.innerHeight - topTextWrapper.offsetHeight){
     playerBoard.style.height = `${playerBoard.offsetHeight + topTextWrapper.offsetHeight}px`;
   }
 }
