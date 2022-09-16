@@ -75,6 +75,7 @@ export function start(steps, resetFunc, bypassReset, topText){
     removeAllOpCardFixed();
   });
 
+  setupMobile(topText);
 
   //click button to start
   let startButtonMobile = document.getElementById("startButtonMobile");
@@ -89,7 +90,7 @@ export function start(steps, resetFunc, bypassReset, topText){
     setupMobile(topText);
 
     //start steps
-    showPuzzleText(steps, 0, resetFunc, bypassReset);
+    showPuzzleText(steps, 0, resetFunc, bypassReset, topText);
   }
 
   startButtonDesktop.addEventListener("click", startPuzzle);
@@ -137,12 +138,28 @@ export function setupMobile(topText){
     }
   }
   else {
+    //scroll to middle so that it's obvious theres more OP cards on mobile
+    let opCardsWrapper = document.getElementById("opCardsWrapper");
+    opCardsWrapper.scrollLeft = (opCardsWrapper.scrollWidth - opCardsWrapper.offsetWidth) / 2;
+    console.log("wha");
     showHideButton(false);
+  }
+
+  //if the height is smaller than puzzle, fix the playerboard height
+  let mobileNavbar = document.getElementById("mobileNavbar");
+  let puzzleWrapper = document.getElementById("puzzleWrapper");
+
+  let playerBoard = document.getElementById("playerBoard");
+  let topTextWrapper = document.getElementById("topTextWrapper");
+  playerBoard.style.removeProperty("height");
+
+  if (window.innerWidth <= 900 && mobileNavbar.offsetHeight + puzzleWrapper.offsetHeight > window.innerHeight){
+    playerBoard.style.height = `${playerBoard.offsetHeight + topTextWrapper.offsetHeight}px`;
   }
 }
 
 //show text on the puzzle
-export function showPuzzleText(steps, nextStep, specificReset, bypassReset){
+export function showPuzzleText(steps, nextStep, specificReset, bypassReset, topText){
 
   //reset puzzle first if starting over, ignore first time running
   if (nextStep === 0 && !bypassReset){
@@ -219,6 +236,9 @@ export function showPuzzleText(steps, nextStep, specificReset, bypassReset){
   if (typeof steps[nextStep].func != "undefined"){
     steps[nextStep].func(bindKeyboard, cloneButton, steps, nextStep, specificReset);
   }
+
+  //fix playerboard height in mobile
+  setupMobile(topText);
 }
 
 //clone a board text button and replace it, attach click listener

@@ -32,6 +32,12 @@ img {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+.content{
+  @media only screen and (max-width: $mid-breakpoint){
+    padding-bottom:0 !important;
+  }
+}
+
 .deemphasized.is-active{
   opacity:.15 !important;
 }
@@ -77,6 +83,7 @@ span.not-monospace{
   color:white;
   font-family:monospace;
   text-transform:uppercase;
+  text-align:center !important;
   cursor:pointer;
   position: absolute;
   border-radius: 5px;
@@ -175,7 +182,7 @@ span.not-monospace{
 
 #initialInstructions > h2{
   margin-top:0;
-  margin-bottom:$section-spacing/2;
+  margin-bottom:$section-spacing/4;
 }
 
 //</editor-fold>
@@ -217,10 +224,16 @@ span.not-monospace{
 
 #topTextWrapper{
   @media only screen and (max-width: $mid-breakpoint) {
+    p, h2 {
+      margin-bottom:$section-spacing/4;
+      text-align: left;
+    }
     position:fixed;
     bottom:0;
     left:0;
     padding:$section-spacing;
+    padding-top:$section-spacing/2;
+    padding-bottom:$section-spacing/2;
     z-index:10;
     width:100%;
     background-color:#F9F9F9;
@@ -231,9 +244,10 @@ span.not-monospace{
 
 #gameBoardText{
 
+  margin-bottom:0;
+
   //tablet
   @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
-    margin-bottom:0;
     margin-top:$section-spacing / 2;
   }
 
@@ -245,10 +259,6 @@ span.not-monospace{
     padding-top:0;
   }
 
-  > h1, > p {
-    text-align:center;
-  }
-
   >h1 {
     margin-top: 0;
   }
@@ -258,6 +268,7 @@ span.not-monospace{
   display:flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+  margin-top:$section-spacing/4;
 }
 
 .gameBoardTextButton{
@@ -391,7 +402,6 @@ span.not-monospace{
   @media only screen and (max-width: $mid-breakpoint){
     padding-left:$section-spacing;
     padding-right:$section-spacing;
-    min-height:50vh;
   }
 
   //tablet and mobile
@@ -629,15 +639,36 @@ span.not-monospace{
   flex-direction:column;
   margin-top:1rem;
 
+  //mobile
+  @media only screen and (max-width: $mid-breakpoint){
+    margin-top:0;
+  }
+
   //tablet
   @media only screen and (min-width: $mid-breakpoint) and (max-width: $large-breakpoint){
     flex-direction:row;
   }
 }
 
+#puzzleText {
+  @media only screen and (max-width: $mid-breakpoint){
+    margin-bottom:$section-spacing/4;
+  }
+}
+#moveButton {
+  @media only screen and (max-width: $mid-breakpoint){
+    margin-bottom:$section-spacing/2 !important;
+  }
+}
+#opButton {
+  @media only screen and (max-width: $mid-breakpoint){
+    margin-bottom:0 !important;
+  }
+}
+
 .puzzleButton{
   position:relative !important;
-  text-align:center;
+  text-align:center !important;
 
   //mobile
   @media only screen and (max-width: $mid-breakpoint){

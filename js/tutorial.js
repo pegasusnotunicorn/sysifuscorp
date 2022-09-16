@@ -303,6 +303,9 @@ export function runTutorial() {
   opCardsWrapper.appendChild(puzzleFunctions.createOPCard(0, 1));
   opCardsWrapper.appendChild(puzzleFunctions.createOPCard(0, 2));
 
+  //scroll to middle so that it's obvious theres more on mobile
+  opCardsWrapper.scrollLeft = (opCardsWrapper.scrollWidth - opCardsWrapper.offsetWidth) / 2;
+
   let topText = `
     <h2 class="is-hidden-desktop">Interactive Tutorial</h2>
     <p>This is a simplied tutorial on how to play the game <span class="is-bold">Welcome to Sysifus Corp</span>.</p>

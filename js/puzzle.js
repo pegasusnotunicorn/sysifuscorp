@@ -123,7 +123,7 @@ const steps = [
     }
   },
   {
-    text: `<span id='puzzleText'>What do you want to do?</span>
+    text: `<p id='puzzleText'>What do you want to do?</p>
            <div class="puzzleButtonWrapper">
             <p id="moveButton" class="moveButton puzzleButton gamebutton noselect is-green">Move your Meeple</p>
             <p id="opButton" class="opButton puzzleButton gamebutton noselect is-yellow">Use an ${opCard}</p>
@@ -243,6 +243,9 @@ export function setupPuzzle() {
   opCardsWrapper.appendChild(puzzleFunctions.createOPCard(0, 1));
   opCardsWrapper.appendChild(puzzleFunctions.createOPCard(0, 2));
   opCardsWrapper.appendChild(puzzleFunctions.createOPCard(0, 3));
+
+  //scroll to middle so that it's obvious theres more on mobile
+  opCardsWrapper.scrollLeft = (opCardsWrapper.scrollWidth - opCardsWrapper.offsetWidth) / 2;
 
   puzzleFunctions.start(steps, resetPuzzle, false, topText);
 }

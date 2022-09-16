@@ -28,7 +28,7 @@ description: "A simplified tutorial on how to play Welcome to Sysifus Corp."
       If you are on a computer, you can use the arrow keys to navigate.
     </p>
   </div>
-  <p id="startButtonMobile" class="startButton is-hidden-desktop gamebutton noselect is-green noselect">Click here to start</p>
+  <div id="startButtonMobile" class="startButton is-hidden-desktop gamebutton noselect is-green noselect">Click here to start</div>
 </div>
 
 {% include puzzle-board.html %}
@@ -37,12 +37,4 @@ description: "A simplified tutorial on how to play Welcome to Sysifus Corp."
   <hr>
       {% include trypuzzle.md %}
   <hr>
-</div>
-
-<div class="is-hidden-desktop">
-  <br>  
-  <br>  
-  <br>  
-  <br>  
-  <br>  
 </div>

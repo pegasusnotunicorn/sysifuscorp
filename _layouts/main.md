@@ -25,7 +25,7 @@ layout: page
 }
 </style>
 
-<div class="logo-top-mobile is-hidden-desktop">
+<div id="mobileNavbar" class="logo-top-mobile is-hidden-desktop">
   <p class="lead lead-top">Welcome to</p>
   <div class="site-title">
     <a href="/" class="no-select">{{ site.title }}</a>
