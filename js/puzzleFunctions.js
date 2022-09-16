@@ -545,6 +545,9 @@ export function highlightOpCard(cardIdIndex, onlyHighlightThis){
     let highlightedCard = document.getElementById(`opCard${cardIdIndex}`)
     highlightedCard.classList.remove("deemphasized");
     moveGameObj(`opCard${cardIdIndex}`, {top:"0.5em"});
+
+    let opCardsWrapper = document.getElementById("opCardsWrapper");
+    opCardsWrapper.scrollLeft = (opCardsWrapper.scrollWidth - opCardsWrapper.offsetWidth) / 2;
   }
 }
 
