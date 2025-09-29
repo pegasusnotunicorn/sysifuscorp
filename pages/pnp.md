@@ -3,11 +3,9 @@ layout: main
 title: Here's your gift!
 header-title: Here's your gift!
 permalink: /pnp
-description: "Thanks for signing up! Here's a free gift for you."
+description: "Play for free right now!"
 showheader_mobile: true
 ---
-
-Thank you for signing up to our newsletter.
 
 You can click the button below to download your free PDF copy of the print-and-play version of the game. All you need is a printer and a scissor to cut out all of the printed pieces of the game. For the non-printed parts, you can use game pieces from other board games or just random little trinkets lying around the house like buttons or coins.
 
